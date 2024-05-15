@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Link-Kerjaku | Lowongan Kerja</title>
+    <title>Link-Kerjaku | Lowongan Kerja 2</title>
   </head>
   <body>
 
@@ -23,20 +23,18 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar" style="color: #FFC94A;">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja" style="color: blue;">Lowongan Kerja</a>
+                    <a class="nav-link active ms-4" href="#">Lowongan Kerja</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/about" style="color: #FFC94A;">Tentang Kami</a>
+                    <a class="nav-link active ms-4" href="/about2">Tentang Kami</a>
                 </li>
             </ul>
             <div class="d-flex">
-            <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
-    <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; background-color: #6c757d; border-radius: 50%; text-decoration: none; margin-left: 10px;">
-        <img src="img/user.png" alt="Profile Image" style="width: 30px; height: 30px; border-radius: 50%;">
-    </a>
+            <a href="/HomePagePerusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #808080; text-decoration: none;">Perusahaan</a>
+            <a href="/login" class="btn btn-secondary" role="button">Masuk/Daftar</a>
 </div>
         </div>
     </div>
@@ -316,19 +314,17 @@
 
 <!-- Footer -->
 <section style="background-color: #FFFFFF; padding: -10px; margin-top: 85px;">
-<footer style="background-color: #FFC94A; padding: 30px;">
+<footer style="background-color: #E9EBF8; padding: 30px;">
     <div class="container">
         <div class="row">
             <div class="col-md-3 mb-4">
                 <!-- Logo -->
-                <img src="img/logo2.png" alt="Logo" style="max-width: 100px;">
-                <!-- Lorem10 -->
-                <p style="margin-top: 55px;">Lorem ipsum</p>
+                <img src="path/to/logo.svg" alt="Logo" style="max-width: 100px;">
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Kategori -->
                 <h5>Kategori</h5>
-                <ul style="margin-top: 55px;">
+                <ul>
                     <li>Kategori 1</li>
                     <li>Kategori 2</li>
                     <li>Kategori 3</li>
@@ -337,7 +333,7 @@
             <div class="col-md-3 mb-4">
                 <!-- Tentang -->
                 <h5>Tentang</h5>
-                <ul style="margin-top: 55px;">
+                <ul>
                     <li>Tentang Kami</li>
                     <li>Tim Kami</li>
                     <li>Karir</li>
@@ -346,7 +342,7 @@
             <div class="col-md-3 mb-4">
                 <!-- Dukungan -->
                 <h5>Dukungan</h5>
-                <ul style="margin-top: 55px;">
+                <ul>
                     <li>Bantuan</li>
                     <li>FAQ</li>
                     <li>Hubungi Kami</li>
@@ -355,15 +351,17 @@
         </div>
         <div class="row">
             <div class="col-md-12">
+                <!-- Lorem10 -->
+                <p>Lorem ipsum</p>
                 <!-- Icon email, telefon, lokasi -->
                 <div>
-                <span><img src="svg/email.svg" width="25" alt="Email Icon"> Email Link Kerjaku</span>
+                <span><img src="svg/email.svg" width="25" alt="Email Icon"> Lorem ipsum</span>
                 </div>
-                <div style="margin-top: 15px;">
-                <span><img src="svg/telephone.svg" width="25" alt="Phone Icon"> (+62) 0000000000</span>
+                <div>
+                <span><img src="svg/telephone.svg" width="25" alt="Phone Icon"> Lorem ipsum</span>
                 </div>
-                <div style="margin-top: 15px;">
-                <span><img src="svg/location.svg" width="25" alt="Location Icon"> Lokasi Lengkap</span>
+                <div>
+                <span><img src="svg/location.svg" width="25" alt="Location Icon"> Lorem ipsum</span>
                 </div>
             </div>
         </div>

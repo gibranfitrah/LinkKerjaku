@@ -7,108 +7,119 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Link-Kerjaku | About Us</title>
+    <title>Link-Kerjaku | About Home</title>
   </head>
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+    <a class="navbar-brand" href="#">
+        <img src="img/logo2.png" alt="Logo" style="height: 40px;">
+    </a>        
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+    <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #FFC94A;">Beranda</a>
+</li>
+
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #FFC94A;">Lowongan Kerja</a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/lowongankerja">Lowongan Kerja</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/about">Tentang Kami</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/about2" style="color: blue;">Tentang Kami</a>
                 </li>
             </ul>
             <div class="d-flex">
-    <a href="/HomePagePelamar" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #808080; text-decoration: none;">Perusahaan</a>
-    <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; background-color: #6c757d; border-radius: 50%; text-decoration: none; margin-left: 10px;">
-        <img src="img/user.png" alt="Profile Image" style="width: 30px; height: 30px; border-radius: 50%;">
-    </a>
+            <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
+            <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
 </div>
         </div>
     </div>
 </nav>
 
 <!-- Section Pertama -->
-<section style="background-color: #D9D9D9; padding: 60px; text-align: center;">
+<section style="background-color: #1679AB; padding: 155px; text-align: center;">
     <div>
-        <h3>Link Kerjaku: Menghubungkan Pencari Kerja dengan Pemberi Kerja Terbaik</h3>
+    <h3 style="color: white;">
+    Link Kerjaku: Menghubungkan 
+    <span style="color: #FFC94A;">Pencari Kerja</span> 
+    <span style="color: white;">dengan</span> 
+    <span style="color: #FFC94A;">Pemberi Kerja Terbaik</span>
+</h3>
+</section>
+<!-- Section Akhir -->
+
+<!-- Section Kedua -->
+<section style="background-color: #FFFFFF; padding: 90px; text-align: center;">
+<div style="display: flex; justify-content: center; margin-top: -185px;">
+    <div style="width: 205px; height: 205px; background-color: #B7D5E5; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 10px; margin-right: 25px;">
+        <img src="svg/Kepercayaan.svg" alt="Kepercayaan" width="90" height="90" style="fill: #1679AB;">
+        <p style="font-size: 20px; margin-top: 10px;">Kepercayaan</p>
     </div>
-    <div style="display: flex; justify-content: center;">
-        <div style="margin-right: 10px;">
-            <div style="width: 513px; height: 184px; background-color: #E9EBF8; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin-top: 50px;">
-                <div style="padding: 20px;">
-                    <h4 style="text-align: center;">Misi Kami</h4>
-                    <p style="text-align: left;">Mempermudah pencari kerja menemukan pekerjaan impian dan membantu pemberi kerja menemukan talenta terbaik.</p>
-                </div>
-            </div>
+    <div style="width: 205px; height: 205px; background-color: #B7D5E5; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 10px; margin-right: 25px;">
+        <img src="svg/Inovasi.svg" alt="Inovasi" width="90" height="90" style="fill: #1679AB;">
+        <p style="font-size: 20px; margin-top: 10px;">Inovasi</p>
+    </div>
+    <div style="width: 205px; height: 205px; background-color: #B7D5E5; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 10px; margin-right: 25px;">
+        <img src="svg/Kolaborasi.svg" alt="Kolaborasi" width="90" height="90" style="fill: #1679AB;">
+        <p style="font-size: 20px; margin-top: 10px;">Kolaborasi</p>
+    </div>
+    <div style="width: 205px; height: 205px; background-color: #B7D5E5; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 10px;">
+        <img src="svg/Keunggulan.svg" alt="Keunggulan" width="90" height="90" style="fill: #1679AB;">
+        <p style="font-size: 20px; margin-top: 10px;">Keunggulan</p>
+    </div>
+</div>
+</section>
+<!-- Akhir Section -->
+
+<!-- Section Baru -->
+<section style="background-color: #FFFFFF; padding: 100px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: -55px;">
+        <div style="margin-left: 20px; max-width: 600px;">
+            <h3 style="color: #1679AB; font-size: 35px;">Visi Kami & Misi Kami</h3>
+            <p style="color: #1679AB; font-size: 15px;">
+                Menjadi platform job portal terdepan di Indonesia yang membangun masa depan pekerjaan yang lebih baik. Serta mempermudah pencari kerja menemukan pekerjaan impian dan membantu pemberi kerja menemukan talenta terbaik.
+            </p>
         </div>
-        
-        <div style="width: 513px; height: 184px; background-color: #E9EBF8; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; margin-top: 50px;">
-            <div style="padding: 20px;">
-                <h4 style="text-align: center;">Visi Kami</h4>
-                <p style="text-align: left;">Menjadi platform job portal terdepan di Indonesia yang membangun masa depan pekerjaan yang lebih baik.</p>
+        <div>
+            <div style="width: 517px; height: 514px; background-color: #B7D5E5; border-radius: 24px; overflow: hidden; margin-right: 55px;">
+                <img src="img/VisiMisi.jpg" alt="Visi dan Misi" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
         </div>
     </div>
 </section>
 <!-- Section Akhir -->
 
-<!-- Section Kedua -->
-<section style="background-color: #FFFFFF; padding: 90px; text-align: center;">
-    <div>
-        <h3>Nilai-Nilai Kami</h3>
-    </div>
-    <div style="display: flex; justify-content: center; margin-top: 70px;">
-        <div style="margin-right: 235px;">
-            <img src="svg/Kepercayaan.svg" alt="Kepercayaan" width="90" height="90">
-            <p style="font-size: 20px;">Kepercayaan</p>
-        </div>
-        <div style="margin-right: 235px;">
-            <img src="svg/Inovasi.svg" alt="Inovasi" width="90" height="90">
-            <p style="font-size: 20px;">Inovasi</p>
-        </div>
-        <div style="margin-right: 235px;">
-            <img src="svg/Kolaborasi.svg" alt="Kolaborasi" width="90" height="90">
-            <p style="font-size: 20px;">Kolaborasi</p>
-        </div>
-        <div>
-            <img src="svg/Keunggulan.svg" alt="Keunggulan" width="90" height="90">
-            <p style="font-size: 20px;">Keunggulan</p>
-        </div>
-    </div>
-</section>
-<!-- Akhir Section -->
-
 <!-- Section Ketiga -->
-<section style="background-color: #B2C4D4; padding: 60px;">
-    <p style="text-align: left; font-size: 20px;">Gemerlap di luar, pahit di dalam. Banyak pencari kerja di Indonesia kesulitan menemukan pekerjaan yang sesuai, terjebak dalam proses rekrutmen yang rumit, dan terhalang kesenjangan informasi. Lahirlah Link Kerjaku: Platform job portal yang mudah digunakan, efektif, dan bermanfaat bagi pencari kerja dan pemberi kerja.</p>
+<section style="background-color: #FFFFFF; display: flex;">
+<div style="width: 1555px; height: 300px; background-color: #1679AB; position: relative; color: #FFFFFF; padding: 20px;">
+    <div style="position: absolute; top: 0; right: 0; width: 1235px; height: 300px; background-color: #FFC94A; border-top-right-radius: 355px; margin-right: 855px;"></div>
+    <p style="position: absolute; top: 50%; transform: translateY(-50%); max-width: 800px; left: 20px; margin-left: 655px; font-size: 20px;">Gemerlap di luar, pahit di dalam. Banyak pencari kerja di Indonesia kesulitan menemukan pekerjaan yang sesuai, terjebak dalam proses rekrutmen yang rumit, dan terhalang kesenjangan informasi. Lahirlah Link Kerjaku: Platform job portal yang mudah digunakan, efektif, dan bermanfaat bagi pencari kerja dan pemberi kerja.</p>
+</div>
+
+
 </section>
 <!-- Akhir Section -->
 
 <!-- Section Keempat -->
 <section style="background-color: #FFFFFF; padding: 60px; text-align: center;">
     <div>
-        <h3>Tim Kami</h3>
+        <h3 style="color: #1679AB;">Tim Kami</h3>
     </div>
     <div style="display: flex; justify-content: center; margin-top: 50px;">
         <div style="margin-right: 20px;">
-            <div style="width: 393px; height: 234px; background-color: #D9D9D9; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
-            </div>
+        <div style="width: 393px; height: 275px; padding: 20px; border-radius: 10px;">
+    <img src="img/tim1.jpg" alt="Img Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+</div>
+
         </div>
         <div>
-            <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
+            <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px; margin-top: 18px; margin-right: 15px;">
                 <h3 style="margin-right: 700px;">Nama</h3>
                 <p style="margin-right: 700px;">Jabatan</p>
                 <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
@@ -125,15 +136,18 @@
         </div>
     </div>
     <div>
-        <div style="width: 393px; height: 234px; background-color: #D9D9D9; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
-        </div>
+    <div style="width: 393px; height: 275px; padding: 20px; border-radius: 10px; margin-top: -16px;">
+    <img src="img/tim2.jpg" alt="Img Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+</div>
+
     </div>
 </div>
 
 <div style="display: flex; justify-content: center; margin-top: 50px;">
         <div style="margin-right: 20px;">
-            <div style="width: 393px; height: 234px; background-color: #D9D9D9; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
-            </div>
+        <div style="width: 393px; height: 275px; padding: 20px; border-radius: 10px; margin-top: -16px;">
+    <img src="img/tim3.jpg" alt="Img Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+</div>
         </div>
         <div>
             <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
@@ -153,8 +167,9 @@
         </div>
     </div>
     <div>
-        <div style="width: 393px; height: 234px; background-color: #D9D9D9; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
-        </div>
+    <div style="width: 393px; height: 275px; padding: 20px; border-radius: 10px; margin-top: -16px;">
+    <img src="img/tim4.jpg" alt="Img Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+</div>
     </div>
 </div>
 
@@ -163,15 +178,15 @@
 <!-- Akhir Section  -->
 
 <!-- Section Kelima -->
-<section style="background-color: #B2C4D4; padding: 60px; text-align: center;">
+<section style="background-color: #1679AB; padding: 60px; text-align: center;">
     <div>
-        <h3>Apa Yang Kami Tawarkan</h3>
+        <h3 style="color: white;">Apa Yang Kami Tawarkan</h3>
     </div>
-    <p style="margin-top: 20px;">Link Kerjaku hadir dengan berbagai fitur canggih yang dirancang untuk membantu pencari kerja menemukan</p>
-    <p style="margin-top: 5px;">pekerjaan impian mereka dan membantu pemberi kerja menemukan talenta terbaik.</p>
-    <div style="display: flex; justify-content: center; margin-top: 30px;">
-        <p style="margin-right: 140px;">Manfaat bagi Pencari Kerja</p>
-        <p style="margin-left: 135px;">Manfaat bagi Pemberi Kerja</p>
+    <p style="margin-top: 20px; color: white;">Link Kerjaku hadir dengan berbagai fitur canggih yang dirancang untuk membantu pencari kerja menemukan</p>
+    <p style="margin-top: 5px; color: white;">pekerjaan impian mereka dan membantu pemberi kerja menemukan talenta terbaik.</p>
+    <div style="display: flex; justify-content: center; margin-top: 75px;">
+        <p style="margin-right: 140px; color: white;">Manfaat bagi Pencari Kerja</p>
+        <p style="margin-left: 135px; color: white;">Manfaat bagi Pemberi Kerja</p>
     </div>
 
     <!-- Card di kiri -->
@@ -237,67 +252,74 @@
 <!-- Seciton Keenam -->
 <section style="background-color: #FFFFFF; padding: 60px; text-align: center;">
     <div>
-        <h3>Teknologi Kami</h3>
+        <h3 style="color: #1679AB;">Teknologi Kami</h3>
     </div>
-    <p style="margin-top: 20px;">Link Kerjaku memanfaatkan berbagai teknologi canggih untuk memberikan pengalaman terbaik bagi pencari kerja dan pemberi kerja.</p>
+    <p style="margin-top: 20px; color: #1679AB;">Link Kerjaku memanfaatkan berbagai teknologi canggih untuk memberikan pengalaman terbaik bagi pencari kerja dan pemberi kerja.</p>
     <div style="display: flex; margin-top: 50px;">
-        <div style="width: 600px; height: 500px; background-color: #D9D9D9; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); margin-right: 20px; margin-left: 200px;"></div>
+    <div style="width: 600px; height: 500px; background-color: #D9D9D9; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); margin-right: 20px; margin-left: 200px;">
+    <img src="img/TeknologiKami.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+</div>
         <div style="display: flex; flex-direction: column; justify-content: flex-start; margin-top: 60px;">
-            <p style="font-weight: bold; margin-right: 134px;">1. Pencarian Kerja Canggih</p>
-            <p style="font-weight: bold; margin-top: 45px; margin-left: -155px;">2. Rekomendasi Cerdas</p>
-            <p style="font-weight: bold; margin-top: 45px; margin-left: -35px;">3. Platform yang Aman dan Terpercaya</p>
-            <p style="font-weight: bold; margin-top: 45px; margin-left: -55px;">4. Platform yang Mudah Digunakan</p>
-            <p style="font-weight: bold; margin-top: 45px; margin-left: -175px;">5. Teknologi Cloud</p>
+            <p style="font-weight: bold; margin-right: 134px; color: #1679AB;">1. Pencarian Kerja Canggih</p>
+            <p style="font-weight: bold; margin-top: 45px; margin-left: -155px; color: #1679AB;">2. Rekomendasi Cerdas</p>
+            <p style="font-weight: bold; margin-top: 45px; margin-left: -35px; color: #1679AB;">3. Platform yang Aman dan Terpercaya</p>
+            <p style="font-weight: bold; margin-top: 45px; margin-left: -55px; color: #1679AB;">4. Platform yang Mudah Digunakan</p>
+            <p style="font-weight: bold; margin-top: 45px; margin-left: -175px; color: #1679AB;">5. Teknologi Cloud</p>
         </div>
     </div>
 </section>
 <!-- Akhir Section -->
 
 <!-- Section Ketujuh -->
-<section style="background-color: #B2C4D4; padding: 60px; text-align: center;">
+<section style="background-color: #1679AB; padding: 60px; text-align: center;">
     <div>
-        <h3>Keamanan Data Link Kerjaku: Prioritas Utama Kami</h3>
+        <h3 style="color: white;">Keamanan Data Link Kerjaku: Prioritas Utama Kami</h3>
     </div>
-    <p style="margin-top: 20px;">Link Kerjaku berkomitmen untuk melindungi data Anda dengan</p>
+    <p style="margin-top: 20px; color: white;">Link Kerjaku berkomitmen untuk melindungi data Anda dengan</p>
     <div style="display: flex; justify-content: center; margin-top: 30px;">
         <div style="width: 290px; height: 136px; background-color: #E9EBF8; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); margin-right: 20px;">
-            <p style="text-align: center; line-height: 136px; margin: 0;">Enkripsi data</p>
+            <p style="text-align: center; line-height: 136px; margin: 0; color: #1679AB;">Enkripsi data</p>
         </div>
         <div style="width: 290px; height: 136px; background-color: #E9EBF8; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); margin-right: 20px;">
-            <p style="text-align: center; line-height: 136px; margin: 0;">Kontrol akses ketat</p>
+            <p style="text-align: center; line-height: 136px; margin: 0; color: #1679AB;">Kontrol akses ketat</p>
         </div>
         <div style="width: 290px; height: 136px; background-color: #E9EBF8; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); margin-right: 20px;">
-            <p style="text-align: center; line-height: 136px; margin: 0;">Keamanan fisik</p>
+            <p style="text-align: center; line-height: 136px; margin: 0; color: #1679AB;">Keamanan fisik</p>
         </div>
         <div style="width: 290px; height: 136px; background-color: #E9EBF8; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
-            <p style="text-align: center; line-height: 136px; margin: 0;">Prosedur keamanan</p>
+            <p style="text-align: center; line-height: 136px; margin: 0; color: #1679AB;">Prosedur keamanan</p>
         </div>
     </div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <h5 style="text-align: left; color: white; margin-top: 55px; margin-left: 100px;">Daftar di Link Kerjaku hari ini dan temukan peluang baru dengan aman!</h5>
+    <button style="background-color: #FFC94A; color: white; border: none; border-radius: 5px; padding: 10px 20px; margin-right: 255px; color: #000000; margin-top: 45px;">Daftar Sekarang</button>
+</div>
+
 </section>
 <!-- Akhir Section -->
 
 <!-- Section Kedelapan -->
 <section style="background-color: #FFFFFF; padding: 60px; text-align: center;">
     <div>
-        <h3>Pencapaian yang telah di raih oleh Link Kerjaku</h3>
+        <h3 style="color: #1679AB;">Pencapaian yang telah di raih oleh Link Kerjaku</h3>
     </div>
     <div style="margin-top: 50px;">
-        <div style="width: 1066px; height: 500px; background-color: #B2C4D4; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-between; margin-left: 155px;">
-            <div style="width: 254px; height: 403px; background-color: #FFFFFF; border-radius: 18px; margin: 20px;">
+        <div style="width: 1066px; height: 500px; background-color: #FFFFFF; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-between; margin-left: 155px;">
+            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px;">
                 <!-- Icon SVG di tengah -->
-                <img src="svg/piala.svg" alt="Icon" style="display: block; margin: auto;">
+                <img src="img/piala1.png" alt="gambar" style="display: block; margin: auto;">
                 <h5>Penghargaan</h5>
                 <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed risus mi.</p>
             </div>
-            <div style="width: 254px; height: 450px; background-color: #FFFFFF; border-radius: 18px; margin: 20px;">
+            <div style="width: 254px; height: 450px; border-radius: 18px; margin: 20px;">
                 <!-- Icon SVG di tengah -->
-                <img src="svg/piala.svg" alt="Icon" style="display: block; margin: auto;">
+                <img src="img/piala1.png" alt="gambar" style="display: block; margin: auto;">
                 <h5>Penghargaan</h5>
                 <p style="font-size: 15px; margin-top: 1px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed risus mi.</p>
             </div>
-            <div style="width: 254px; height: 403px; background-color: #FFFFFF; border-radius: 18px; margin: 20px;">
+            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px;">
                 <!-- Icon SVG di tengah -->
-                <img src="svg/piala.svg" alt="Icon" style="display: block; margin: auto;">
+                <img src="img/piala1.png" alt="gambar" style="display: block; margin: auto;">
                 <h5>Penghargaan</h5>
                 <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed risus mi.</p>
             </div>
@@ -307,23 +329,25 @@
 <!-- Akhir Section -->
 
 <!-- Section Kesembilan -->
-<section style="background-color: #B2C4D4; padding: 50px 0;">
+<section style="background-color: #1679AB; padding: 50px 0;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center mb-4">
-                <h3>Recomendasi Mitra </h3>
+                <h3 style="color: white;">Rekomendasi Pekerjaan</h3>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="margin-left: 30px;">
             <!-- Card 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 400px; height: 435px; border-radius: 20px; background-color: #EAECF1; position: relative;">
-                    <div style="width: 100px; height: 100px; background-color: #9DD0FD; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px;"></div>
-                        <h5 class="card-title" style="color: #000000; margin-top: 55px; margin-left: 150px; margin-bottom: 10px;">Nama Perusahaan</h5>
-                        <p style="color: #000000; margin-bottom: 10px; margin-left: 150px;">3 hari yang lalu</p>
+                    <div style="width: 100px; height: 100px; background-color: #9DD0FD; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px; margin-left: -30px">
+                    <img src="img/foto1.jpg" alt="Gambar" style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 0; left: 0; object-fit: cover;">
+                </div>
+                        <h5 class="card-title" style="color: #000000; margin-top: 55px; margin-left: 125px; margin-bottom: 10px;">Nama Perusahaan</h5>
+                        <p style="color: #000000; margin-bottom: 10px; margin-left: 125px;">3 hari yang lalu</p>
                     <hr style="border-color: #000000; margin-bottom: 70px; margin-top: 25px;">
                     <h5 style="color: #000000; margin-left: 20px; margin-top: -55px;">Digital Marketing</h5>
-                    <p style="color: #000000; margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style="color: #000000; margin-left: 20px; margin-right: 15px;">Digital marketing adalah kegiatan pemasaran produk atau jasa...</p>
                     <div style="display: flex; justify-content: space-between; margin-left: 20px; margin-right: 20px; margin-top: -5px;">
             <div style="width: 80px; height: 30px; border: 1px solid #000000; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
                 Full Time
@@ -335,30 +359,29 @@
 
         <div style="display: flex; align-items: center; margin-left: 20px; margin-right: 20px; margin-top: 20px;">
             <img src="svg/location.svg" alt="Lokasi Icon" width="20" style="margin-right: 10px;">
-            <h6 style="color: #000000; margin-top: 5px;">Jakarta</h6>
+            <h6 style="color: #000000; margin-top: 5px;">Jakarta & Bandung</h6>
         </div>
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <a href="/DetailPekerjaan" style="text-decoration: none;">
-        <button style="width: 373px; height: 58px; background-color: #8DA4B8; color: #000000; border: none; border-radius: 5px;">
-            Lamar Pekerjaan Ini
-        </button>
-    </a>
+    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+        Lamar Pekerjaan Ini
+    </button>
 </div>
-
                 </div>
             </div>
 
             <!-- Card 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 400px; height: 435px; border-radius: 20px; background-color: #EAECF1; position: relative;">
-                    <div style="width: 100px; height: 100px; background-color: #9DD0FD; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px;"></div>
-                        <h5 class="card-title" style="color: #000000; margin-top: 55px; margin-left: 150px; margin-bottom: 10px;">Nama Perusahaan</h5>
-                        <p style="color: #000000; margin-bottom: 10px; margin-left: 150px;">3 hari yang lalu</p>
+                <div style="width: 100px; height: 100px; background-color: #9DD0FD; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px; margin-left: -30px">
+                    <img src="img/foto2.jpg" alt="Gambar" style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 0; left: 0; object-fit: cover;">
+                </div>                        
+                <h5 class="card-title" style="color: #000000; margin-top: 55px; margin-left: 125px; margin-bottom: 10px;">Nama Perusahaan</h5>
+                        <p style="color: #000000; margin-bottom: 10px; margin-left: 125px;">3 hari yang lalu</p>
                     <hr style="border-color: #000000; margin-bottom: 70px; margin-top: 25px;">
                     <h5 style="color: #000000; margin-left: 20px; margin-top: -55px;">Digital Marketing</h5>
-                    <p style="color: #000000; margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style="color: #000000; margin-left: 20px; margin-right: 15px;">Digital marketing adalah kegiatan pemasaran produk atau jasa...</p>
                     <div style="display: flex; justify-content: space-between; margin-left: 20px; margin-right: 20px; margin-top: -5px;">
             <div style="width: 80px; height: 30px; border: 1px solid #000000; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
                 Full Time
@@ -370,16 +393,14 @@
 
         <div style="display: flex; align-items: center; margin-left: 20px; margin-right: 20px; margin-top: 20px;">
             <img src="svg/location.svg" alt="Lokasi Icon" width="20" style="margin-right: 10px;">
-            <h6 style="color: #000000; margin-top: 5px;">Jakarta</h6>
+            <h6 style="color: #000000; margin-top: 5px;">Jakarta & Bandung</h6>
         </div>
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <a href="/DetailPekerjaan" style="text-decoration: none;">
-        <button style="width: 373px; height: 58px; background-color: #8DA4B8; color: #000000; border: none; border-radius: 5px;">
-            Lamar Pekerjaan Ini
-        </button>
-    </a>
+    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+        Lamar Pekerjaan Ini
+    </button>
 </div>
                 </div>
             </div>
@@ -388,12 +409,14 @@
             <!-- Card 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 400px; height: 435px; border-radius: 20px; background-color: #EAECF1; position: relative;">
-                    <div style="width: 100px; height: 100px; background-color: #9DD0FD; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px;"></div>
-                        <h5 class="card-title" style="color: #000000; margin-top: 55px; margin-left: 150px; margin-bottom: 10px;">Nama Perusahaan</h5>
-                        <p style="color: #000000; margin-bottom: 10px; margin-left: 150px;">3 hari yang lalu</p>
+                <div style="width: 100px; height: 100px; background-color: #9DD0FD; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px; margin-left: -30px">
+                    <img src="img/foto3.jpg" alt="Gambar" style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 0; left: 0; object-fit: cover;">
+                </div>                        
+                <h5 class="card-title" style="color: #000000; margin-top: 55px; margin-left: 125px; margin-bottom: 10px;">Nama Perusahaan</h5>
+                        <p style="color: #000000; margin-bottom: 10px; margin-left: 125px;">3 hari yang lalu</p>
                     <hr style="border-color: #000000; margin-bottom: 70px; margin-top: 25px;">
                     <h5 style="color: #000000; margin-left: 20px; margin-top: -55px;">Digital Marketing</h5>
-                    <p style="color: #000000; margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style="color: #000000; margin-left: 20px; margin-right: 15px;">Digital marketing adalah kegiatan pemasaran produk atau jasa...</p>
                     <div style="display: flex; justify-content: space-between; margin-left: 20px; margin-right: 20px; margin-top: -5px;">
             <div style="width: 80px; height: 30px; border: 1px solid #000000; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
                 Full Time
@@ -405,16 +428,14 @@
 
         <div style="display: flex; align-items: center; margin-left: 20px; margin-right: 20px; margin-top: 20px;">
             <img src="svg/location.svg" alt="Lokasi Icon" width="20" style="margin-right: 10px;">
-            <h6 style="color: #000000; margin-top: 5px;">Jakarta</h6>
+            <h6 style="color: #000000; margin-top: 5px;">Jakarta & Bandung</h6>
         </div>
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <a href="/DetailPekerjaan" style="text-decoration: none;">
-        <button style="width: 373px; height: 58px; background-color: #8DA4B8; color: #000000; border: none; border-radius: 5px;">
-            Lamar Pekerjaan Ini
-        </button>
-    </a>
+    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+        Lamar Pekerjaan Ini
+    </button>
 </div>
                 </div>
             </div>
@@ -424,17 +445,20 @@
 
 
 <!-- Footer -->
-<footer style="background-color: #E9EBF8; padding: 30px;">
+<footer style="background-color: #FFC94A; padding: 30px;">
     <div class="container">
         <div class="row">
             <div class="col-md-3 mb-4">
                 <!-- Logo -->
-                <img src="path/to/logo.svg" alt="Logo" style="max-width: 100px;">
+                <img src="img/logo2.png" alt="Logo" style="max-width: 100px;">
+                                <!-- Lorem10 -->
+                                <p style="margin-top: 55px;">Link Kerjaku
+            (Portal Lowongan Kerja)</p>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Kategori -->
                 <h5>Kategori</h5>
-                <ul>
+                <ul style="margin-top: 55px;">
                     <li>Kategori 1</li>
                     <li>Kategori 2</li>
                     <li>Kategori 3</li>
@@ -443,7 +467,7 @@
             <div class="col-md-3 mb-4">
                 <!-- Tentang -->
                 <h5>Tentang</h5>
-                <ul>
+                <ul style="margin-top: 55px;">
                     <li>Tentang Kami</li>
                     <li>Tim Kami</li>
                     <li>Karir</li>
@@ -452,7 +476,7 @@
             <div class="col-md-3 mb-4">
                 <!-- Dukungan -->
                 <h5>Dukungan</h5>
-                <ul>
+                <ul style="margin-top: 55px;">
                     <li>Bantuan</li>
                     <li>FAQ</li>
                     <li>Hubungi Kami</li>
@@ -461,17 +485,15 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <!-- Lorem10 -->
-                <p>Lorem ipsum</p>
                 <!-- Icon email, telefon, lokasi -->
                 <div>
-                <span><img src="svg/email.svg" width="25" alt="Email Icon"> Lorem ipsum</span>
+                <span><img src="svg/email.svg" width="25" alt="Email Icon"> Email Link Kerjaku</span>
                 </div>
-                <div>
-                <span><img src="svg/telephone.svg" width="25" alt="Phone Icon"> Lorem ipsum</span>
+                <div style="margin-top: 15px;">
+                <span><img src="svg/telephone.svg" width="25" alt="Phone Icon"> (+62) 0000000000</span>
                 </div>
-                <div>
-                <span><img src="svg/location.svg" width="25" alt="Location Icon"> Lorem ipsum</span>
+                <div style="margin-top: 15px;">
+                <span><img src="svg/location.svg" width="25" alt="Location Icon"> Lokasi Lengkap</span>
                 </div>
             </div>
         </div>

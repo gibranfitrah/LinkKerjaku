@@ -8,13 +8,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Link-Kerjaku | Buat Lowongan</title>
+    <title>Link-Kerjaku | Buat Perusahaan</title>
   </head>
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="/">Logo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,17 +22,17 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePerusahaan">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/lowongankerja">Lowongan Kerja</a>
+                    <a class="nav-link active ms-4" href="/StatusPelamar">Status Pelamar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/about">Tentang Kami</a>
+                    <a class="nav-link active ms-4" href="/aboutperusahaan">Tentang Kami</a>
                 </li>
             </ul>
             <div class="d-flex">
-            <a href="/buatlowongan" class="btn btn-secondary me-2" style="background-color: #8DA4B8; color: #808080; text-decoration: none;">Buat Lowongan</a>
+            <a href="/BuatLowongan" class="btn btn-secondary me-2" style="background-color: #8DA4B8; color: #808080; text-decoration: none;">Buat Lowongan</a>
             <a href="/ProfillPerusahaan" class="btn btn-secondary d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; background-color: #6c757d; border-radius: 50%; text-decoration: none; margin-left: 10px;">
         <img src="img/user.png" alt="Profile Image" style="width: 30px; height: 30px; border-radius: 50%;">
     </a>
@@ -47,11 +47,6 @@
     <h3>Bergabunglah dengan Link Kerjaku dan Temukan Talenta Terbaik untuk</h3>
     <h3>Perusahaan Anda!</h3>
     <p>Bantu Ciptakan Masa Depan Pekerjaan dengan Membuka Lowongan di Platform Job Portal Baru yang Menjanjikan</p>
-    <div class="row justify-content-center" style="margin-top: 50px;">
-    <div class="col-md-6 text-center">
-        <button class="btn btn-secondary" style="color: #000000; background-color: #808080;">Lihat Selengkapnya</button>
-    </div>
-</div>
 </div>
 </section>
 <!-- Section Akhir -->
@@ -243,6 +238,88 @@
     </div>
 </div>
 </div>
+    </div>
+</section>
+<!-- Section Akhir -->
+
+<!-- Section Baru Keenam -->
+<section style="background-color: #D9D9D9; padding: 50px 0;">
+    <div class="container text-center">
+        <h3>Blog</h3>
+        <p>Keputusan Tepat, Masa Depan Cerah: Andalkan Keahlian Kami!</p>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 393px; height: 448px; border-radius: 10px; overflow: hidden; margin-top: 30px; margin-left: 35px;">
+                    <img src="img/blog1.jpg" class="card-img-top" alt="Image 1" style="width: 393px; height: 254px;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; display: flex; align-items: center; margin-bottom: 130px;">
+            <img src="svg/person.svg" alt="Icon 1" width="26" height="26" style="margin-right: 10px;">
+            <p style="margin-right: auto;  margin-top: 15px;">Nama Pembuat</p>
+            <img src="svg/date.svg" alt="Icon 2" width="26" height="26" style="margin-left: auto;">
+            <p style="margin-left: 10px; margin-right: 45px; margin-top: 15px;">03 May 2024</p>
+        </div>
+        <hr style="border-color: #000000; margin-bottom: 70px; margin-top: 50px;">
+
+
+        <div style="display: flex; align-items: center; margin-left: 20px; margin-top: -60px;">
+    <h5>Judul Blog</h5>
+</div>
+<p style="margin-right: 1px; margin-left: -35px; margin-top: 5px; font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<div style="display: flex; align-items: center; margin-left: 20px; margin-top: 2px; margin-bottom: 5px;">
+    <p style="margin-right: 15px;">Lihat detail</p>
+    <a href="/detailblog" style="margin-bottom: 20px;">--></a>
+</div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 393px; height: 448px; border-radius: 10px; overflow: hidden; margin-top: 30px; margin-left: 35px;">
+                    <img src="img/blog2.jpg" class="card-img-top" alt="Image 1" style="width: 393px; height: 254px;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; display: flex; align-items: center; margin-bottom: 130px;">
+            <img src="svg/person.svg" alt="Icon 1" width="26" height="26" style="margin-right: 10px;">
+            <p style="margin-right: auto;  margin-top: 15px;">Nama Pembuat</p>
+            <img src="svg/date.svg" alt="Icon 2" width="26" height="26" style="margin-left: auto;">
+            <p style="margin-left: 10px; margin-right: 45px; margin-top: 15px;">03 May 2024</p>
+        </div>
+        <hr style="border-color: #000000; margin-bottom: 70px; margin-top: 50px;">
+
+
+        <div style="display: flex; align-items: center; margin-left: 20px; margin-top: -60px;">
+    <h5>Judul Blog</h5>
+</div>
+<p style="margin-right: 1px; margin-left: -35px; margin-top: 5px; font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<div style="display: flex; align-items: center; margin-left: 20px; margin-top: 2px; margin-bottom: 5px;">
+    <p style="margin-right: 15px;">Lihat detail</p>
+    <a href="/detailblog" style="margin-bottom: 20px;">--></a>
+</div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 393px; height: 448px; border-radius: 10px; overflow: hidden; margin-top: 30px; margin-left: 35px;">
+                    <img src="img/blog3.jpg" class="card-img-top" alt="Image 1" style="width: 393px; height: 254px;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; display: flex; align-items: center; margin-bottom: 130px;">
+            <img src="svg/person.svg" alt="Icon 1" width="26" height="26" style="margin-right: 10px;">
+            <p style="margin-right: auto;  margin-top: 15px;">Nama Pembuat</p>
+            <img src="svg/date.svg" alt="Icon 2" width="26" height="26" style="margin-left: auto;">
+            <p style="margin-left: 10px; margin-right: 45px; margin-top: 15px;">03 May 2024</p>
+        </div>
+        <hr style="border-color: #000000; margin-bottom: 70px; margin-top: 50px;">
+
+
+        <div style="display: flex; align-items: center; margin-left: 20px; margin-top: -60px;">
+    <h5>Judul Blog</h5>
+</div>
+<p style="margin-right: 1px; margin-left: -35px; margin-top: 5px; font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<div style="display: flex; align-items: center; margin-left: 20px; margin-top: 2px; margin-bottom: 5px;">
+    <p style="margin-right: 15px;">Lihat detail</p>
+    <a href="/detailblog" style="margin-bottom: 20px;">--></a>
+</div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- Section Akhir -->

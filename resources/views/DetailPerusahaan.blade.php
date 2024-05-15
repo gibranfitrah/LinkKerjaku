@@ -17,7 +17,7 @@
 }
 </style>
 
-    <title>Link-Kerjaku | Profofill Company</title>
+    <title>Link-Kerjaku | Detail Perusahaan</title>
   </head>
   <body>
 
@@ -81,22 +81,22 @@
     <span style="color: #E05821; font-size: 35px;">★</span>
     <span style="color: #E05821; font-size: 35px;">☆</span>
   </div>
-  <span style="font-size: 20px; margin-left: 45px;">4.2 total rating from</span>
-  <span style="font-size: 20px; margin-left: 45px; border-bottom: 1px solid black;">429 reviews</span>
+  <span style="font-size: 20px; margin-left: 45px;">4.2 peringkat total dari</span>
+  <span style="font-size: 20px; margin-left: 45px; border-bottom: 1px solid black;">429 review</span>
 </div>
 
-<div class="mb-4">
+<div class="mb-4" style="margin-top: 25px;">
   <a href="#about" style="text-decoration: none; color: black;">
-    <span id="about" style="font-size: 20px; margin-right: 20px;">About</span>
+    <span id="about" style="font-size: 20px; margin-right: 20px;">Tentang</span>
   </a>
   <a href="#life" style="text-decoration: none; color: black;">
-    <span id="life" style="font-size: 20px; margin-right: 20px;">Life and Culture</span>
+    <span id="life" style="font-size: 20px; margin-right: 20px;">Kehidupan dan Budaya</span>
   </a>
   <a href="#jobs" style="text-decoration: none; color: black;">
-    <span id="jobs" style="font-size: 20px; margin-right: 20px;">Jobs</span>
+    <span id="jobs" style="font-size: 20px; margin-right: 20px;">Pekerjaan</span>
   </a>
   <a href="#reviews" style="text-decoration: none; color: black;">
-    <span id="reviews" style="font-size: 20px; margin-right: 20px;">Reviews</span>
+    <span id="reviews" style="font-size: 20px; margin-right: 20px;">Review</span>
   </a>
   <hr id="underline" style="border-color: 1E47A9;">
 </div>

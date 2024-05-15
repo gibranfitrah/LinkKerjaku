@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Link-Kerjaku | Profill</title>
+    <title>Link-Kerjaku | Profill Pelamar</title>
   </head>
   <body>
 
@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar">Beranda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active ms-4" href="/lowongankerja">Lowongan Kerja</a>
@@ -58,8 +58,10 @@
 
             <div style="margin-left: 1225px; margin-top: -100px;">
             <img src="svg/titik.svg" alt="Icon" style="width: 30px; height: 30px; margin-right: 10px;">
-            <button style="width: 120px; height: 40px; background-color: #808080; border: none; border-radius: 8px; color: white;">+ Follow </button>
-        </div>
+            <a href="/disimpan" style="display: inline-block; width: 120px; height: 40px; background-color: #808080; border: none; border-radius: 8px; color: white; text-align: center; line-height: 40px; text-decoration: none;">
+        Disimpan
+    </a>        
+</div>
 
         <div style="text-align: left; padding: 155px;">
         <h3>Pengalaman</h3>

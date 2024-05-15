@@ -34,13 +34,13 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePerusahaan">Beranda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active ms-4" href="/StatusPelamar">Status Pelamar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/about">Tentang Kami</a>
+                    <a class="nav-link active ms-4" href="/aboutperusahaan">Tentang Kami</a>
                 </li>
             </ul>
             <div class="d-flex">
@@ -260,79 +260,111 @@
 <!-- Akhir Footer -->
 
 <script>
-    // Menambahkan event listener untuk card
-    document.getElementById('jobCard').addEventListener('click', function() {
-        // Memunculkan confirm saat card diklik
-        var confirmResult = confirm('Apakah Anda ingin melihat Profill Pelamar ini?');
-        
-        // Mengarahkan ke halaman beranda jika 'Ya' ditekan, jika tidak, munculkan pesan 'Baiklah'
-        if (confirmResult) {
-            window.location.href = '/PopUpStatus'; // Ganti 'halaman_beranda.html' dengan URL halaman beranda Anda
+document.getElementById('jobCard').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Ya',
+        cancelButtonText: 'Tidak'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/PopUpStatus';
         } else {
-            alert('Baiklah');
+            Swal.fire('Baiklah', '', 'info');
         }
     });
+});
 
-    document.getElementById('jobCard2').addEventListener('click', function() {
-        // Memunculkan confirm saat card diklik
-        var confirmResult = confirm('Apakah Anda ingin melihat Profill Pelamar ini?');
-        
-        // Mengarahkan ke halaman beranda jika 'Ya' ditekan, jika tidak, munculkan pesan 'Baiklah'
-        if (confirmResult) {
-            window.location.href = '/PopUpStatus'; // Ganti 'halaman_beranda.html' dengan URL halaman beranda Anda
+document.getElementById('jobCard2').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Ya',
+        cancelButtonText: 'Tidak'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/PopUpStatus';
         } else {
-            alert('Baiklah');
+            Swal.fire('Baiklah', '', 'info');
         }
     });
+});
 
-    document.getElementById('jobCard3').addEventListener('click', function() {
-        // Memunculkan confirm saat card diklik
-        var confirmResult = confirm('Apakah Anda ingin melihat Profill Pelamar ini?');
-        
-        // Mengarahkan ke halaman beranda jika 'Ya' ditekan, jika tidak, munculkan pesan 'Baiklah'
-        if (confirmResult) {
-            window.location.href = '/PopUpStatus'; // Ganti 'halaman_beranda.html' dengan URL halaman beranda Anda
+document.getElementById('jobCard3').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Ya',
+        cancelButtonText: 'Tidak'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/PopUpStatus';
         } else {
-            alert('Baiklah');
+            Swal.fire('Baiklah', '', 'info');
         }
     });
+});
 
-    document.getElementById('jobCard4').addEventListener('click', function() {
-        // Memunculkan confirm saat card diklik
-        var confirmResult = confirm('Apakah Anda ingin melihat Profill Pelamar ini?');
-        
-        // Mengarahkan ke halaman beranda jika 'Ya' ditekan, jika tidak, munculkan pesan 'Baiklah'
-        if (confirmResult) {
-            window.location.href = '/PopUpStatus'; // Ganti 'halaman_beranda.html' dengan URL halaman beranda Anda
+document.getElementById('jobCard4').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Ya',
+        cancelButtonText: 'Tidak'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/PopUpStatus';
         } else {
-            alert('Baiklah');
+            Swal.fire('Baiklah', '', 'info');
         }
     });
+});
 
-    document.getElementById('jobCard5').addEventListener('click', function() {
-        // Memunculkan confirm saat card diklik
-        var confirmResult = confirm('Apakah Anda ingin melihat Profill Pelamar ini?');
-        
-        // Mengarahkan ke halaman beranda jika 'Ya' ditekan, jika tidak, munculkan pesan 'Baiklah'
-        if (confirmResult) {
-            window.location.href = '/PopUpStatus'; // Ganti 'halaman_beranda.html' dengan URL halaman beranda Anda
+document.getElementById('jobCard5').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Ya',
+        cancelButtonText: 'Tidak'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/PopUpStatus';
         } else {
-            alert('Baiklah');
+            Swal.fire('Baiklah', '', 'info');
         }
     });
+});
 
-    document.getElementById('jobCard6').addEventListener('click', function() {
-        // Memunculkan confirm saat card diklik
-        var confirmResult = confirm('Apakah Anda ingin melihat Profill Pelamar ini?');
-        
-        // Mengarahkan ke halaman beranda jika 'Ya' ditekan, jika tidak, munculkan pesan 'Baiklah'
-        if (confirmResult) {
-            window.location.href = '/PopUpStatus'; // Ganti 'halaman_beranda.html' dengan URL halaman beranda Anda
+document.getElementById('jobCard6').addEventListener('click', function() {
+    Swal.fire({
+        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Ya',
+        cancelButtonText: 'Tidak'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/PopUpStatus';
         } else {
-            alert('Baiklah');
+            Swal.fire('Baiklah', '', 'info');
         }
     });
+});
+
 </script>
+
+@include('sweetalert::alert')
+
+<!-- SweetAlert CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+<!-- SweetAlert JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

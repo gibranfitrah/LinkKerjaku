@@ -81,15 +81,17 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+    <a class="navbar-brand" href="#">
+        <img src="img/logo2.png" alt="Logo" style="height: 40px;">
+    </a>         
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #FFC94A;">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar" style="color: #FFC94A;">Beranda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja" style="color: #FFC94A;">Lowongan Kerja</a>
@@ -100,8 +102,9 @@
             </ul>
             <div class="d-flex">
             <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
-            <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
-
+    <a href="/ProfillPelamar" class="btn btn-secondary d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; background-color: #6c757d; border-radius: 50%; text-decoration: none; margin-left: 10px;">
+        <img src="img/user.png" alt="Profile Image" style="width: 30px; height: 30px; border-radius: 50%;">
+    </a>
 </div>
 
         </div>
@@ -247,7 +250,8 @@
                 <!-- Logo -->
                 <img src="path/to/logo.svg" alt="Logo" style="max-width: 100px;">
                  <!-- Lorem10 -->
-                 <p style="margin-top: 55px;">Lorem ipsum</p>
+                 <p style="margin-top: 55px;">Link Kerjaku
+            (Portal Lowongan Kerja)</p>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Kategori -->

@@ -25,6 +25,13 @@ Route::get('/login', function () {
     ]);
 });
 
+
+Route::get('/loginperusahaan', function () {
+    return view('loginperusahaan', [
+        "title" => "loginperusahaan"
+    ]);
+});
+
 Route::get('/HomePagePerusahaan', function () {
     return view('HomePagePerusahaan', [
         "title" => "HomePagePerusahaan"
@@ -34,6 +41,12 @@ Route::get('/HomePagePerusahaan', function () {
 Route::get('/LihatPerusahaan', function () {
     return view('LihatPerusahaan', [
         "title" => "LihatPerusahaan"
+    ]);
+});
+
+Route::get('/LihatPerusahaan2', function () {
+    return view('LihatPerusahaan2', [
+        "title" => "LihatPerusahaan2"
     ]);
 });
 
@@ -55,15 +68,40 @@ Route::get('/register', function () {
     ]);
 });
 
+Route::get('/registerperusahaan', function () {
+    return view('registerperusahaan', [
+        "title" => "registerperusahaan"
+    ]);
+});
+
 Route::get('/about', function () {
     return view('about', [
         "title" => "about"
     ]);
 });
 
+Route::get('/about2', function () {
+    return view('about2', [
+        "title" => "about2"
+    ]);
+});
+
+
+Route::get('/aboutperusahaan', function () {
+    return view('aboutperusahaan', [
+        "title" => "aboutperusahaan"
+    ]);
+});
+
 Route::get('/lowongankerja', function () {
     return view('lowongankerja', [
         "title" => "lowongankerja"
+    ]);
+});
+
+Route::get('/lowongankerja2', function () {
+    return view('lowongankerja2', [
+        "title" => "lowongankerja2"
     ]);
 });
 
@@ -95,6 +133,36 @@ Route::get('/StatusPelamar', function () {
 Route::get('/PopUpStatus', function () {
     return view('PopUpStatus', [
         "title" => "PopUpStatus"
+    ]);
+});
+
+Route::get('/BuatLowongan', function () {
+    return view('BuatLowongan', [
+        "title" => "BuatLowongan"
+    ]);
+});
+
+Route::get('/BuatLowongan2', function () {
+    return view('BuatLowongan2', [
+        "title" => "BuatLowongan2"
+    ]);
+});
+
+Route::get('/BuatLowongan3', function () {
+    return view('BuatLowongan3', [
+        "title" => "BuatLowongan3"
+    ]);
+});
+
+Route::get('/disimpan', function () {
+    return view('disimpan', [
+        "title" => "disimpan"
+    ]);
+});
+
+Route::get('/unggahlowongan', function () {
+    return view('unggahlowongan', [
+        "title" => "unggahlowongan"
     ]);
 });
 

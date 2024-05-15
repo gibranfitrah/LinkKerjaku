@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Login</title>
+    <title>Form Login Perusahaan</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -33,7 +33,7 @@
     </div>
 </div>
 
-                            <a href="/HomePagePelamar" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Masuk</a>
+                            <a href="/HomePagePerusahaan" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Masuk</a>
                             <div class="mt-5">
                                 <img src="svg/google.svg" alt="Google Icon" width="30" class="mr-3">
                                 <img src="svg/facebook.svg" alt="Facebook Icon" width="30" class="mr-3">

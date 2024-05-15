@@ -275,7 +275,7 @@
 
             <div class="row justify-content-center" style="margin-top: 20px;">
     <div class="col-md-6 text-center">
-        <a href="/DetailPekerjaan" class="btn btn-secondary" style="color: #000000; background-color: #808080;">Lihat Selengkapnya</a>
+        <a href="#" class="btn btn-secondary" style="color: #000000; background-color: #808080;">Lihat Selengkapnya</a>
     </div>
 </div>
 
@@ -388,7 +388,7 @@
                 </div>
             </div>
             <div class="col-md-6 text-center">
-    <a href="/DetailPerusahaan" class="btn btn-secondary" style="color: #000000; background-color: #808080;">Lihat Selengkapnya</a>
+    <a href="/LihatPerusahaan2" class="btn btn-secondary" style="color: #000000; background-color: #808080;">Lihat Selengkapnya</a>
 </div>
         </div>
     </div>
@@ -499,7 +499,7 @@
 
 <div style="display: flex; align-items: center; margin-left: 20px; margin-top: 2px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="#" style="margin-bottom: 20px;">--></a>
+    <a href="/detailblog" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>
@@ -523,7 +523,7 @@
 
 <div style="display: flex; align-items: center; margin-left: 20px; margin-top: 2px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="#" style="margin-bottom: 20px;">--></a>
+    <a href="/detailblog" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>
@@ -547,7 +547,7 @@
 
 <div style="display: flex; align-items: center; margin-left: 20px; margin-top: 2px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="#" style="margin-bottom: 20px;">--></a>
+    <a href="/detailblog" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>

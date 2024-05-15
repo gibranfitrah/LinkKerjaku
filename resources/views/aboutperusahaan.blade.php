@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Link-Kerjaku | About Us</title>
+
+    <title>Link-Kerjaku | About Us Perusahaan</title>
   </head>
   <body>
 
@@ -21,18 +22,18 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePerusahaan">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/lowongankerja">Lowongan Kerja</a>
+                    <a class="nav-link active ms-4" href="/StatusPelamar">Status Pelamar</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active ms-4" href="/about">Tentang Kami</a>
                 </li>
             </ul>
             <div class="d-flex">
-    <a href="/HomePagePelamar" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #808080; text-decoration: none;">Perusahaan</a>
-    <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; background-color: #6c757d; border-radius: 50%; text-decoration: none; margin-left: 10px;">
+            <a href="/BuatLowongan" class="btn btn-secondary me-2" style="background-color: #8DA4B8; color: #808080; text-decoration: none;">Buat Lowongan</a>
+            <a href="/ProfillPerusahaan" class="btn btn-secondary d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; background-color: #6c757d; border-radius: 50%; text-decoration: none; margin-left: 10px;">
         <img src="img/user.png" alt="Profile Image" style="width: 30px; height: 30px; border-radius: 50%;">
     </a>
 </div>

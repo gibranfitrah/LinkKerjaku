@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Link-Kerjaku | Buat Lowongan</title>
+    <title>Link-Kerjaku | Detail Pekerjaan</title>
   </head>
   <body>
 
@@ -125,7 +125,9 @@
 <h5 style="margin-right: 155px; margin-top: 40px; text-align: center; margin-left: 165px;">Informasi Lebih Lanjut</h5>
 <div style="text-align: center; margin-top: 20px">
     <button style="background-color: #808080; width: 240px; height: 58px; margin-right: 20px; border-radius: 5px;">Hubungi Kami Sekarang</button>
-    <button style="background-color: #808080; width: 240px; height: 58px; border-radius: 5px;">Detail Perusahaan</button>
+    <a href="/DetailPerusahaan" style="background-color: #808080; width: 240px; height: 58px; border-radius: 5px; display: inline-block; text-align: center; line-height: 58px; color: white; text-decoration: none;">
+  Detail Perusahaan
+</a>
 </div>
 
 </section>

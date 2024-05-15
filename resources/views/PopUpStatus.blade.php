@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card dengan Lingkaran dan Heading</title>
-  <!-- Bootstrap CSS -->
+  <title>Pop Up Status</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
     .card {
       width: 1300px;
@@ -50,7 +50,7 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        text-decoration: none; /* Hapus garis bawah default untuk tautan */
+        text-decoration: none;
     }
     .button2 {
         background-color: #808080;
@@ -60,7 +60,7 @@
         border-radius: 5px;
         margin-left: 55px;
         cursor: pointer;
-        text-decoration: none; /* Hapus garis bawah default untuk tautan */
+        text-decoration: none;
     }
   </style>
 </head>
@@ -107,14 +107,13 @@
         </div>
 
         <div class="button-container" style="margin-top: 35px;">
-    <a href="/StatusPelamar" class="button">Terima</a>
-    <a href="/HomePagePelamar" class="button2">Tolak</a>
+    <button id="acceptButton" class="button">Terima</button>
+    <button id="rejectButton" class="button2">Tolak</button>
 </div>
     
     </div>
   </div>
 
-  <!-- Bootstrap JS Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -130,6 +129,28 @@
           readMoreText.style.display = 'none';
           readMoreLink.textContent = 'Read more';
         }
+      });
+
+      const acceptButton = document.getElementById('acceptButton');
+      const rejectButton = document.getElementById('rejectButton');
+
+      acceptButton.addEventListener('click', function() {
+        Swal.fire({
+          icon: 'success',
+          title: 'Terima kasih sudah menerima pelamar ini',
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = '/StatusPelamar';
+          }
+        });
+      });
+
+      rejectButton.addEventListener('click', function() {
+        Swal.fire({
+          icon: 'error',
+          title: 'Tidak menerima pelamar ini',
+          text: '😢'
+        });
       });
     });
   </script>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Register</title>
+    <title>Form Register Perusahaan</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -63,7 +63,7 @@
         </div>
     </div>
 </div>
-                            <a href="/HomePagePelamar" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Buat Akun</a>
+                            <a href="/HomePagePerusahaan" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Buat Akun</a>
                             <p class="mt-5">Sudah punya akun? <a href="/login" style="color: blue;">Login</a></p>
                         </form>
                     </div>
