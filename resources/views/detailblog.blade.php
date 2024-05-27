@@ -27,7 +27,7 @@
 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja" style="color: #FFC94A;">Lowongan Kerja</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #FFC94A;">Lowongan Kerja</a>
                 </li>
 
                 <li class="nav-item">
@@ -105,30 +105,28 @@
     <hr style="border: 4px solid #FFC94A; margin-top: 55px;">
 
     <div style="width: 85px; height: 85px; background-color: #ccc; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin-left: 354px; margin-top: 30px;">
-        <img src="img/blog1.jpg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="img/clara.jpg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
     <div style="margin-left: 455px; margin-top: -65px;">
         <h2 style="margin: 0; font-size: 24px;">Clara Claire</h2>
         <p style="margin: 5px 0 0 0; color: gray; font-size: 14px;">3 hours ago</p>
-        <p style="margin: 5px 0 0 0; color: gray; font-size: 14px; margin-top: 35px; margin-right: 345px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et diam elementum, gravida erat ut, viverra neque. Morbi ut justo non ante dapibus tincidunt. Etiam euismod sodales pharetra. Pellentesque purus augue, tempor vitae tempus eu, convallis in dolor. Morbi nec enim ut turpis elementum finibus eu vel augue.</p>
+        <p style="margin: 5px 0 0 0; color: gray; font-size: 14px; margin-top: 35px; margin-right: 345px;">Link Kerjaku sangat membantu saya dalam menemukan pekerjaan yang sesuai dengan minat dan kualifikasi saya. Proses lamarannya juga mudah dan cepat. Terima kasih Link Kerjaku!</p>
     </div>
 
     <div style="width: 85px; height: 85px; background-color: #ccc; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin-left: 354px; margin-top: 55px;">
-        <img src="img/blog1.jpg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="img/clara.jpg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
     <div style="margin-left: 455px; margin-top: -65px;">
         <h2 style="margin: 0; font-size: 24px;">Clara Claire</h2>
         <p style="margin: 5px 0 0 0; color: gray; font-size: 14px;">3 hours ago</p>
-        <p style="margin: 5px 0 0 0; color: gray; font-size: 14px; margin-top: 35px; margin-right: 345px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et diam elementum, gravida erat ut, viverra neque. Morbi ut justo non ante dapibus tincidunt. Etiam euismod sodales pharetra. Pellentesque purus augue, tempor vitae tempus eu, convallis in dolor. Morbi nec enim ut turpis elementum finibus eu vel augue.</p>
+        <p style="margin: 5px 0 0 0; color: gray; font-size: 14px; margin-top: 35px; margin-right: 345px;">Link Kerjaku sangat membantu saya dalam menemukan pekerjaan yang sesuai dengan minat dan kualifikasi saya. Proses lamarannya juga mudah dan cepat. Terima kasih Link Kerjaku!</p>
     </div>
 
     <p style="margin-top: 55px; text-align: center; margin-left: 55px;">Tinggalkan komentar di bawah ini untuk membagikan pengalamanmu dalam mencari kerja.</p>
     
-    <input type="text" placeholder="Nama" style="width: 872px; height: 52px; border-radius: 8px; border: 1px solid #0000FF; margin-top: 20px; padding: 10px; margin-left: 300px;">
-    <input type="email" placeholder="Email" style="width: 872px; height: 52px; border-radius: 8px; border: 1px solid #0000FF; margin-top: 20px; padding: 10px; margin-left: 300px;">
     <textarea placeholder="Komentar" style="width: 872px; height: 210px; border-radius: 8px; border: 1px solid #0000FF; margin-top: 20px; padding: 10px; margin-left: 300px;"></textarea>
 
-    <button style="width: 100px; height: 40px; background-color: #FFC94A; border: none; border-radius: 8px; color: white; margin-top: 5px; display: block; margin-left: 300px;">Kirim</button>
+    <button style="width: 100px; height: 40px; background-color: #FFC94A; border: none; border-radius: 8px; color: white; margin-top: 5px; display: block; margin-left: 1065px;">Kirim</button>
 </section>
 <!-- Section Akhir -->
 
@@ -217,36 +215,32 @@
             <div class="col-md-3 mb-4">
                 <!-- Logo -->
                 <img src="img/logo2.png" alt="Logo" style="max-width: 100px;">
-                <!-- Lorem10 -->
-                <p style="margin-top: 55px;">Link Kerjaku
-            (Portal Lowongan Kerja)</p>
+                                <!-- Lorem10 -->
+                                <h6 style="margin-top: 55px;">Link Kerjaku</h6>
+                                <h6 style="margin-top: 10px;">(Portal Lowongan Kerja)</h6>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Kategori -->
                 <h5>Kategori</h5>
-                <ul style="margin-top: 55px;">
-                    <li>Kategori 1</li>
-                    <li>Kategori 2</li>
-                    <li>Kategori 3</li>
-                </ul>
+                <h5 style="margin-top: 70px;">Tentang Link Kerjaku</h5>
+                <h5 style="margin-top: 25px;">Hubungi Kami</h5>
+                <h5 style="margin-top: 25px;">Syarat dan Ketentuan</h5>
+                <h5 style="margin-top: 25px;">Kebijakan Privasi</h5>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Tentang -->
                 <h5>Tentang</h5>
-                <ul style="margin-top: 55px;">
-                    <li>Tentang Kami</li>
-                    <li>Tim Kami</li>
-                    <li>Karir</li>
-                </ul>
+                <h5 style="margin-top: 70px;">Bantuan</h5>
+                <h5 style="margin-top: 25px;">Blog</h5>
+                <h5 style="margin-top: 25px;">Cari Lowongan Kerja</h5>
+                <h5 style="margin-top: 25px;">Pasang Lowongan</h5>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Dukungan -->
-                <h5>Dukungan</h5>
-                <ul style="margin-top: 55px;">
-                    <li>Bantuan</li>
-                    <li>FAQ</li>
-                    <li>Hubungi Kami</li>
-                </ul>
+                <h5>Opsional</h5>
+                <h5 style="margin-top: 70px;">Penghargaan</h5>
+                <h5 style="margin-top: 25px;">Logo Partner</h5>
+                <h5 style="margin-top: 25px;">Bahasa</h5>
             </div>
         </div>
         <div class="row">
@@ -255,10 +249,10 @@
                 <div>
                 <span><img src="svg/email.svg" width="25" alt="Email Icon"> Email Link Kerjaku</span>
                 </div>
-                <div>
+                <div style="margin-top: 15px;">
                 <span><img src="svg/telephone.svg" width="25" alt="Phone Icon"> (+62) 0000000000</span>
                 </div>
-                <div>
+                <div style="margin-top: 15px;">
                 <span><img src="svg/location.svg" width="25" alt="Location Icon"> Lokasi Lengkap</span>
                 </div>
             </div>
@@ -267,11 +261,11 @@
         <div class="row">
     <div class="col-md-6">
         <!-- Credit -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, iusto.</p>
+        <h6>Ikuti Kami di Media Sosial</h6>
     </div>
     <div class="col-md-6">
         <!-- Ikuti Kami -->
-        <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none;">
+        <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none; margin-left: 455px;">
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/facebook.svg" width="30" alt="Facebook Icon"></a></li>
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/instagram.svg" width="30" alt="Instagram Icon"></a></li>
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/link.svg" width="30" alt="LinkedIn Icon"></a></li>

@@ -56,6 +56,18 @@ Route::get('/DetailPerusahaan', function () {
     ]);
 });
 
+Route::get('/Kehidupan&Budaya', function () {
+    return view('Kehidupan&Budaya', [
+        "title" => "Kehidupan&Budaya"
+    ]);
+});
+
+Route::get('/Pekerjaan', function () {
+    return view('Pekerjaan', [
+        "title" => "Pekerjaan"
+    ]);
+});
+
 Route::get('/DetailPekerjaan', function () {
     return view('DetailPekerjaan', [
         "title" => "DetailPekerjaan"
@@ -111,6 +123,12 @@ Route::get('/detailblog', function () {
     ]);
 });
 
+Route::get('/detailblog2', function () {
+    return view('detailblog2', [
+        "title" => "detailblog2"
+    ]);
+});
+
 Route::get('/ProfillPelamar', function () {
     return view('ProfillPelamar', [
         "title" => "ProfillPelamar"
@@ -154,6 +172,12 @@ Route::get('/BuatLowongan3', function () {
     ]);
 });
 
+Route::get('/LowonganDisimpan', function () {
+    return view('LowonganDisimpan', [
+        "title" => "LowonganDisimpan"
+    ]);
+});
+
 Route::get('/disimpan', function () {
     return view('disimpan', [
         "title" => "disimpan"
@@ -170,5 +194,12 @@ Route::get('/unggahlowongan', function () {
 Route::get('/HomePagePelamar', function () {
     return view('HomePagePelamar', [
         "title" => "HomePagePelamar"
+    ]);
+});
+
+
+Route::get('/Kontak', function () {
+    return view('Kontak', [
+        "title" => "Kontak"
     ]);
 });

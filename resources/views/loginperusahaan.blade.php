@@ -13,8 +13,8 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body text-center">
-                        <img src="brand_logo.png" alt="Brand Logo" class="mb-4">
-                        <h2 class="mb-4">Masuk</h2>
+                        <img src="img/logo2.png" alt="Brand Logo" class="mb-4">
+                        <h2 class="mb-4">Masuk Sebagai Perusahaan</h2>
                         <form action="#" method="post">
                         <div class="form-group">
     <div class="input-group" style="border: 1px solid #146D9A; background-color: #FFFFFF;">
@@ -39,7 +39,7 @@
                                 <img src="svg/facebook.svg" alt="Facebook Icon" width="30" class="mr-3">
                                 <img src="svg/apple.svg" alt="Apple Icon" width="30">
                             </div>
-                            <p class="mt-5">Belum punya akun? <a href="/register" style="color: blue;">Daftar</a></p>
+                            <p class="mt-5">Belum punya akun? <a href="/registerperusahaan" style="color: blue;">Daftar</a></p>
                         </form>
                     </div>
                 </div>

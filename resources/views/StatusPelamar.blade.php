@@ -26,46 +26,50 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+    <a class="navbar-brand" href="#">
+        <img src="img/logo2.png" alt="Logo" style="height: 40px;">
+    </a>         
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePerusahaan">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePerusahaan" style="color: #000000;">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/StatusPelamar">Status Pelamar</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/StatusPelamar" style="color: #146D9A;">Status Pelamar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/aboutperusahaan">Tentang Kami</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/aboutperusahaan" style="color: #000000;">Tentang Kami</a>
                 </li>
             </ul>
             <div class="d-flex">
-            <a href="/buatlowongan" class="btn btn-secondary me-2" style="background-color: #8DA4B8; color: #808080; text-decoration: none;">Buat Lowongan</a>
-            <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; background-color: #6c757d; border-radius: 50%; text-decoration: none; margin-left: 10px;">
-        <img src="img/user.png" alt="Profile Image" style="width: 30px; height: 30px; border-radius: 50%;">
+            <a href="/BuatLowongan" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; color: #000000;">Buat Lowongan</a>
+            <a href="/ProfillPerusahaan" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;">
+        <img src="img/ProfilPerusahaan.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
     </a>
 </div>
+
         </div>
     </div>
 </nav>
 
 
 <!-- Section Pertama -->
-<section style="background-color: #D9D9D9; padding: 50px;">
+<section style="background-color: #146D9A; padding: 50px;">
 <div class="col" style="margin-left: 25px;">
-<select class="select" aria-label="Default select example" style="width: 250px; height: 40px; margin-left: 50px; margin-top: 25px; background-color: transparent; border: none;">
-  <option selected>Software Engineer</option>
-  <option value="1">Backend</option>
-  <option value="2">UI/UX</option>
-  <option value="3">Digital Marketing</option>
+<select class="select" aria-label="Default select example" style="width: 250px; height: 40px; margin-left: 50px; margin-top: 25px; background-color: #146D9A; border: none; color: #FFFFFF;">
+<option style="color: #FFFFFF;" selected>Software Engineer</option>
+  <option style="color: #FFFFFF;" value="1">Backend</option>
+  <option style="color: #FFFFFF;" value="2">UI/UX</option>
+  <option style="color: #FFFFFF;" value="3">Digital Marketing</option>
 </select>
+
 </div>
 
-<div style="display: flex; justify-content: space-between; margin-top: 45px; margin-left: 100px;">
+<div style="display: flex; justify-content: space-between; margin-top: 45px; margin-left: 100px; color: #FFFFFF;">
     <span class="text-clickable" style="margin-left: 55px;">Semua Pelamar</span>
     <span style="margin-right: 45px;" class="text-clickable">Belum dibaca</span>
     <span style="margin-right: 75px;" class="text-clickable">Sudah dibaca</span>
@@ -76,43 +80,89 @@
 <!-- Section Akhir -->
 
 <!-- Section Kedua -->
-<section style="background-color: #FFFFFF; padding: 50px;">
+<section style="background-color: #E8F2F7; padding: 50px;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <h6>Menampilkan 6 Pelamar</h6>
             </div>
             <div class="col-md-6" style="margin-top: -15px;">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Cari Pelamar" aria-label="Search" style="padding-right: 30px; background-image: url('svg/search.svg'); background-repeat: no-repeat; background-position: calc(100% - 10px) center;">
-                </form>
-            </div>
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Cari Pelamar" aria-label="Search" style="padding-right: 30px; background-image: url('svg/search.svg'); background-repeat: no-repeat; background-position: calc(100% - 10px) center; background-color: #E8F2F7;">
+    </form>
+</div>
+
         </div>
     </div>
 
 
-    <div class="card" id="jobCard" style="width: 1120px; height: 225px; background-color: #E9EBF8; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/blog1.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
+    <div class="card" id="jobCard" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+    <img src="img/pelamar1.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
     <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Nama Pelamar, Pekerjaan yang Dilamar</h6>
+        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Nia, Digital Marketing</h6>
         <div style="display: flex; align-items: center;">
             <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-            <p style="margin-left: 20px; margin-top: 35px;">Lokasi</p>
+            <p style="margin-left: 20px; margin-top: 35px;">Bandung</p>
             <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-            <p style="margin-left: 20px; margin-top: 40px;">3 hari yang lalu</p>
+            <p style="margin-left: 20px; margin-top: 40px;">1 hari yang lalu</p>
             <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
             <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
         </div>
     </div>
 </div>
 
-<div class="card" id="jobCard2" style="width: 1120px; height: 225px; background-color: #E9EBF8; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/blog1.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
+<div class="card" id="jobCard2" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+    <img src="img/pelamar2.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
     <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Nama Pelamar, Pekerjaan yang Dilamar</h6>
+        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Reni , Manajemen</h6>
         <div style="display: flex; align-items: center;">
     <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 35px;">Lokasi</p>
+    <p style="margin-left: 20px; margin-top: 35px;">Jakarta</p>
+    <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
+    <p style="margin-left: 20px; margin-top: 40px;">1 hari yang lalu</p>
+    <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
+    <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
+</div>
+    </div>
+</div>
+
+<div class="card" id="jobCard3" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+    <img src="img/pelamar3.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
+    <div class="card-body">
+        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Deni , Web Developer</h6>
+        <div style="display: flex; align-items: center;">
+    <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
+    <p style="margin-left: 20px; margin-top: 35px;">Bogor</p>
+    <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
+    <p style="margin-left: 20px; margin-top: 40px;">2 hari yang lalu</p>
+    <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
+    <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
+</div>
+    </div>
+</div>
+
+<div class="card" id="jobCard4" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+    <img src="img/pelamar4.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
+    <div class="card-body">
+        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Aldo  , Data Analyst</h6>
+        <div style="display: flex; align-items: center;">
+    <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
+    <p style="margin-left: 20px; margin-top: 35px;">Lampung</p>
+    <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
+    <p style="margin-left: 20px; margin-top: 40px;">2 hari yang lalu</p>
+    <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
+    <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
+</div>
+    </div>
+</div>
+
+<div class="card" id="jobCard5" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+    <img src="img/pelamar5.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
+    <div class="card-body">
+        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Kyla , Digital Marketing</h6>
+        <div style="display: flex; align-items: center;">
+    <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
+    <p style="margin-left: 20px; margin-top: 35px;">Surabaya</p>
     <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
     <p style="margin-left: 20px; margin-top: 40px;">3 hari yang lalu</p>
     <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
@@ -121,58 +171,13 @@
     </div>
 </div>
 
-<div class="card" id="jobCard3" style="width: 1120px; height: 225px; background-color: #E9EBF8; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/blog1.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
+<div class="card" id="jobCard6" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+    <img src="img/pelamar6.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
     <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Nama Pelamar, Pekerjaan yang Dilamar</h6>
+        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Sinta , Digital Marketing</h6>
         <div style="display: flex; align-items: center;">
     <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 35px;">Lokasi</p>
-    <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">3 hari yang lalu</p>
-    <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
-</div>
-    </div>
-</div>
-
-<div class="card" id="jobCard4" style="width: 1120px; height: 225px; background-color: #E9EBF8; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/blog1.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
-    <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Nama Pelamar, Pekerjaan yang Dilamar</h6>
-        <div style="display: flex; align-items: center;">
-    <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 35px;">Lokasi</p>
-    <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">3 hari yang lalu</p>
-    <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
-</div>
-    </div>
-</div>
-
-<div class="card" id="jobCard5" style="width: 1120px; height: 225px; background-color: #E9EBF8; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/blog1.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
-    <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Nama Pelamar, Pekerjaan yang Dilamar</h6>
-        <div style="display: flex; align-items: center;">
-    <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 35px;">Lokasi</p>
-    <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">3 hari yang lalu</p>
-    <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
-</div>
-    </div>
-</div>
-
-<div class="card" id="jobCard6" style="width: 1120px; height: 225px; background-color: #E9EBF8; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/blog1.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
-    <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Nama Pelamar, Pekerjaan yang Dilamar</h6>
-        <div style="display: flex; align-items: center;">
-    <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 35px;">Lokasi</p>
+    <p style="margin-left: 20px; margin-top: 35px;">Be</p>
     <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
     <p style="margin-left: 20px; margin-top: 40px;">3 hari yang lalu</p>
     <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
@@ -188,54 +193,54 @@
 
 
 <!-- Footer -->
-<footer style="background-color: #E9EBF8; padding: 30px;">
+<footer style="background-color: #FFC94A; padding: 30px;">
     <div class="container">
         <div class="row">
             <div class="col-md-3 mb-4">
                 <!-- Logo -->
-                <img src="path/to/logo.svg" alt="Logo" style="max-width: 100px;">
+                <img src="img/logo2.png" alt="Logo" style="max-width: 100px;">
+                                <!-- Lorem10 -->
+                                <h6 style="margin-top: 55px;">Link Kerjaku</h6>
+                                <h6 style="margin-top: 10px;">(Portal Lowongan Kerja)</h6>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Kategori -->
                 <h5>Kategori</h5>
-                <ul>
-                    <li>Kategori 1</li>
-                    <li>Kategori 2</li>
-                    <li>Kategori 3</li>
-                </ul>
+                <h5 style="margin-top: 70px;">Tentang Link Kerjaku</h5>
+                <h5 style="margin-top: 25px;">Hubungi Kami</h5>
+                <h5 style="margin-top: 25px;">Syarat dan Ketentuan</h5>
+                <h5 style="margin-top: 25px;">Kebijakan Privasi</h5>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Tentang -->
                 <h5>Tentang</h5>
-                <ul>
-                    <li>Tentang Kami</li>
-                    <li>Tim Kami</li>
-                    <li>Karir</li>
-                </ul>
+                <h5 style="margin-top: 70px;">Bantuan</h5>
+                <h5 style="margin-top: 25px;">Blog</h5>
+                <h5 style="margin-top: 25px;">Cari Lowongan Kerja</h5>
+                <h5 style="margin-top: 25px;">Pasang Lowongan</h5>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Dukungan -->
-                <h5>Dukungan</h5>
-                <ul>
-                    <li>Bantuan</li>
-                    <li>FAQ</li>
-                    <li>Hubungi Kami</li>
-                </ul>
+                <h5>Opsional</h5>
+                <h5 style="margin-top: 70px;">Penghargaan</h5>
+                <h5 style="margin-top: 25px;">Logo Partner</h5>
+                <h5 style="margin-top: 25px;">Bahasa</h5>
+                <h5 style="margin-top: 25px;">
+    <a href="/Kontak" style="text-decoration: none; color: inherit;">Kontak</a>
+</h5>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <!-- Lorem10 -->
-                <p>Lorem ipsum</p>
                 <!-- Icon email, telefon, lokasi -->
                 <div>
-                <span><img src="svg/email.svg" width="25" alt="Email Icon"> Lorem ipsum</span>
+                <span><img src="svg/email.svg" width="25" alt="Email Icon"> Email Link Kerjaku</span>
                 </div>
-                <div>
-                <span><img src="svg/telephone.svg" width="25" alt="Phone Icon"> Lorem ipsum</span>
+                <div style="margin-top: 15px;">
+                <span><img src="svg/telephone.svg" width="25" alt="Phone Icon"> (+62) 0000000000</span>
                 </div>
-                <div>
-                <span><img src="svg/location.svg" width="25" alt="Location Icon"> Lorem ipsum</span>
+                <div style="margin-top: 15px;">
+                <span><img src="svg/location.svg" width="25" alt="Location Icon"> Lokasi Lengkap</span>
                 </div>
             </div>
         </div>
@@ -243,11 +248,11 @@
         <div class="row">
     <div class="col-md-6">
         <!-- Credit -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, iusto.</p>
+        <h6>Ikuti Kami di Media Sosial</h6>
     </div>
     <div class="col-md-6">
         <!-- Ikuti Kami -->
-        <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none;">
+        <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none; margin-left: 455px;">
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/facebook.svg" width="30" alt="Facebook Icon"></a></li>
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/instagram.svg" width="30" alt="Instagram Icon"></a></li>
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/link.svg" width="30" alt="LinkedIn Icon"></a></li>

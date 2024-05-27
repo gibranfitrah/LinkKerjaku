@@ -13,8 +13,8 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body text-center">
-                        <img src="brand_logo.png" alt="Brand Logo" class="mb-4">
-                        <h2 class="mb-4">Daftar</h2>
+                    <img src="img/logo2.png" alt="Brand Logo" class="mb-4">
+                        <h2 class="mb-4">Daftar Sebagai Perusahaan</h2>
                         <form action="#" method="post">
                         <div class="form-group">
                                 <div class="input-group">
@@ -63,8 +63,8 @@
         </div>
     </div>
 </div>
-                            <a href="/HomePagePerusahaan" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Buat Akun</a>
-                            <p class="mt-5">Sudah punya akun? <a href="/login" style="color: blue;">Login</a></p>
+                            <a href="/loginperusahaan" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Buat Akun</a>
+                            <p class="mt-5">Sudah punya akun? <a href="/loginperusahaan" style="color: blue;">Login</a></p>
                         </form>
                     </div>
                 </div>

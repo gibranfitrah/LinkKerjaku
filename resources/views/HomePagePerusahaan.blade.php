@@ -14,27 +14,29 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+    <a class="navbar-brand" href="/">
+        <img src="img/logo2.png" alt="Logo" style="height: 40px;">
+    </a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePerusahaan">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePerusahaan" style="color: #146D9A;">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/StatusPelamar">Status Pelamar</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/StatusPelamar" style="color: #000000;">Status Pelamar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" href="/aboutperusahaan">Tentang Kami</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/aboutperusahaan" style="color: #000000;">Tentang Kami</a>
                 </li>
             </ul>
             <div class="d-flex">
-            <a href="/BuatLowongan" class="btn btn-secondary me-2" style="background-color: #8DA4B8; color: #808080; text-decoration: none;">Buat Lowongan</a>
-            <a href="/ProfillPerusahaan" class="btn btn-secondary d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; background-color: #6c757d; border-radius: 50%; text-decoration: none; margin-left: 10px;">
-        <img src="img/user.png" alt="Profile Image" style="width: 30px; height: 30px; border-radius: 50%;">
+            <a href="/BuatLowongan" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; color: #000000;">Buat Lowongan</a>
+            <a href="/ProfillPerusahaan" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;">
+        <img src="img/ProfilPerusahaan.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
     </a>
 </div>
         </div>
@@ -42,11 +44,11 @@
 </nav>
 
 <!-- Section Pertama -->
-<section style="background-color: #D9D9D9; padding: 70px; display: flex; align-items: center; justify-content: center;">
+<section style="background-color: #146D9A; padding: 70px; display: flex; align-items: center; justify-content: center;">
 <div style="margin-right: 10px; text-align: center;">
-    <h3>Bergabunglah dengan Link Kerjaku dan Temukan Talenta Terbaik untuk</h3>
-    <h3>Perusahaan Anda!</h3>
-    <p>Bantu Ciptakan Masa Depan Pekerjaan dengan Membuka Lowongan di Platform Job Portal Baru yang Menjanjikan</p>
+<h3 style="color: white;">Bergabunglah dengan <span style="color: #FFC94A;">Link Kerjaku</span> dan Temukan Talenta Terbaik untuk</h3>
+    <h3 style="color: #FFFFFF;">Perusahaan Anda!</h3>
+    <p style="color: #FFFFFF;">Bantu Ciptakan Masa Depan Pekerjaan dengan Membuka Lowongan di Platform Job Portal Baru yang Menjanjikan</p>
 </div>
 </section>
 <!-- Section Akhir -->
@@ -54,48 +56,52 @@
 <!-- Section Kedua -->
 <section style="background-color: #ffff; padding: 70px; display: flex; align-items: center; justify-content: center;">
 <div style="margin-right: 10px; text-align: center;">
-    <h5>Link Kerjaku adalah platform job portal baru yang inovatif dan mudah digunakan, dirancang untuk </h5>
-    <h5>membantu perusahaan menemukan talenta terbaik dan pencari kerja menemukan pekerjaan impian </h5>
-    <h5>mereka.</h5>
+    <h5 style="color: #146D9A;">Link Kerjaku adalah platform job portal baru yang inovatif dan mudah digunakan, dirancang untuk </h5>
+    <h5 style="color: #146D9A;">membantu perusahaan menemukan talenta terbaik dan pencari kerja menemukan pekerjaan impian </h5>
+    <h5 style="color: #146D9A;">mereka.</h5>
 </div>
 </section>
 <!-- Section Akhir -->
 
 <!-- Section Ketiga -->
-<section style="background-color: #D9D9D9; padding: 55px;">
+<section style="background-color: #ffffff; padding: 55px;">
 <div class="container">
-    <div class="row justify-content-between">
-        <div class="col-md-3 mb-4 text-center">
-            <div style="width: 312px; height: 301px; text-align: center; padding: 20px; border: 1px solid #000000; border-radius: 20px; display: flex; flex-direction: column; justify-content: center;">
-                <h4 style="color: #000000; margin-bottom: 10px; margin-top: 0;">Basis pengguna yang luas</h4>
-                <p style="color: #000000; margin-bottom: 0;">Kami memiliki basis pengguna yang terus berkembang, terdiri dari pencari kerja yang terampil dan berkualitas dari berbagai industri dan latar belakang.</p>
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4 text-center">
+            <div style="width: 100%; height: 301px; text-align: center; padding: 20px; border: 1px solid #8DA4B8; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; background-color: #E8F2F7;">
+            <img src="svg/basis.svg" alt="Icon" style="width: 100px; height: 120px; margin-bottom: 10px; margin-left: 185px;">
+                <h4 style="color: #146D9A; margin-bottom: 10px; margin-top: 0;">Basis pengguna yang luas</h4>
             </div>
         </div>
-        <div class="col-md-3 mb-4 text-center">
-            <div style="width: 312px; height: 301px; text-align: center; padding: 20px; border: 1px solid #000000; border-radius: 20px; display: flex; flex-direction: column; justify-content: center;">
-                <h4 style="color: #000000; margin-bottom: 10px; margin-top: 0;">Alat pencocokan yang canggih</h4>
-                <p style="color: #000000; margin-bottom: 0;">Kami menggunakan alat pencocokan yang canggih untuk menghubungkan perusahaan dengan pencari kerja yang paling sesuai dengan kebutuhan mereka.</p>
+        <div class="col-md-5 mb-4 text-center">
+            <div style="width: 100%; height: 301px; text-align: center; padding: 20px; border: 1px solid #8DA4B8; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; background-color: #E8F2F7;">
+            <img src="svg/alat.svg" alt="Icon" style="width: 100px; height: 120px; margin-bottom: 10px; margin-left: 195px;">
+                <h4 style="color: #146D9A; margin-bottom: 10px; margin-top: 0;">Alat pencocokan yang canggih</h4>
             </div>
         </div>
-        <div class="col-md-3 mb-4 text-center">
-            <div style="width: 312px; height: 301px; text-align: center; padding: 20px; border: 1px solid #000000; border-radius: 20px; display: flex; flex-direction: column; justify-content: center;">
-                <h4 style="color: #000000; margin-bottom: 10px; margin-top: 0;">Biaya yang terjangkau</h4>
-                <p style="color: #000000; margin-bottom: 0;">Kami menawarkan paket harga yang terjangkau untuk memenuhi kebutuhan berbagai jenis perusahaan.</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4 text-center">
+            <div style="width: 100%; height: 301px; text-align: center; padding: 20px; border: 1px solid #8DA4B8; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; background-color: #E8F2F7;">
+            <img src="svg/biaya.svg" alt="Icon" style="width: 100px; height: 120px; margin-bottom: 10px; margin-left: 195px;">
+                <h4 style="color: #146D9A; margin-bottom: 10px; margin-top: 0;">Biaya yang terjangkau</h4>
             </div>
         </div>
-        <div class="col-md-3 mb-4 text-center">
-            <div style="width: 312px; height: 301px; text-align: center; padding: 20px; border: 1px solid #000000; border-radius: 20px; display: flex; flex-direction: column; justify-content: center;">
-                <h4 style="color: #000000; margin-bottom: 10px; margin-top: 0;">Platform yang mudah digunakan</h4>
-                <p style="color: #000000; margin-bottom: 0;">Platform kami mudah digunakan dan intuitif, memungkinkan perusahaan untuk memposting lowongan dengan cepat dan mudah.</p>
+        <div class="col-md-5 mb-4 text-center">
+            <div style="width: 100%; height: 301px; text-align: center; padding: 20px; border: 1px solid #8DA4B8; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; background-color: #E8F2F7;">
+            <img src="svg/platform.svg" alt="Icon" style="width: 100px; height: 120px; margin-bottom: 10px; margin-left: 195px;">
+                <h4 style="color: #146D9A; margin-bottom: 10px; margin-top: 0;">Platform yang mudah digunakan</h4>
             </div>
         </div>
     </div>
 </div>
+
+
 </section>
 <!-- Akhir -->
 
 <!-- Section Keempat -->
-<section style="background-color: #ffff; padding: 50px 0;">
+<section style="background-color: #1679AB; padding: 50px 0;">
 <div class="container">
     <h2 style="text-align: center; margin-bottom: 70px;">Manfaat Membuka Lowongan di Link Kerjaku</h2>
     <div class="row justify-content-center">
@@ -147,40 +153,44 @@
                 <p style="margin-left: 550px; margin-bottom: 0; margin-top: -60px; margin-right: 100px;">Membuka lowongan di Link Kerjaku menunjukkan bahwa perusahaan Anda berkomitmen untuk menemukan talenta terbaik dan membangun masa depan pekerjaan yang lebih baik.</p>
             </div>
         </div>
-
-        <div class="col-md-12 mt-4">
-    <div style="display: inline-block;">
-        <h5 style="text-align: left; margin-bottom: 20px; margin-left: 150px;">Mulai uji coba gratis Link Kerjaku hari ini dan temukan</h5>
-        <h5 style="text-align: left; margin-bottom: 20px; margin-left: 150px;">kandidat yang sempurna untuk lowongan Anda</h5>
-    </div>
-    <div style="display: inline-block; vertical-align: top; margin-left: 200px; margin-top: 20px;">
-        <button class="btn btn-secondary" style="color: #000000; background-color: #808080;">Uji Coba Gratis</button>
-    </div>
-</div>
-
-
-
     </div>
 </div>
 </section>
 <!-- Section Akhir -->
 
+<!-- Section Lagi -->
+<section style="background-color: #FFFFFF; display: flex;">
+<div style="width: 1555px; height: 300px; background-color: #1679AB; position: relative; color: #FFFFFF; padding: 20px;">
+    <div style="position: absolute; top: 0; right: 0; width: 1235px; height: 300px; background-color: #FFC94A; border-top-right-radius: 355px; margin-right: 1115px;"></div>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <div style="max-width: 1000px; text-align: center; margin-left: 125px;">
+            <p style="color: #FFFFFF; text-align: justify; margin: 0; font-size: 25px;">Mulai uji coba gratis Link Kerjaku hari ini dan temukan</p>
+            <p style="color: #FFFFFF; text-align: justify; margin: 0; font-size: 25px;">kandidat yang sempurna untuk lowongan Anda</p>
+        </div>
+        <button style="background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; padding: 10px 20px; font-size: 20px; margin-left: 20px; cursor: pointer; margin-left: 35px;">Uji Coba Gratis</button>
+    </div>
+</div>
+</section>
+<!-- Section Lagi -->
+
+
 <!-- Tambahan Tampilan Baru Kelima  -->
-<section style="background-color: #F3F0F0; padding: 55px;">
+<section style="background-color: #FFFFFF; padding: 55px;">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-4">
-                <h3 style="color: #000000;">Apa Kata Klien Kami?</h3>
+                <h3 style="color: #146D9A;">Apa Kata Klien Kami?</h3>
             </div>
         </div>
         <div class="row justify-content-center">
         <div class="col-md-4 mb-4">
-    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #000000; position: relative; background-color: #B2C4D4;">
-        <div style="width: 100px; height: 100px; background-color: #D9D9D9; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center;">
+    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #B7D5E5; position: relative; background-color: #B2C4D4;">
+        <div style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+        <img src="img/profill 1.jpg" alt="Gambar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
         </div>
-        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</h4>
+        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Nama</h4>
         <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</p>
-        <div style="margin-top: 5px; text-align: center; position: absolute; top: 155px; left: 100px;">
+        <div style="margin-top: -15px; text-align: center; position: absolute; top: 155px; left: 100px;">
             <div>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
@@ -188,21 +198,22 @@
                 <span style="color: #FFD700; font-size: 45px;">★</span>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
             </div>
-            <div style="margin-top: 5px;">
-                <p style="font-size: 14px; color: #000000;">Lorem ipsum dolor sit amet</p>
-            </div>
         </div>
+        <div style="margin-top: 215px;">
+                <p style="font-size: 14px; color: #000000;">Link Kerjaku sangat membantu saya dalam menemukan pekerjaan yang sesuai dengan minat dan kualifikasi saya. Proses lamarannya juga mudah dan cepat. Terima kasih Link Kerjaku!</p>
+            </div>
     </div>
 </div>
 
 
 <div class="col-md-4 mb-4">
-    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #000000; position: relative; background-color: #B2C4D4;">
-        <div style="width: 100px; height: 100px; background-color: #D9D9D9; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center;">
+    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #B7D5E5; position: relative; background-color: #B2C4D4;">
+        <div style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+        <img src="img/profill 2.jpg" alt="Gambar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
         </div>
-        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</h4>
+        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Nama</h4>
         <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</p>
-        <div style="margin-top: 5px; text-align: center; position: absolute; top: 155px; left: 100px;">
+        <div style="margin-top: -15px; text-align: center; position: absolute; top: 155px; left: 100px;">
             <div>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
@@ -210,20 +221,21 @@
                 <span style="color: #FFD700; font-size: 45px;">★</span>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
             </div>
-            <div style="margin-top: 5px;">
-                <p style="font-size: 14px; color: #000000;">Lorem ipsum dolor sit amet</p>
-            </div>
         </div>
+        <div style="margin-top: 215px;">
+                <p style="font-size: 14px; color: #000000;">Link Kerjaku sangat membantu saya dalam menemukan pekerjaan yang sesuai dengan minat dan kualifikasi saya. Proses lamarannya juga mudah dan cepat. Terima kasih Link Kerjaku!</p>
+            </div>
     </div>
 </div>
 
 <div class="col-md-4 mb-4">
-    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #000000; position: relative; background-color: #B2C4D4;">
-        <div style="width: 100px; height: 100px; background-color: #D9D9D9; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center;">
+    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #B7D5E5; position: relative; background-color: #B2C4D4;">
+        <div style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+        <img src="img/profill 3.jpg" alt="Gambar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
         </div>
-        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</h4>
+        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Nama</h4>
         <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</p>
-        <div style="margin-top: 5px; text-align: center; position: absolute; top: 155px; left: 100px;">
+        <div style="margin-top: -15px; text-align: center; position: absolute; top: 155px; left: 100px;">
             <div>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
@@ -231,91 +243,92 @@
                 <span style="color: #FFD700; font-size: 45px;">★</span>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
             </div>
-            <div style="margin-top: 5px;">
-                <p style="font-size: 14px; color: #000000;">Lorem ipsum dolor sit amet</p>
-            </div>
         </div>
+                <div style="margin-top: 215px;">
+                <p style="font-size: 14px; color: #000000;">Link Kerjaku sangat membantu saya dalam menemukan pekerjaan yang sesuai dengan minat dan kualifikasi saya. Proses lamarannya juga mudah dan cepat. Terima kasih Link Kerjaku!</p>
+            </div>
     </div>
 </div>
+
 </div>
     </div>
 </section>
 <!-- Section Akhir -->
 
 <!-- Section Baru Keenam -->
-<section style="background-color: #D9D9D9; padding: 50px 0;">
+<section style="background-color: #126189; padding: 50px 0;">
     <div class="container text-center">
-        <h3>Blog</h3>
-        <p>Keputusan Tepat, Masa Depan Cerah: Andalkan Keahlian Kami!</p>
+        <h3 style="color: #FFFFFF;">Blog</h3>
+        <p style="color: #FFFFFF;">Keputusan Tepat, Masa Depan Cerah: Andalkan Keahlian Kami!</p>
         <div class="row justify-content-center">
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 393px; height: 448px; border-radius: 10px; overflow: hidden; margin-top: 30px; margin-left: 35px;">
-                    <img src="img/blog1.jpg" class="card-img-top" alt="Image 1" style="width: 393px; height: 254px;">
+                    <img src="img/1.jpg" class="card-img-top" alt="Image 1" style="width: 393px; height: 254px;">
                     <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; display: flex; align-items: center; margin-bottom: 130px;">
             <img src="svg/person.svg" alt="Icon 1" width="26" height="26" style="margin-right: 10px;">
-            <p style="margin-right: auto;  margin-top: 15px;">Nama Pembuat</p>
+            <p style="margin-right: auto;  margin-top: 15px;">Kania</p>
             <img src="svg/date.svg" alt="Icon 2" width="26" height="26" style="margin-left: auto;">
-            <p style="margin-left: 10px; margin-right: 45px; margin-top: 15px;">03 May 2024</p>
+            <p style="margin-left: 10px; margin-right: 45px; margin-top: 15px;">10 May 2024</p>
         </div>
-        <hr style="border-color: #000000; margin-bottom: 70px; margin-top: 50px;">
+        <hr style="border-color: #000000; margin-top: 45px;">
 
 
-        <div style="display: flex; align-items: center; margin-left: 20px; margin-top: -60px;">
-    <h5>Judul Blog</h5>
+        <div style="display: flex; align-items: center; margin-left: 20px; margin-bottom: -55px; margin-top: 5px;">
+    <h5 style="margin: 0; text-align: left;">Menuju Sukses : Panduan Lengkap untuk Pencari Kerja</h5>
 </div>
-<p style="margin-right: 1px; margin-left: -35px; margin-top: 5px; font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<div style="display: flex; align-items: center; margin-left: 20px; margin-top: 2px; margin-bottom: 5px;">
+
+<div style="display: flex; align-items: center; margin-left: 20px; margin-top: 75px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="/detailblog" style="margin-bottom: 20px;">--></a>
+    <a href="/detailblog2" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 393px; height: 448px; border-radius: 10px; overflow: hidden; margin-top: 30px; margin-left: 35px;">
-                    <img src="img/blog2.jpg" class="card-img-top" alt="Image 1" style="width: 393px; height: 254px;">
+                    <img src="img/2.jpg" class="card-img-top" alt="Image 1" style="width: 393px; height: 254px;">
                     <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; display: flex; align-items: center; margin-bottom: 130px;">
             <img src="svg/person.svg" alt="Icon 1" width="26" height="26" style="margin-right: 10px;">
-            <p style="margin-right: auto;  margin-top: 15px;">Nama Pembuat</p>
+            <p style="margin-right: auto;  margin-top: 15px;">Putri</p>
             <img src="svg/date.svg" alt="Icon 2" width="26" height="26" style="margin-left: auto;">
-            <p style="margin-left: 10px; margin-right: 45px; margin-top: 15px;">03 May 2024</p>
+            <p style="margin-left: 10px; margin-right: 45px; margin-top: 15px;">20 April 2024</p>
         </div>
-        <hr style="border-color: #000000; margin-bottom: 70px; margin-top: 50px;">
+        <hr style="border-color: #000000; margin-top: 45px;">
 
 
-        <div style="display: flex; align-items: center; margin-left: 20px; margin-top: -60px;">
-    <h5>Judul Blog</h5>
+        <div style="display: flex; align-items: center; margin-left: 20px; margin-bottom: -55px; margin-top: 5px;">
+    <h5 style="margin: 0; text-align: left;">Menuju Sukses : Panduan Lengkap untuk Pencari Kerja</h5>
 </div>
-<p style="margin-right: 1px; margin-left: -35px; margin-top: 5px; font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<div style="display: flex; align-items: center; margin-left: 20px; margin-top: 2px; margin-bottom: 5px;">
+
+<div style="display: flex; align-items: center; margin-left: 20px; margin-top: 75px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="/detailblog" style="margin-bottom: 20px;">--></a>
+    <a href="/detailblog2" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
                 <div class="card" style="width: 393px; height: 448px; border-radius: 10px; overflow: hidden; margin-top: 30px; margin-left: 35px;">
-                    <img src="img/blog3.jpg" class="card-img-top" alt="Image 1" style="width: 393px; height: 254px;">
+                    <img src="img/3.jpg" class="card-img-top" alt="Image 1" style="width: 393px; height: 254px;">
                     <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; display: flex; align-items: center; margin-bottom: 130px;">
             <img src="svg/person.svg" alt="Icon 1" width="26" height="26" style="margin-right: 10px;">
-            <p style="margin-right: auto;  margin-top: 15px;">Nama Pembuat</p>
+            <p style="margin-right: auto;  margin-top: 15px;">Roni</p>
             <img src="svg/date.svg" alt="Icon 2" width="26" height="26" style="margin-left: auto;">
-            <p style="margin-left: 10px; margin-right: 45px; margin-top: 15px;">03 May 2024</p>
+            <p style="margin-left: 10px; margin-right: 45px; margin-top: 15px;">19 May 2024</p>
         </div>
-        <hr style="border-color: #000000; margin-bottom: 70px; margin-top: 50px;">
+        <hr style="border-color: #000000; margin-top: 45px;">
 
 
-        <div style="display: flex; align-items: center; margin-left: 20px; margin-top: -60px;">
-    <h5>Judul Blog</h5>
+        <div style="display: flex; align-items: center; margin-left: 20px; margin-bottom: -55px; margin-top: 5px;">
+    <h5 style="margin: 0; text-align: left;">Menuju Sukses : Panduan Lengkap untuk Pencari Kerja</h5>
 </div>
-<p style="margin-right: 1px; margin-left: -35px; margin-top: 5px; font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<div style="display: flex; align-items: center; margin-left: 20px; margin-top: 2px; margin-bottom: 5px;">
+
+<div style="display: flex; align-items: center; margin-left: 20px; margin-top: 75px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="/detailblog" style="margin-bottom: 20px;">--></a>
+    <a href="/detailblog2" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>
@@ -325,54 +338,54 @@
 <!-- Section Akhir -->
 
 <!-- Footer -->
-<footer style="background-color: #E9EBF8; padding: 30px;">
+<footer style="background-color: #FFC94A; padding: 30px;">
     <div class="container">
         <div class="row">
             <div class="col-md-3 mb-4">
                 <!-- Logo -->
-                <img src="path/to/logo.svg" alt="Logo" style="max-width: 100px;">
+                <img src="img/logo2.png" alt="Logo" style="max-width: 100px;">
+                                <!-- Lorem10 -->
+                                <h6 style="margin-top: 55px;">Link Kerjaku</h6>
+                                <h6 style="margin-top: 10px;">(Portal Lowongan Kerja)</h6>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Kategori -->
                 <h5>Kategori</h5>
-                <ul>
-                    <li>Kategori 1</li>
-                    <li>Kategori 2</li>
-                    <li>Kategori 3</li>
-                </ul>
+                <h5 style="margin-top: 70px;">Tentang Link Kerjaku</h5>
+                <h5 style="margin-top: 25px;">Hubungi Kami</h5>
+                <h5 style="margin-top: 25px;">Syarat dan Ketentuan</h5>
+                <h5 style="margin-top: 25px;">Kebijakan Privasi</h5>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Tentang -->
                 <h5>Tentang</h5>
-                <ul>
-                    <li>Tentang Kami</li>
-                    <li>Tim Kami</li>
-                    <li>Karir</li>
-                </ul>
+                <h5 style="margin-top: 70px;">Bantuan</h5>
+                <h5 style="margin-top: 25px;">Blog</h5>
+                <h5 style="margin-top: 25px;">Cari Lowongan Kerja</h5>
+                <h5 style="margin-top: 25px;">Pasang Lowongan</h5>
             </div>
             <div class="col-md-3 mb-4">
                 <!-- Dukungan -->
-                <h5>Dukungan</h5>
-                <ul>
-                    <li>Bantuan</li>
-                    <li>FAQ</li>
-                    <li>Hubungi Kami</li>
-                </ul>
+                <h5>Opsional</h5>
+                <h5 style="margin-top: 70px;">Penghargaan</h5>
+                <h5 style="margin-top: 25px;">Logo Partner</h5>
+                <h5 style="margin-top: 25px;">Bahasa</h5>
+                <h5 style="margin-top: 25px;">
+    <a href="/Kontak" style="text-decoration: none; color: inherit;">Kontak</a>
+</h5>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <!-- Lorem10 -->
-                <p>Lorem ipsum</p>
                 <!-- Icon email, telefon, lokasi -->
                 <div>
-                <span><img src="svg/email.svg" width="25" alt="Email Icon"> Lorem ipsum</span>
+                <span><img src="svg/email.svg" width="25" alt="Email Icon"> Email Link Kerjaku</span>
                 </div>
-                <div>
-                <span><img src="svg/telephone.svg" width="25" alt="Phone Icon"> Lorem ipsum</span>
+                <div style="margin-top: 15px;">
+                <span><img src="svg/telephone.svg" width="25" alt="Phone Icon"> (+62) 0000000000</span>
                 </div>
-                <div>
-                <span><img src="svg/location.svg" width="25" alt="Location Icon"> Lorem ipsum</span>
+                <div style="margin-top: 15px;">
+                <span><img src="svg/location.svg" width="25" alt="Location Icon"> Lokasi Lengkap</span>
                 </div>
             </div>
         </div>
@@ -380,11 +393,11 @@
         <div class="row">
     <div class="col-md-6">
         <!-- Credit -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, iusto.</p>
+        <h6>Ikuti Kami di Media Sosial</h6>
     </div>
     <div class="col-md-6">
         <!-- Ikuti Kami -->
-        <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none;">
+        <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none; margin-left: 455px;">
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/facebook.svg" width="30" alt="Facebook Icon"></a></li>
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/instagram.svg" width="30" alt="Instagram Icon"></a></li>
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/link.svg" width="30" alt="LinkedIn Icon"></a></li>

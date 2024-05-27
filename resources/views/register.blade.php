@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Register</title>
+    <title>Form Register Pelamar</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -13,8 +13,8 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body text-center">
-                        <img src="brand_logo.png" alt="Brand Logo" class="mb-4">
-                        <h2 class="mb-4">Daftar</h2>
+                    <img src="img/logo2.png" alt="Brand Logo" class="mb-4">
+                        <h2 class="mb-4">Daftar Sebagai Pelamar</h2>
                         <form action="#" method="post">
                         <div class="form-group">
                                 <div class="input-group">
@@ -63,7 +63,7 @@
         </div>
     </div>
 </div>
-                            <a href="/HomePagePelamar" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Buat Akun</a>
+                            <a href="/login" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Buat Akun</a>
                             <p class="mt-5">Sudah punya akun? <a href="/login" style="color: blue;">Login</a></p>
                         </form>
                     </div>
