@@ -136,8 +136,8 @@
     Edit Profil
 </div>
 
-        <div class="dropdown-divider"></div>
-        <div class="dropdown-item" onclick="window.location.href='/';">
+<div class="dropdown-divider"></div>
+<div class="dropdown-item" onclick="confirmLogout()">
     <img src="svg/logout.svg" alt="Logout Icon" class="dropdown-icon">
     Logout
 </div>
@@ -333,10 +333,23 @@ window.onclick = function(event) {
     }
 }
 
-
+function confirmLogout() {
+    Swal.fire({
+        title: 'Logout dan Kembali Ke Halaman Home?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Iya',
+        cancelButtonText: 'Batal'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/';
+        }
+    });
+}
 
 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

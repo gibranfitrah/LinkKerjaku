@@ -98,7 +98,7 @@
                     <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar" style="color: #000000;">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #000000;">Lowongan Kerja</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja" style="color: #000000;">Lowongan Kerja</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active ms-4" aria-current="page" href="/about2" style="color: #000000;">Tentang Kami</a>
@@ -128,11 +128,13 @@
             <img src="svg/edit.svg" alt="Edit Icon" class="dropdown-icon">
             Edit Profil
         </div>
+
         <div class="dropdown-divider"></div>
-        <div class="dropdown-item">
-            <img src="svg/logout.svg" alt="Logout Icon" class="dropdown-icon">
-            Logout
-        </div>
+<div class="dropdown-item" onclick="confirmLogout()">
+    <img src="svg/logout.svg" alt="Logout Icon" class="dropdown-icon">
+    Logout
+</div>
+
     </div>
 </div>
         </div>
@@ -160,7 +162,6 @@
 
 
             <div style="margin-left: 1225px; margin-top: -100px;">
-            <img src="svg/titik.svg" alt="Icon" style="width: 30px; height: 30px; margin-right: 10px;">
             <a href="/disimpan" style="display: inline-block; width: 120px; height: 40px; background-color: #FFC94A; border: none; border-radius: 8px; color: white; text-align: center; line-height: 40px; text-decoration: none;">
         Disimpan
     </a>        
@@ -329,9 +330,23 @@ window.onclick = function(event) {
 }
 
 
+function confirmLogout() {
+    Swal.fire({
+        title: 'Logout dan Kembali Ke Halaman Home?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Iya',
+        cancelButtonText: 'Batal'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/';
+        }
+    });
+}
 
 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

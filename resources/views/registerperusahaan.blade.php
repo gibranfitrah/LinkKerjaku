@@ -6,63 +6,80 @@
     <title>Form Register Perusahaan</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .input-group-text, .input-group-append button {
+            display: flex;
+            align-items: center;
+            background-color: #FFFFFF;
+        }
+        .form-control {
+            height: 45px;
+            padding: 10px;
+        }
+        .btn-block {
+            height: 45px;
+        }
+        .text-left {
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
+<div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body text-center">
-                    <img src="img/logo2.png" alt="Brand Logo" class="mb-4">
-                        <h2 class="mb-4">Daftar Sebagai Perusahaan</h2>
+                        <img src="img/Logo.png" alt="Brand Logo" class="mb-4" style="width: 175px;">
+                        <h2 class="mb-4" style="margin-top: -45px;">Daftar Sebagai Perusahaan</h2>
                         <form action="#" method="post">
-                        <div class="form-group">
-                                <div class="input-group">
+                            <div class="form-group">
+                                <div class="input-group" style="border: 1px solid #146D9A;">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><img src="svg/profile.svg" alt="profile icon" width="20"></span>
+                                        <span class="input-group-text"><img src="svg/profile.svg" alt="Profile Icon" width="20"></span>
                                     </div>
-                                    <input type="name" class="form-control" name="name" placeholder="Masukkan Nama Anda">
+                                    <input type="name" class="form-control" name="name" placeholder="Masukkan Nama Anda" style="border: none;">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="input-group">
+                                <div class="input-group" style="border: 1px solid #146D9A;">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><img src="svg/email.svg" alt="Email Icon" width="20"></span>
                                     </div>
-                                    <input type="email" class="form-control" name="email" placeholder="Masukkan Alamat Email Anda">
+                                    <input type="email" class="form-control" name="email" placeholder="Masukkan Alamat Email Anda" style="border: none;">
                                 </div>
                             </div>
                             <div class="form-group">
-    <div class="input-group">
-        <div class="input-group-prepend">
-            <span class="input-group-text">
-                <img src="svg/password.svg" alt="Password Icon" width="20">
-            </span>
-        </div>
-        <input type="password" class="form-control" name="password" placeholder="Masukkan Kata Sandi Anda">
-        <div class="input-group-append">
-            <button class="btn btn-outline-secondary toggle-password" type="button">
-                <img src="svg/eye.svg" alt="Toggle Password" width="20">
-            </button>
-        </div>
-    </div>
-    <p class="text-left">Kata sandi minimal terdiri dari 8 karakter</p>
-</div>
-<div class="form-group">
-    <div class="input-group">
-        <div class="input-group-prepend">
-            <span class="input-group-text">
-                <img src="svg/password.svg" alt="Password Icon" width="20">
-            </span>
-        </div>
-        <input type="password" class="form-control" name="password" placeholder="Konfirmasi kata sandi">
-        <div class="input-group-append">
-            <button class="btn btn-outline-secondary toggle-password" type="button">
-                <img src="svg/eye.svg" alt="Toggle Password" width="20">
-            </button>
-        </div>
-    </div>
-</div>
+                                <div class="input-group" style="border: 1px solid #146D9A;">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><img src="svg/password.svg" alt="Password Icon" width="20"></span>
+                                    </div>
+                                    <input type="password" class="form-control" name="password" placeholder="Masukkan Kata Sandi Anda" style="border: none;">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary toggle-password" type="button">
+                                            <img src="svg/eye.svg" alt="Toggle Password" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="text-left">Kata sandi minimal terdiri dari 8 karakter</p>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group" style="border: 1px solid #146D9A;">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><img src="svg/password.svg" alt="Password Icon" width="20"></span>
+                                    </div>
+                                    <input type="password" class="form-control" name="password" placeholder="Konfirmasi kata sandi" style="border: none;">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary toggle-password" type="button">
+                                            <img src="svg/eye.svg" alt="Toggle Password" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                             <a href="/loginperusahaan" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Buat Akun</a>
                             <p class="mt-5">Sudah punya akun? <a href="/loginperusahaan" style="color: blue;">Login</a></p>
                         </form>

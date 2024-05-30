@@ -7,9 +7,10 @@
 
     <!-- Bootstrap CSS -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Link-Kerjaku | Home Pelamar</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <style>
        .dropdown-menu {
     position: absolute;
@@ -78,14 +79,24 @@
     margin: 5px 0;
 }
 
-.card {
-        transition: height 0.3s ease;
-        overflow: hidden;
+.carousel {
+      position: relative;
     }
 
-    .show-details {
-        height: auto !important;
+    .carousel-item {
+      scroll-snap-align: start;
+      flex: none;
+      width: 100%;
     }
+
+    .card-slider {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .slide {
+      padding: 15px;
+    }
+    
 
     </style>
 
@@ -139,8 +150,8 @@
     Edit Profil
 </div>
 
-        <div class="dropdown-divider"></div>
-        <div class="dropdown-item" onclick="window.location.href='/';">
+<div class="dropdown-divider"></div>
+<div class="dropdown-item" onclick="confirmLogout()">
     <img src="svg/logout.svg" alt="Logout Icon" class="dropdown-icon">
     Logout
 </div>
@@ -314,9 +325,11 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
-        Lamar Pekerjaan Ini
-    </button>
+        <a href="/DetailPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-decoration: none; line-height: 58px; text-align: center; border: none; border-radius: 5px;">
+    Detail Pekerjaan
+</a>
+
+
 </div>
                 </div>
             </div>
@@ -348,9 +361,9 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
-        Lamar Pekerjaan Ini
-    </button>
+        <a href="/DetailPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-decoration: none; line-height: 58px; text-align: center; border: none; border-radius: 5px;">
+    Detail Pekerjaan
+</a>
 </div>
                 </div>
             </div>
@@ -383,16 +396,16 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
-        Lamar Pekerjaan Ini
-    </button>
+        <a href="/DetailPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-decoration: none; line-height: 58px; text-align: center; border: none; border-radius: 5px;">
+    Detail Pekerjaan
+</a>
 </div>
                 </div>
             </div>
 
             <div class="row justify-content-center" style="margin-top: 20px;">
     <div class="col-md-6 text-center">
-        <a href="#" class="btn btn-secondary" style="color: #000000; background-color: #FFC94A;">Lihat Selengkapnya</a>
+        <a href="/DetailPekerjaan" class="btn btn-secondary" style="color: #000000; background-color: #FFC94A;">Lihat Selengkapnya</a>
     </div>
 </div>
     </div>
@@ -632,8 +645,8 @@
         <div style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
         <img src="img/profill 1.jpg" alt="Gambar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
         </div>
-        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Nama</h4>
-        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</p>
+        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Alex Wong</h4>
+        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">HRD</p>
         <div style="margin-top: -15px; text-align: center; position: absolute; top: 155px; left: 100px;">
             <div>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
@@ -655,8 +668,8 @@
         <div style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
         <img src="img/profill 2.jpg" alt="Gambar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
         </div>
-        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Nama</h4>
-        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</p>
+        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Fanny Yong</h4>
+        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Senior Executive</p>
         <div style="margin-top: -15px; text-align: center; position: absolute; top: 155px; left: 100px;">
             <div>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
@@ -667,7 +680,7 @@
             </div>
         </div>
         <div style="margin-top: 215px;">
-                <p style="font-size: 14px; color: #000000;">Link Kerjaku sangat membantu saya dalam menemukan pekerjaan yang sesuai dengan minat dan kualifikasi saya. Proses lamarannya juga mudah dan cepat. Terima kasih Link Kerjaku!</p>
+                <p style="font-size: 14px; color: #000000;">Saya senang menggunakan Link Kerjaku karena platform ini menyediakan banyak informasi lowongan kerja yang akurat dan up-to-date. Saya juga bisa mendapatkan tips dan trik</p>
             </div>
     </div>
 </div>
@@ -677,8 +690,8 @@
         <div style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
         <img src="img/profill 3.jpg" alt="Gambar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
         </div>
-        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Nama</h4>
-        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</p>
+        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Richard Lee</h4>
+        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">CEO</p>
         <div style="margin-top: -15px; text-align: center; position: absolute; top: 155px; left: 100px;">
             <div>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
@@ -689,7 +702,7 @@
             </div>
         </div>
                 <div style="margin-top: 215px;">
-                <p style="font-size: 14px; color: #000000;">Link Kerjaku sangat membantu saya dalam menemukan pekerjaan yang sesuai dengan minat dan kualifikasi saya. Proses lamarannya juga mudah dan cepat. Terima kasih Link Kerjaku!</p>
+                <p style="font-size: 14px; color: #000000;">Link Kerjaku adalah platform yang sangat bermanfaat bagi pencari kerja seperti saya. Saya bisa terhubung dengan perusahaan-perusahaan ternama dan mengikuti perkembangan terbaru</p>
             </div>
     </div>
 </div>
@@ -885,10 +898,26 @@ window.onclick = function(event) {
         });
     });
 
+    function confirmLogout() {
+    Swal.fire({
+        title: 'Logout dan Kembali Ke Halaman Home?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Iya',
+        cancelButtonText: 'Batal'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/';
+        }
+    });
+}
 
 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
+    <script src="owl.carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

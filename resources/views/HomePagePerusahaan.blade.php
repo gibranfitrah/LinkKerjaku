@@ -9,15 +9,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Link-Kerjaku | Buat Perusahaan</title>
+    <style>
+       .dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-content {
+    padding: 10px;
+}
+
+.dropdown-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-image: url('img/pelamar.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0 0; /* Optional: rounding top corners */
+}
+
+.dropdown-profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 5px 0;
+}
+    </style>
   </head>
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="#">
         <img src="img/logo2.png" alt="Logo" style="height: 40px;">
-    </a> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+    </a>         
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,18 +95,44 @@
                     <a class="nav-link active ms-4" aria-current="page" href="/HomePagePerusahaan" style="color: #146D9A;">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/StatusPelamar" style="color: #000000;">Status Pelamar</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/StatusPelamar" style="color: #082A3C;">Status Pelamar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/aboutperusahaan" style="color: #000000;">Tentang Kami</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/aboutperusahaan" style="color: #082A3C;">Tentang Kami</a>
                 </li>
             </ul>
-            <div class="d-flex">
-            <a href="/BuatLowongan" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; color: #000000;">Buat Lowongan</a>
-            <a href="/ProfillPerusahaan" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;">
+            <div class="d-flex align-items-center">
+            <a href="/BuatLowongan" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; color: #000000; margin-right: 15px;">Buat Lowongan</a>
+    <a href="/ProfillPelamar" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px; margin-right: 10px;" title="Olivia Rhye">
         <img src="img/ProfilPerusahaan.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
     </a>
+    <div id="dropdownIcon" class="arrow-icon" style="margin-left: 10px; width: 26px; height: 26px; border: 2px solid #FFC94A; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+            <path d="M6 9l6 6 6-6"></path>
+        </svg>
+    </div>
 </div>
+
+<div id="dropdownMenu" class="dropdown-menu">
+    <div class="dropdown-content">
+    <div class="dropdown-header" style="background-image: url('img/pelamar.jpg'); background-size: cover; background-position: center;">
+    <img src="img/ProfilPerusahaan.jpg" alt="Profile Image" class="dropdown-profile-img">
+    <span>Perusahaan@gmail.com</span>
+</div>
+
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-item" onclick="window.location.href='/ProfillPerusahaan';">
+            <img src="svg/edit.svg" alt="Edit Icon" class="dropdown-icon">
+            Edit Profil
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-item" onclick="window.location.href='/';">
+            <img src="svg/logout.svg" alt="Logout Icon" class="dropdown-icon">
+            Logout
+        </div>
+    </div>
+</div>
+
         </div>
     </div>
 </nav>
@@ -184,12 +278,12 @@
         </div>
         <div class="row justify-content-center">
         <div class="col-md-4 mb-4">
-    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #B7D5E5; position: relative; background-color: #B2C4D4;">
+    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #B7D5E5; position: relative; background-color: #B7D5E5;">
         <div style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
         <img src="img/profill 1.jpg" alt="Gambar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
         </div>
-        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Nama</h4>
-        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</p>
+        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Alex Wong</h4>
+        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">HRD</p>
         <div style="margin-top: -15px; text-align: center; position: absolute; top: 155px; left: 100px;">
             <div>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
@@ -207,12 +301,12 @@
 
 
 <div class="col-md-4 mb-4">
-    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #B7D5E5; position: relative; background-color: #B2C4D4;">
+    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #B7D5E5; position: relative; background-color: #B7D5E5;">
         <div style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
         <img src="img/profill 2.jpg" alt="Gambar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
         </div>
-        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Nama</h4>
-        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</p>
+        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Fanny Yong</h4>
+        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Senior Executive</p>
         <div style="margin-top: -15px; text-align: center; position: absolute; top: 155px; left: 100px;">
             <div>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
@@ -223,18 +317,18 @@
             </div>
         </div>
         <div style="margin-top: 215px;">
-                <p style="font-size: 14px; color: #000000;">Link Kerjaku sangat membantu saya dalam menemukan pekerjaan yang sesuai dengan minat dan kualifikasi saya. Proses lamarannya juga mudah dan cepat. Terima kasih Link Kerjaku!</p>
+                <p style="font-size: 14px; color: #000000;">Saya senang menggunakan Link Kerjaku karena platform ini menyediakan banyak informasi lowongan kerja yang akurat dan up-to-date. Saya juga bisa mendapatkan tips dan trik</p>
             </div>
     </div>
 </div>
 
 <div class="col-md-4 mb-4">
-    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #B7D5E5; position: relative; background-color: #B2C4D4;">
+    <div style="width: 393px; height: 401px; padding: 20px; border-radius: 20px; border: 1px solid #B7D5E5; position: relative; background-color: #B7D5E5;">
         <div style="width: 100px; height: 100px; border-radius: 50%; position: absolute; top: 15px; left: 20px; display: flex; justify-content: center; align-items: center; margin-top: 10px;">
         <img src="img/profill 3.jpg" alt="Gambar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
         </div>
-        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Nama</h4>
-        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">Lorem ipsum</p>
+        <h4 style="margin-top: 20px; color: #000000; position: absolute; top: 20px; left: 140px;">Richard Lee</h4>
+        <p style="margin-top: 50px; color: #000000; position: absolute; top: 20px; left: 140px;">CEO</p>
         <div style="margin-top: -15px; text-align: center; position: absolute; top: 155px; left: 100px;">
             <div>
                 <span style="color: #FFD700; font-size: 45px;">★</span>
@@ -245,7 +339,7 @@
             </div>
         </div>
                 <div style="margin-top: 215px;">
-                <p style="font-size: 14px; color: #000000;">Link Kerjaku sangat membantu saya dalam menemukan pekerjaan yang sesuai dengan minat dan kualifikasi saya. Proses lamarannya juga mudah dan cepat. Terima kasih Link Kerjaku!</p>
+                <p style="font-size: 14px; color: #000000;">Link Kerjaku adalah platform yang sangat bermanfaat bagi pencari kerja seperti saya. Saya bisa terhubung dengan perusahaan-perusahaan ternama dan mengikuti perkembangan terbaru</p>
             </div>
     </div>
 </div>
@@ -280,7 +374,7 @@
 
 <div style="display: flex; align-items: center; margin-left: 20px; margin-top: 75px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="/detailblog2" style="margin-bottom: 20px;">--></a>
+    <a href="/detailblog3" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>
@@ -304,7 +398,7 @@
 
 <div style="display: flex; align-items: center; margin-left: 20px; margin-top: 75px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="/detailblog2" style="margin-bottom: 20px;">--></a>
+    <a href="/detailblog3" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>
@@ -328,7 +422,7 @@
 
 <div style="display: flex; align-items: center; margin-left: 20px; margin-top: 75px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="/detailblog2" style="margin-bottom: 20px;">--></a>
+    <a href="/detailblog3" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>
@@ -408,6 +502,31 @@
     </div>
 </footer>
 <!-- Akhir Footer -->
+
+<script>
+document.getElementById('dropdownIcon').addEventListener('click', function() {
+    var dropdownMenu = document.getElementById('dropdownMenu');
+    if (dropdownMenu.classList.contains('show')) {
+        dropdownMenu.classList.remove('show');
+    } else {
+        dropdownMenu.classList.add('show');
+    }
+});
+
+// Close the dropdown menu if clicked outside
+window.onclick = function(event) {
+    if (!event.target.matches('#dropdownIcon') && !event.target.closest('.arrow-icon')) {
+        var dropdownMenu = document.getElementById('dropdownMenu');
+        if (dropdownMenu.classList.contains('show')) {
+            dropdownMenu.classList.remove('show');
+        }
+    }
+}
+
+
+
+
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

@@ -33,7 +33,7 @@
                 </li>
             </ul>
             <div class="d-flex">
-            <a href="/BuatLowongan" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; color: #000000;">Buat Lowongan</a>
+            <a href="/BuatLowongan" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; color: #000000; margin-right: 15px;">Buat Lowongan</a>
             <a href="/ProfillPerusahaan" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px;">
         <img src="img/ProfilPerusahaan.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
     </a>
@@ -61,7 +61,6 @@
     <img src="svg/facebook.svg" alt="Facebook" style="width: 30px; height: 30px; margin-left: 25px; filter: invert(53%) sepia(33%) saturate(2754%) hue-rotate(190deg) brightness(94%) contrast(91%);">
 </div>
             <div style="margin-left: 1225px; margin-top: -100px;">
-            <img src="svg/titik.svg" alt="Icon" style="width: 30px; height: 30px; margin-right: 10px;">
             <a href="/BuatLowongan" style="display: inline-block; width: 120px; height: 40px; background-color: #FFC94A; border: none; border-radius: 8px; color: white; text-align: center; line-height: 40px; text-decoration: none;">Buat Lowongan</a>
         </div>
 

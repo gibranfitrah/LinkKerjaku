@@ -129,6 +129,12 @@ Route::get('/detailblog2', function () {
     ]);
 });
 
+Route::get('/detailblog3', function () {
+    return view('detailblog3', [
+        "title" => "detailblog3"
+    ]);
+});
+
 Route::get('/ProfillPelamar', function () {
     return view('ProfillPelamar', [
         "title" => "ProfillPelamar"
@@ -201,5 +207,30 @@ Route::get('/HomePagePelamar', function () {
 Route::get('/Kontak', function () {
     return view('Kontak', [
         "title" => "Kontak"
+    ]);
+});
+
+Route::get('/LamarPekerjaan', function () {
+    return view('LamarPekerjaan', [
+        "title" => "LamarPekerjaan"
+    ]);
+});
+
+Route::get('/LamarPekerjaan2', function () {
+    return view('LamarPekerjaan2', [
+        "title" => "LamarPekerjaan2"
+    ]);
+});
+
+Route::get('/LamarPekerjaan3', function () {
+    return view('LamarPekerjaan3', [
+        "title" => "LamarPekerjaan3"
+    ]);
+});
+
+
+Route::get('/PageValidasi', function () {
+    return view('PageValidasi', [
+        "title" => "PageValidasi"
     ]);
 });

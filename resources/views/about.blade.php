@@ -8,38 +8,46 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Link-Kerjaku | About Home</title>
+
+    <style>
+  .navbar {
+            height: 80px; /* Ubah sesuai keinginan Anda */
+        }
+        .navbar-brand img {
+            height: 150px; /* Ubah sesuai keinginan Anda */
+        }
+</style>
   </head>
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-    <a class="navbar-brand" href="#">
-        <img src="img/logo2.png" alt="Logo" style="height: 40px;">
-    </a>         
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #000000;">Beranda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #000000;">Lowongan Kerja</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/about" style="color: blue;">Tentang Kami</a>
-                </li>
-            </ul>
-            <div class="d-flex">
-            <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
-            <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
-</div>
-
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" alt="Logo">
+            </a>        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #000000;">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #000000;">Lowongan Kerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ms-4" aria-current="page" href="/about" style="color: #000000;">Tentang Kami</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
+                    <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 <!-- Section Pertama -->
 <section style="background-color: #1679AB; padding: 155px; text-align: center;">
@@ -363,7 +371,7 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <a href="#" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; text-decoration: none; text-align: center; line-height: 58px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; text-decoration: none; text-align: center; line-height: 58px;">
         Lamar Pekerjaan Ini
     </a>
 </div>
@@ -398,7 +406,7 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <a href="#" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; text-decoration: none; text-align: center; line-height: 58px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; text-decoration: none; text-align: center; line-height: 58px;">
         Lamar Pekerjaan Ini
     </a>
 </div>
@@ -433,7 +441,7 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <a href="#" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; text-decoration: none; text-align: center; line-height: 58px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; text-decoration: none; text-align: center; line-height: 58px;">
         Lamar Pekerjaan Ini
     </a>
 </div>

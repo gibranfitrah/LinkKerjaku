@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+
+    <title>Link-Kerjaku | Home Pelamar</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Link-Kerjaku | Detail Pekerjaan</title>
-
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <style>
        .dropdown-menu {
     position: absolute;
@@ -78,6 +78,26 @@
     background-color: #ccc;
     margin: 5px 0;
 }
+
+.carousel {
+      position: relative;
+    }
+
+    .carousel-item {
+      scroll-snap-align: start;
+      flex: none;
+      width: 100%;
+    }
+
+    .card-slider {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .slide {
+      padding: 15px;
+    }
+    
+
     </style>
 
   </head>
@@ -85,8 +105,10 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+    <a class="navbar-brand" href="/">
+        <img src="img/logo2.png" alt="Logo" style="height: 40px;">
+    </a>         
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -96,12 +118,13 @@
                     <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar" style="color: #000000;">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja" style="color: #000000;">Lowongan Kerja</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja" style="color: blue;">Lowongan Kerja</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active ms-4" aria-current="page" href="/about2" style="color: #000000;">Tentang Kami</a>
                 </li>
             </ul>
+
             <div class="d-flex align-items-center">
     <a href="/ProfillPelamar" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px; margin-right: 10px;" title="Olivia Rhye">
         <img src="img/ProfilPelamar.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
@@ -127,115 +150,84 @@
     Edit Profil
 </div>
 
-<div class="dropdown-divider"></div>
-<div class="dropdown-item" onclick="confirmLogout()">
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-item" onclick="window.location.href='/';">
     <img src="svg/logout.svg" alt="Logout Icon" class="dropdown-icon">
     Logout
 </div>
 
     </div>
 </div>
-
         </div>
     </div>
 </nav>
 
 <!-- Section Pertama -->
-<section style="background-color: #FFFFFF; padding: 40px;">
-    <h5 style="text-align: left; margin-left: 70px;">Digital Marketing
-    <img src="svg/Save.svg" alt="Icon" style="width: 35px; height: 35px; float: right; margin-right: 85px;">
-    <img src="svg/Share.svg" alt="Icon" style="width: 35px; height: 35px; float: right; margin-right: 85px;">
-</h5>
-    <h6 style="margin-left: 85px; margin-top: 30px;">Perusahaan Google
-        <img src="svg/location.svg" alt="Icon" style="width: 30px; height: 30px; margin-left: 155px;">
-        <span>Jakarta</span>
-        <img src="svg/date.svg" alt="Icon" style="width: 30px; height: 30px; margin-left: 155px;">
-        <span>3 hari yang lalu</span>
-</h6>
+<section style="background-color: #E8F2F7; padding: 70px; display: flex; align-items: center; justify-content: center;">
 
-    <h6 style="text-align: left; margin-left: 70px; margin-top: 35px;">Gaji <span style="float: right; margin-right: 855px;">Rp5.000.000 - Rp7.000.000 per bulan (tergantung pengalaman)</span></h6>
-    <h6 style="text-align: left; margin-left: 70px; margin-top: 35px;">Benefit  
-    <ul style="margin-top: 5px; margin-left: 65px; margin-top: -20px;">
-        <li>Asuransi kesehatan dan jiwa</li>
-        <li>Tunjangan makan</li>
-        <li>Dana pensiun</li>
-        <li>Cuti tahunan 15 hari</li>
-        <li>Bonus kinerja tahunan</li>
-        <li>Peluang pengembangan karir melalui pelatihan dan workshop</li>
-        <li>Fasilitas kantor yang nyaman (ruang gym, ruang istirahat)</li>
-        <li>BWork-life balance yang diutamakan</li>
-    </ul>
-    <div style="float: right; margin-right: 125px; margin-top: -100px;">
-        <img src="img/google.jpg" alt="Card Gambar" style="width: 100px; height: 100px; margin-right: 55px;">
-    </div>
-</h6>
-
-<hr style="margin-left: 70px; margin-top: 25px;">
-
-<h5 style="margin-right: 155px; margin-top: 50px; text-align: justify; margin-left: 70px;">Deskripsi Pekerjaan</h5>
-    <p style="margin-right: 155px; margin-top: 1px; text-align: justify; margin-left: 70px;">Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. In consectetur ac nulla non mattis. Nunc eu magna nibh. Sed feugiat justo ullamcorper, 
-    interdum ex id, iaculis mi. Sed mollis tincidunt risus vitae tristique. Praesent a orci non turpis dapibus laoreet 
-    nec non risus. Vivamus mattis bibendum leo eget porttitor. 
-    Ut eu est mauris. In id risus augue.</p>
-
-    <h5 style="margin-right: 155px; margin-top: 50px; text-align: left; margin-left: 70px;">Persyaratan Pekerjaan</h5>
-
-    <h6 style="text-align: left; margin-left: 70px; margin-top: 35px;">Kualifikasi:</h6>
-    <ul style="margin-left: 70px; margin-top: 15px;">
-        <li>[Pendidikan] (misalnya, S1 [Jurusan])</li>
-        <li>[Pengalaman] (misalnya, [Jumlah] tahun pengalaman di [Bidang])</li>
-        <li>[Keterampilan] (misalnya, [Keterampilan Teknis], [Keterampilan Soft Skills])</li>
-    </ul>
-
-    <h6 style="text-align: left; margin-left: 70px; margin-top: 35px;">Persyaratan Tambahan (Opsional):</h6>
-    <ul style="margin-left: 70px; margin-top: 15px;">
-        <li>[Sertifikasi] (misalnya, [Nama Sertifikasi])</li>
-        <li>[Bahasa] (misalnya, Bahasa Inggris [Tingkat Kemampuan])</li>
-        <li>[Portofolio]</li>
-    </ul>
-
-    <h5 style="margin-right: 155px; margin-top: 95px; text-align: left; margin-left: 65px;">Cara Melamar</h5>
-<div style="display: flex; align-items: justify; margin-top: 25px; margin-left: 45px;">
-    <img src="svg/pin.svg" alt="Icon" style="width: 30px; height: 30px; margin-left: 10px; filter: invert(21%) sepia(67%) saturate(4447%) hue-rotate(180deg) brightness(91%) contrast(101%);">
-    <h6 style="margin-left: 10px; margin-top: 3px;">Buat CV dan surat lamaran yang menarik.</h6>
+<div style="display: flex; align-items: center; flex-direction: column; margin-top: 20px; margin-right: -10px; margin-left: 100px;">
+    <div style="width: 85px; height: 84px; background-color: blue; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 10px;">1</div>
+    <p style="margin-top: 0;">Deskripsi Diri</p>
 </div>
-<div style="display: flex; align-items: justify; margin-top: 25px;  margin-left: 45px;">
-    <img src="svg/pin.svg" alt="Icon" style="width: 30px; height: 30px; margin-left: 10px; filter: invert(21%) sepia(67%) saturate(4447%) hue-rotate(180deg) brightness(91%) contrast(101%);">
-    <h6 style="margin-left: 10px; margin-top: 3px;">Klik "Lamar Sekarang" dan ikuti instruksi.</h6>
-</div>
-<div style="display: flex; align-items: justify; margin-top: 25px;  margin-left: 45px;">
-    <img src="svg/pin.svg" alt="Icon" style="width: 30px; height: 30px; margin-left: 10px; filter: invert(21%) sepia(67%) saturate(4447%) hue-rotate(180deg) brightness(91%) contrast(101%);">
-    <h6 style="margin-left: 10px; margin-top: 3px;">Lamar sebelum batas waktu berakhir.</h6>
+    <div style="width: 10%; height: 2px; background-color: blue; margin-left: 35px; margin-right: 25px; margin-bottom: 25px;"></div>
+
+    <div style="display: flex; align-items: center; flex-direction: column; margin-top: 20px; margin-left: 15px;">
+    <div style="width: 85px; height: 84px; background-color: blue; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 10px;">2</div>
+    <p style="margin-top: 0;">Lokasi</p>
 </div>
 
-<h6 style="text-align: left; margin-left: 70px; margin-top: 35px;">Batas Waktu Lamaran:</h6>
-    <ul style="margin-left: 70px; margin-top: 15px;">
-        <li>Sebutkan tanggal batas waktu lamaran.</li>
-    </ul>
+    <div style="width: 10%; height: 2px; background-color: blue; margin-left: 35px; margin-right: 25px; margin-bottom: 25px;"></div>
 
-    <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <a href="/LamarPekerjaan" style="width: 240px; height: 58px; border-radius: 5px; display: inline-block; text-align: center; line-height: 58px; color: white; text-decoration: none; background-color: #FFC94A; color: #000000;">
-  Lamar Sekarang
-</a>
-</div>
-
-<hr style="margin-left: 70px; margin-top: 25px;">
-
-<h5 style="margin-right: 155px; margin-top: 40px; text-align: center; margin-left: 165px;">Informasi Lebih Lanjut</h5>
-<div style="text-align: center; margin-top: 20px">
-<button style="background-color: #FFC94A; width: 240px; height: 58px; margin-right: 20px; border: none; border-radius: 5px; color: #000000;">Hubungi Kami Sekarang</button>
-<a href="/DetailPerusahaan" style="width: 240px; height: 58px; border-radius: 5px; display: inline-block; text-align: center; line-height: 58px; color: white; text-decoration: none; border: 2px solid #FFC94A; color: #000000;">
-  Detail Perusahaan
-</a>
-
+    <div style="display: flex; align-items: center; flex-direction: column; margin-top: 20px;">
+    <div style="width: 85px; height: 84px; background-color: blue; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 10px;">3</div>
+    <p style="margin-top: 0;">Informasi Lainnya</p>
 </div>
 
 </section>
 <!-- Section Akhir -->
 
+<!-- Garis -->
+
+<!-- Garis -->
+
+<!-- Section Kedua -->
+<section style="background-color: #E8F2F7; padding: 70px; display: flex; align-items: center; justify-content: center;">
+    <div style="margin-left: 55px; margin-top: -75px;">
+    <hr style="border: 1px solid black; margin-bottom: 20px; width: 900%; margin-left: -700px;">
+        <h6 style="text-align: left;">Deskripsi Diri*</h6>
+        <form>
+            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+        </form>
+        <h6 style="text-align: left; margin-top: 15px;">Pengalaman*</h6>
+        <form>
+            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+        </form>
+        <h6 style="text-align: left; margin-top: 15px;">Soft Skill(Minimal 5)*</h6>
+        <form>
+            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+        </form>
+        <h6 style="text-align: left; margin-top: 15px;">Hard Skill(Minimal 5)*</h6>
+        <form>
+            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+        </form>
+
+    </div>
+</section>
+<!-- Section Akhir -->
+
+<!-- Tambahan Section -->
+<section style="background-color: #E8F2F7; padding: 5px; display: flex; align-items: center; justify-content: center;">
+<a href="/LamarPekerjaan2" style="text-decoration: none; margin-left: auto; margin-right: 100px; margin-top: -55px;">
+    <button type="submit" style="background-color: #FFC94A; border: none; border-radius: 8px; color: #000000; padding: 10px;">
+        Selanjutnya
+    </button>
+</a>
+</section>
+
+<!-- Tambahan Section -->
+
 <!-- Footer -->
-<footer style="background-color: #FFC94A; padding: 30px;">
+<footer style="background-color: #FFC94A; padding: 55px;">
     <div class="container">
         <div class="row">
             <div class="col-md-3 mb-4">
@@ -326,24 +318,23 @@ window.onclick = function(event) {
     }
 }
 
-function confirmLogout() {
-    Swal.fire({
-        title: 'Logout dan Kembali Ke Halaman Home?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonText: 'Iya',
-        cancelButtonText: 'Batal'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = '/';
-        }
+    // Ambil semua card
+    const cards = document.querySelectorAll('.card');
+
+    // Iterasi semua card
+    cards.forEach(card => {
+        // Tambahkan event listener untuk setiap card
+        card.addEventListener('click', function() {
+            // Toggle class 'show-details' pada card yang diklik
+            this.classList.toggle('show-details');
+        });
     });
-}
+
+
 
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <script src="owl.carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

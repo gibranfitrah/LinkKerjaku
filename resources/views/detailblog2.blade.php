@@ -274,7 +274,7 @@
 
 <div style="display: flex; align-items: center; margin-left: 20px; margin-top: 95px; margin-bottom: 5px;">
     <p style="margin-right: 15px;">Lihat detail</p>
-    <a href="https://linkkerjaku.wixsite.com/link-kerjaku/post/membuka-pintu-peluang-karir-dengan-link-kerjaku-portal-pekerjaan-terpercaya-untuk-masa-depan-anda" style="margin-bottom: 20px;">--></a>
+    <a href="https://linkkerjaku.wixsite.com/link-kerjaku/post/bagaimana-cara-untuk-mengubah-karier" style="margin-bottom: 20px;">--></a>
 </div>
                 </div>
             </div>

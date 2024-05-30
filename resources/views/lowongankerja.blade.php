@@ -130,8 +130,8 @@
     Edit Profil
 </div>
 
-        <div class="dropdown-divider"></div>
-        <div class="dropdown-item" onclick="window.location.href='/';">
+<div class="dropdown-divider"></div>
+<div class="dropdown-item" onclick="confirmLogout()">
     <img src="svg/logout.svg" alt="Logout Icon" class="dropdown-icon">
     Logout
 </div>
@@ -211,7 +211,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
+        <div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <div style="display: flex; align-items: center; margin-top: 20px;">
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/google.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
@@ -228,7 +228,7 @@
     </div>
 </div>
 
-<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
+<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <div style="display: flex; align-items: center; margin-top: 20px;">
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/Tokopedia.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
@@ -245,7 +245,7 @@
     </div>
 </div>
 
-<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
+<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <div style="display: flex; align-items: center; margin-top: 20px;">
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/Gojek.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
@@ -262,7 +262,7 @@
     </div>
 </div>
 
-<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
+<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <div style="display: flex; align-items: center; margin-top: 20px;">
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/Traveloka.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
@@ -279,7 +279,7 @@
     </div>
 </div>
 
-<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
+<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <div style="display: flex; align-items: center; margin-top: 20px;">
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/Shope.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
@@ -305,7 +305,9 @@
         <h5 style="margin-bottom: 2px; margin-left: 20px;">Digital Marketing</h5>
         <p style="margin-right: 50px; margin-left: 50px;">Perusahaan Google</p>
         <div style="margin-right: -655px; margin-top: -70px;">
-            <button type="button" class="btn" style="width: 169px; height: 58px; background-color: #FFC94A; margin-right: 10px;">Lamar Sekarang</button>
+        <a href="/LamarPekerjaan" style="text-decoration: none;">
+    <button type="button" class="btn" style="width: 169px; height: 58px; background-color: #FFC94A; margin-right: 10px; border-radius: 4px;">Lamar Sekarang</button>
+</a>
             <button type="button" class="btn" style="width: 100px; height: 58px; background-color: #FFC94A;">Simpan</button>
         </div>
     </div>
@@ -401,14 +403,16 @@ Spesialis SEO: Membantu bisnis meningkatkan peringkat website mereka di hasil pe
 <h5 style="margin-right: 155px; margin-top: 100px; text-align: center; margin-left: 165px;">Informasi Lebih Lanjut</h5>
 <div class="row justify-content-center" style="margin-top: 15px;">
 <div class="col-md-5" style="margin-bottom: 20px;">
-<div class="card" style="width: 290px; height: 60px; background-color: #FFC94A; border-radius: 8px; display: flex; align-items: center; margin-bottom: -10px;">
-    <button style="margin-top: 15px; color: #FFFFFF; background-color: transparent; border: none; cursor: pointer;">Hubungi Kami Sekarang</button>
-</div>
+<a href="/HubungiSekarang" style="text-decoration: none;">
+    <div class="card" style="width: 290px; height: 60px; background-color: #FFC94A; border-radius: 8px; display: flex; align-items: center; margin-bottom: -10px;">
+        <button style="margin-top: 15px; color: #FFFFFF; background-color: transparent; border: none; cursor: pointer;">Hubungi Kami Sekarang</button>
+    </div>
+</a>
     </div>
 
     <div class="col-md-5" style="margin-bottom: 20px;">
     <div class="card" style="width: 290px; height: 60px; border-radius: 8px; display: flex; align-items: center; margin-bottom: -10px; border: 2px solid #FFC94A;">
-        <a href="#" style="margin-top: 15px; color: #000000; background-color: transparent; border: none; cursor: pointer; text-decoration: none; width: 100%; text-align: center;">Detail Perusahaan</a>
+        <a href="/DetailPerusahaan" style="margin-top: 15px; color: #000000; background-color: transparent; border: none; cursor: pointer; text-decoration: none; width: 100%; text-align: center;">Detail Perusahaan</a>
     </div>
 </div>
 
@@ -514,7 +518,23 @@ window.onclick = function(event) {
     }
 }
 
+function confirmLogout() {
+    Swal.fire({
+        title: 'Logout dan Kembali Ke Halaman Home?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Iya',
+        cancelButtonText: 'Batal'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/';
+        }
+    });
+}
+
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

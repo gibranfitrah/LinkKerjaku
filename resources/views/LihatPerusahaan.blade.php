@@ -9,41 +9,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Link-Kerjaku | Lihat Perusaahan 1</title>
 
-
+<style>
+  .navbar {
+            height: 80px; /* Ubah sesuai keinginan Anda */
+        }
+        .navbar-brand img {
+            height: 150px; /* Ubah sesuai keinginan Anda */
+        }
+</style>
 
   </head>
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-    <a class="navbar-brand" href="#">
-        <img src="img/logo2.png" alt="Logo" style="height: 40px;">
-    </a>         
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #FFC94A;">Beranda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #FFC94A;">Lowongan Kerja</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/about2" style="color: #FFC94A;">Tentang Kami</a>
-                </li>
-            </ul>
-            <div class="d-flex">
-            <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
-            <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
-
-</div>
-
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" alt="Logo">
+            </a>        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #000000;">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #000000;">Lowongan Kerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ms-4" aria-current="page" href="/about" style="color: #000000;">Tentang Kami</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
+                    <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 <!-- Section Pertama -->
 <section style="background-color: #146D9A; padding: 50px; display: flex; align-items: center; justify-content: center;">
@@ -73,8 +78,8 @@
 <section style="background-color: #ffffff; padding: 100px;">
 <div class="container">
 <div style="margin-bottom: 50px;">
-        <h3 style="text-align: left;">Find the right company for you</h3>
-        <p style="text-align: left;">Everything you need to know about a company, all in one place</p>
+        <h3 style="text-align: left;">Temukan perusahaan yang tepat untuk Anda</h3>
+        <p style="text-align: left;">Semua yang perlu Anda ketahui tentang perusahaan, semuanya di satu tempat</p>
     </div>
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -241,25 +246,25 @@
 <!-- Akhir Section Kedua -->
 
 <!-- Section Ketiga -->
-<section style="background-color: #ffffff; padding: 1px;">
+<section style="background-color: #ffffff; padding: 1px; margin-bottom: 55px;">
     <div style="margin-bottom: 65px;">
-        <h3 style="text-align: center;">Get the Full picture before you apply</h3>
+        <h3 style="text-align: center;">Dapatkan gambaran lengkap sebelum Anda mendaftar</h3>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-3" style="margin-right: 100px;">
             <img src="img/gambar1.jpg" alt="Gambar 1" style="width: 70%; display: block; margin: 0 auto;">
-            <h5 style="text-align: center; margin-top: 5px;">Culture And Values</h5>
-            <p style="text-align: center;">Find out about the company culture</p>
+            <h5 style="text-align: center; margin-top: 5px;">Budaya dan Nilai-Nilai </h5>
+            <p style="text-align: center;">Mencari tahu tentang budaya perusahaan</p>
         </div>
         <div class="col-md-3" style="margin-right: 100px;">
             <img src="img/gambar2.jpg" alt="Gambar 2" style="width: 70%; display: block; margin: 0 auto;">
-            <h5 style="text-align: center; margin-top: 5px;">Culture And Values</h5>
-            <p style="text-align: center;">Find out about the company culture</p>
+            <h5 style="text-align: center; margin-top: 5px;">Penilaian dan ulasan</h5>
+            <p style="text-align: center;">Baca ulasan dari karyawan</p>
         </div>
         <div class="col-md-3" style="margin-right: 100px;">
             <img src="img/gambar3.jpg" alt="Gambar 3" style="width: 70%; display: block; margin: 0 auto;">
-            <h5 style="text-align: center; margin-top: 5px;">Culture And Values</h5>
-            <p style="text-align: center;">Find out about the company culture</p>
+            <h5 style="text-align: center; margin-top: 5px;">Tunjangan dan keuntungan</h5>
+            <p style="text-align: center;">Temukan keuntungan yang penting bagi Anda</p>
         </div>
     </div>
 </section>

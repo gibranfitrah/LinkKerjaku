@@ -134,8 +134,8 @@
     Edit Profil
 </div>
 
-        <div class="dropdown-divider"></div>
-        <div class="dropdown-item" onclick="window.location.href='/';">
+<div class="dropdown-divider"></div>
+<div class="dropdown-item" onclick="confirmLogout()">
     <img src="svg/logout.svg" alt="Logout Icon" class="dropdown-icon">
     Logout
 </div>
@@ -211,11 +211,6 @@
 <!-- Section Kedua -->
 <section style="background-color: #FFFFFF; padding: 50px 0;">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center mb-4">
-                <h3>Pekerjaan Yang Disimpan</h3>
-            </div>
-        </div>
         <div class="row justify-content-center" style="margin-left: 30px;">
             <!-- Card 1 -->
             <div class="col-md-4 mb-4">
@@ -244,10 +239,11 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-align: center; line-height: 58px; text-decoration: none; border-radius: 5px;">
         Lamar Pekerjaan Ini
-    </button>
+    </a>
 </div>
+
                 </div>
             </div>
 
@@ -278,9 +274,9 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-align: center; line-height: 58px; text-decoration: none; border-radius: 5px;">
         Lamar Pekerjaan Ini
-    </button>
+    </a>
 </div>
                 </div>
             </div>
@@ -313,9 +309,9 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-align: center; line-height: 58px; text-decoration: none; border-radius: 5px;">
         Lamar Pekerjaan Ini
-    </button>
+    </a>
 </div>
                 </div>
             </div>
@@ -349,9 +345,9 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-align: center; line-height: 58px; text-decoration: none; border-radius: 5px;">
         Lamar Pekerjaan Ini
-    </button>
+    </a>
 </div>
                 </div>
             </div>
@@ -383,9 +379,9 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-align: center; line-height: 58px; text-decoration: none; border-radius: 5px;">
         Lamar Pekerjaan Ini
-    </button>
+    </a>
 </div>
                 </div>
             </div>
@@ -418,9 +414,9 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-align: center; line-height: 58px; text-decoration: none; border-radius: 5px;">
         Lamar Pekerjaan Ini
-    </button>
+    </a>
 </div>
                 </div>
             </div>
@@ -454,9 +450,9 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-align: center; line-height: 58px; text-decoration: none; border-radius: 5px;">
         Lamar Pekerjaan Ini
-    </button>
+    </a>
 </div>
                 </div>
             </div>
@@ -488,9 +484,9 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-align: center; line-height: 58px; text-decoration: none; border-radius: 5px;">
         Lamar Pekerjaan Ini
-    </button>
+    </a>
 </div>
                 </div>
             </div>
@@ -523,9 +519,9 @@
 
 
         <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <button style="width: 373px; height: 58px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px;">
+    <a href="/LamarPekerjaan" style="display: inline-block; width: 373px; height: 58px; background-color: #FFC94A; color: #000000; text-align: center; line-height: 58px; text-decoration: none; border-radius: 5px;">
         Lamar Pekerjaan Ini
-    </button>
+    </a>
 </div>
                 </div>
             </div>
@@ -626,9 +622,23 @@ window.onclick = function(event) {
 }
 
 
+function confirmLogout() {
+    Swal.fire({
+        title: 'Logout dan Kembali Ke Halaman Home?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Iya',
+        cancelButtonText: 'Batal'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/';
+        }
+    });
+}
 
 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

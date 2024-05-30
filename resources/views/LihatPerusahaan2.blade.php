@@ -233,8 +233,8 @@
 <!-- Section Kedua -->
 <section style="background-color: #ffffff; padding: 100px;">
     <div style="margin-bottom: 50px;">
-        <h3 style="text-align: left;">Find the right company for you</h3>
-        <p style="text-align: left;">Everything you need to know about a company, all in one place</p>
+        <h3 style="text-align: left;">Temukan perusahaan yang tepat untuk Anda</h3>
+        <p style="text-align: left;">Semua yang perlu Anda ketahui tentang perusahaan, semuanya di satu tempat</p>
     </div>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -400,7 +400,7 @@
 <!-- Section Ketiga -->
 <section style="background-color: #ffffff; padding: 1px; margin-bottom: 55px;">
     <div style="margin-bottom: 65px;">
-        <h3 style="text-align: center;">Get the Full picture before you apply</h3>
+        <h3 style="text-align: center;">Dapatkan gambaran lengkap sebelum Anda mendaftar</h3>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-3" style="margin-right: 100px;">
@@ -410,13 +410,13 @@
         </div>
         <div class="col-md-3" style="margin-right: 100px;">
             <img src="img/gambar2.jpg" alt="Gambar 2" style="width: 70%; display: block; margin: 0 auto;">
-            <h5 style="text-align: center; margin-top: 5px;">Budaya dan Nilai-Nilai </h5>
-            <p style="text-align: center;">Mencari tahu tentang budaya perusahaan</p>
+            <h5 style="text-align: center; margin-top: 5px;">Penilaian dan ulasan </h5>
+            <p style="text-align: center;">Baca ulasan dari karyawan</p>
         </div>
         <div class="col-md-3" style="margin-right: 100px;">
             <img src="img/gambar3.jpg" alt="Gambar 3" style="width: 70%; display: block; margin: 0 auto;">
-            <h5 style="text-align: center; margin-top: 5px;">Budaya dan Nilai-Nilai </h5>
-            <p style="text-align: center;">Mencari tahu tentang budaya perusahaan</p>
+            <h5 style="text-align: center; margin-top: 5px;">Tunjangan dan keuntungan </h5>
+            <p style="text-align: center;">Temukan keuntungan yang penting bagi Anda</p>
         </div>
     </div>
 </section>

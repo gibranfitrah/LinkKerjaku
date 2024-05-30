@@ -8,39 +8,45 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Link-Kerjaku | Lowongan Kerja Home</title>
+    <style>
+  .navbar {
+            height: 80px; /* Ubah sesuai keinginan Anda */
+        }
+        .navbar-brand img {
+            height: 150px; /* Ubah sesuai keinginan Anda */
+        }
+</style>
   </head>
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-    <a class="navbar-brand" href="#">
-        <img src="img/logo2.png" alt="Logo" style="height: 40px;">
-    </a>        
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-    <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #000000;">Beranda</a>
-</li>
-
-                <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: blue;">Lowongan Kerja</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/about" style="color: #000000;">Tentang Kami</a>
-                </li>
-            </ul>
-            <div class="d-flex">
-            <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
-            <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
-</div>
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" alt="Logo">
+            </a>        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #000000;">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #000000;">Lowongan Kerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ms-4" aria-current="page" href="/about" style="color: #000000;">Tentang Kami</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
+                    <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 <!-- Section Pertama -->
 <section style="background-color: #146D9A; padding: 90px; text-align: left;">
@@ -111,8 +117,8 @@
             </div>
         </div>
 
-        <div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
-    <div style="display: flex; align-items: center; margin-top: 20px;">
+        <div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
+    <div style="display: flex; align-items: center; margin-top: 20px;" >
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/google.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
 </div>
@@ -128,7 +134,7 @@
     </div>
 </div>
 
-<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
+<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <div style="display: flex; align-items: center; margin-top: 20px;">
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/Tokopedia.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
@@ -145,7 +151,7 @@
     </div>
 </div>
 
-<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
+<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <div style="display: flex; align-items: center; margin-top: 20px;">
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/Gojek.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
@@ -162,7 +168,7 @@
     </div>
 </div>
 
-<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
+<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <div style="display: flex; align-items: center; margin-top: 20px;">
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/Traveloka.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
@@ -179,7 +185,7 @@
     </div>
 </div>
 
-<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px;">
+<div class="card" style="width: 467px; height: 250px; background-color: #FFFFFF; border-radius: 8px; margin-top: 55px; margin-left: 135px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <div style="display: flex; align-items: center; margin-top: 20px;">
     <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 25px; overflow: hidden;">
     <img src="img/Shope.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
@@ -198,7 +204,7 @@
 
 <div class="col" style="margin-left: 655px; margin-top: -1495px;">
 <div class="card" style="width: 723px; height: 1481px; background-color: #FFFFFF; border-radius: 8px; margin-top: 20px;">
-<div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 35px; margin-top: 55px; overflow: hidden;">
+<div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; margin-left: 35px; margin-top: 55px; overflow: hidden; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">
     <img src="img/google.jpg" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
 </div>
     <div style="margin-right: 315px; margin-top: -65px;">
