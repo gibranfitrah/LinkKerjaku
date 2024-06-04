@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Link-Kerjaku | Lihat Perusaahan 1</title>
+
+    <link
+            href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
 
 <style>
   .navbar {
@@ -42,10 +60,36 @@
                         <a class="nav-link active ms-4" aria-current="page" href="/about" style="color: #000000;">Tentang Kami</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
-                    <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
-                </div>
+
+                <div class="d-flex" style="margin-right: -25px; position: relative; display: flex; align-items: center;">
+        <div style="margin-right: -10px; position: relative;">
+            <button id="loginButton" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; margin-right: 15px;">
+                Log in
+            </button>
+            <div id="dropdownMenuLogin" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 10px;">
+                <a href="/loginperusahaan" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                    Login Sebagai Perusahaan
+                </a>
+                <a href="/login" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                    Login Sebagai Pelamar
+                </a>
+            </div>
+        </div>
+        <div style="position: relative; margin-right: -5px;">
+            <button id="signUpButton" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">
+                Sign up
+            </button>
+            <div id="dropdownMenuSignUp" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 10px;">
+                <a href="/registerperusahaan" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                    Daftar Perusahaan
+                </a>
+                <a href="/register" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                    Daftar Pelamar
+                </a>
+            </div>
+        </div>
+    </div>
+
             </div>
         </div>
     </nav>
@@ -64,7 +108,7 @@
 </div>
 <div style="margin-left: 60px;">
     <div class="card" style="width: 393px; height: 488px; border-radius: 20px; background-color: #8E98A8;">
-    <img src="img/profill 4.jpg" class="card-img-top" alt="Card Image" style="border-radius: 20px 20px 0 0; height: 100%;">
+    <img src="img/profill 4.jpg" class="card-img-top" alt="Card Image" style="border-radius: 20px 20px 20px 20px; height: 100%;">
         <div class="card-body">
         </div>
     </div>
@@ -75,178 +119,254 @@
 <!-- Section Akhir -->
 
 <!-- Section Kedua -->
-<section style="background-color: #ffffff; padding: 100px;">
-<div class="container">
-<div style="margin-bottom: 50px;">
-        <h3 style="text-align: left;">Temukan perusahaan yang tepat untuk Anda</h3>
-        <p style="text-align: left;">Semua yang perlu Anda ketahui tentang perusahaan, semuanya di satu tempat</p>
-    </div>
+<section
+            class="container splide mt-5"
+            aria-label="Splide Basic HTML Example"
+            style="margin-top: -35px;"
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="row" style="margin-left: 100px; margin-right: 25px;">
-        <div class="col-3">
-          <div class="card" style="width: 220px; height: 235px; border-radius: 16px;">
-            <div class="card-body">
-              <img src="img/Gojek.jpg" class="card-img-top" alt="Card image" style="width: 105px; height: 105px; margin-left: 45px;">
-              <div class="card-body">
-                <h5 class="card-text" style="text-align: center; margin-left: 10px; margin-top: -15px;">Gojek</h5>
-                <div style="text-align: center;">
-                  ⭐  <span style="margin-left: 5px;">4.2 - 178 Reviews</span>
-                </div>
-              </div>
-              <div class="card-body" style="width: 130px; height: 24px; background-color: #E8F2F7; text-align: center; padding-top: 1px; border-radius: 8px; margin-left: 30px;">
-                82 Pekerjaan
-              </div>
+        >
+        <h4 style="text-align: left; color: #146D9A;">Temukan perusahaan yang tepat untuk Anda</h4>
+        <p style="text-align: left; color: #146D9A;">Semua yang perlu Anda ketahui tentang perusahaan, semuanya di satu tempat</p>
+            <div class="splide__track" style="margin-top: 75px;">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div
+                            class="card"
+                            style="
+                                width: 220px;
+                                height: 235px;
+                                border-radius: 16px;
+                            "
+                        >
+                            <div class="card-body">
+                                <img
+                                    src="img/Gojek.jpg"
+                                    class="card-img-top"
+                                    alt="Card image"
+                                    style="
+                                        width: 105px;
+                                        height: 105px;
+                                        margin-left: 45px;
+                                    "
+                                />
+                                <div class="card-body">
+                                    <h5
+                                        class="card-text"
+                                        style="
+                                            text-align: center;
+                                            margin-left: 10px;
+                                            margin-top: -15px;
+                                        "
+                                    >
+                                        Gojek
+                                    </h5>
+                                    <div style="text-align: center">
+                                        ⭐
+                                        <span style="margin-left: 5px"
+                                            >4.2 - 178 Reviews</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="card-body"
+                                    style="
+                                        width: 130px;
+                                        height: 24px;
+                                        background-color: #e8f2f7;
+                                        text-align: center;
+                                        padding-top: 1px;
+                                        border-radius: 8px;
+                                        margin-left: 30px;
+                                    "
+                                >
+                                    82 Pekerjaan
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div
+                            class="card"
+                            style="
+                                width: 220px;
+                                height: 235px;
+                                border-radius: 16px;
+                            "
+                        >
+                            <div class="card-body">
+                                <img
+                                    src="img/Tokopedia.jpg"
+                                    class="card-img-top"
+                                    alt="Card image"
+                                    style="
+                                        width: 105px;
+                                        height: 105px;
+                                        margin-left: 45px;
+                                    "
+                                />
+                                <div class="card-body">
+                                    <h5
+                                        class="card-text"
+                                        style="
+                                            text-align: center;
+                                            margin-left: 10px;
+                                            margin-top: -15px;
+                                        "
+                                    >
+                                        Tokopedia
+                                    </h5>
+                                    <div style="text-align: center">
+                                        ⭐
+                                        <span style="margin-left: 5px"
+                                            >4.2 - 178 Reviews</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="card-body"
+                                    style="
+                                        width: 130px;
+                                        height: 24px;
+                                        background-color: #e8f2f7;
+                                        text-align: center;
+                                        padding-top: 1px;
+                                        border-radius: 8px;
+                                        margin-left: 30px;
+                                    "
+                                >
+                                    82 Pekerjaan
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div
+                            class="card"
+                            style="
+                                width: 220px;
+                                height: 235px;
+                                border-radius: 16px;
+                            "
+                        >
+                            <div class="card-body">
+                                <img
+                                    src="img/Shope.jpg"
+                                    class="card-img-top"
+                                    alt="Card image"
+                                    style="
+                                        width: 105px;
+                                        height: 105px;
+                                        margin-left: 45px;
+                                    "
+                                />
+                                <div class="card-body">
+                                    <h5
+                                        class="card-text"
+                                        style="
+                                            text-align: center;
+                                            margin-left: 10px;
+                                            margin-top: -15px;
+                                        "
+                                    >
+                                        Shopee
+                                    </h5>
+                                    <div style="text-align: center">
+                                        ⭐
+                                        <span style="margin-left: 5px"
+                                            >4.2 - 178 Reviews</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="card-body"
+                                    style="
+                                        width: 130px;
+                                        height: 24px;
+                                        background-color: #e8f2f7;
+                                        text-align: center;
+                                        padding-top: 1px;
+                                        border-radius: 8px;
+                                        margin-left: 30px;
+                                    "
+                                >
+                                    82 Pekerjaan
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div
+                            class="card"
+                            style="
+                                width: 220px;
+                                height: 235px;
+                                border-radius: 16px;
+                            "
+                        >
+                            <div class="card-body">
+                                <img
+                                    src="img/google.jpg"
+                                    class="card-img-top"
+                                    alt="Card image"
+                                    style="
+                                        width: 105px;
+                                        height: 105px;
+                                        margin-left: 45px;
+                                    "
+                                />
+                                <div class="card-body">
+                                    <h5
+                                        class="card-text"
+                                        style="
+                                            text-align: center;
+                                            margin-left: 10px;
+                                            margin-top: -15px;
+                                        "
+                                    >
+                                        Google
+                                    </h5>
+                                    <div style="text-align: center">
+                                        ⭐
+                                        <span style="margin-left: 5px"
+                                            >4.2 - 178 Reviews</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="card-body"
+                                    style="
+                                        width: 130px;
+                                        height: 24px;
+                                        background-color: #e8f2f7;
+                                        text-align: center;
+                                        padding-top: 1px;
+                                        border-radius: 8px;
+                                        margin-left: 30px;
+                                    "
+                                >
+                                    82 Pekerjaan
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    
+
+                
+                </ul>
             </div>
-          </div>
-        </div>
-        <!-- Add other cards in the first carousel item -->
-        <!-- Repeated structure for the next three cards -->
-        <div class="col-3">
-          <div class="card" style="width: 220px; height: 235px; border-radius: 16px;">
-            <div class="card-body">
-              <img src="img/Tokopedia.jpg" class="card-img-top" alt="Card image" style="width: 105px; height: 105px; margin-left: 45px;">
-              <div class="card-body">
-                <h5 class="card-text" style="text-align: center; margin-left: 10px; margin-top: -15px;">Tokopedia</h5>
-                <div style="text-align: center;">
-                  ⭐  <span style="margin-left: 5px;">4.2 - 178 Reviews</span>
-                </div>
-              </div>
-              <div class="card-body" style="width: 130px; height: 24px; background-color: #E8F2F7; text-align: center; padding-top: 1px; border-radius: 8px; margin-left: 30px;">
-                82 Pekerjaan
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Second card -->
-        <div class="col-3">
-          <div class="card" style="width: 220px; height: 235px; border-radius: 16px;">
-            <div class="card-body">
-              <img src="img/Shope.jpg" class="card-img-top" alt="Card image" style="width: 105px; height: 105px; margin-left: 45px;">
-              <div class="card-body">
-                <h5 class="card-text" style="text-align: center; margin-left: 10px; margin-top: -15px;">Shopee</h5>
-                <div style="text-align: center;">
-                  ⭐  <span style="margin-left: 5px;">4.2 - 178 Reviews</span>
-                </div>
-              </div>
-              <div class="card-body" style="width: 130px; height: 24px; background-color: #E8F2F7; text-align: center; padding-top: 1px; border-radius: 8px; margin-left: 30px;">
-                82 Pekerjaan
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Third card -->
-        <div class="col-3">
-          <div class="card" style="width: 220px; height: 235px; border-radius: 16px;">
-            <div class="card-body">
-              <img src="img/google.jpg" class="card-img-top" alt="Card image" style="width: 105px; height: 105px; margin-left: 45px;">
-              <div class="card-body">
-                <h5 class="card-text" style="text-align: center; margin-left: 10px; margin-top: -15px;">Google</h5>
-                <div style="text-align: center;">
-                  ⭐  <span style="margin-left: 5px;">4.2 - 178 Reviews</span>
-                </div>
-              </div>
-              <div class="card-body" style="width: 130px; height: 24px; background-color: #E8F2F7; text-align: center; padding-top: 1px; border-radius: 8px; margin-left: 30px;">
-                82 Pekerjaan
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Add more carousel items with rows and cards -->
-    <div class="carousel-item">
-      <div class="row" style="margin-left: 100px; margin-right: 25px;">
-        <!-- Add four new cards here -->
-        <div class="col-3">
-          <div class="card" style="width: 220px; height: 235px; border-radius: 16px;">
-            <div class="card-body">
-              <img src="img/Gojek.jpg" class="card-img-top" alt="Card image" style="width: 105px; height: 105px; margin-left: 45px;">
-              <div class="card-body">
-                <h5 class="card-text" style="text-align: center; margin-left: 10px; margin-top: -15px;">Gojek</h5>
-                <div style="text-align: center;">
-                  ⭐  <span style="margin-left: 5px;">4.2 - 178 Reviews</span>
-                </div>
-              </div>
-              <div class="card-body" style="width: 130px; height: 24px; background-color: #E8F2F7; text-align: center; padding-top: 1px; border-radius: 8px; margin-left: 30px;">
-                82 Pekerjaan
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Repeat the structure for the next three cards -->
-        <div class="col-3">
-          <div class="card" style="width: 220px; height: 235px; border-radius: 16px;">
-            <div class="card-body">
-              <img src="img/Tokopedia.jpg" class="card-img-top" alt="Card image" style="width: 105px; height: 105px; margin-left: 45px;">
-              <div class="card-body">
-                <h5 class="card-text" style="text-align: center; margin-left: 10px; margin-top: -15px;">Tokopedia</h5>
-                <div style="text-align: center;">
-                  ⭐  <span style="margin-left: 5px;">4.2 - 178 Reviews</span>
-                </div>
-              </div>
-              <div class="card-body" style="width: 130px; height: 24px; background-color: #E8F2F7; text-align: center; padding-top: 1px; border-radius: 8px; margin-left: 30px;">
-                82 Pekerjaan
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fourth card -->
-        <div class="col-3">
-          <div class="card" style="width: 220px; height: 235px; border-radius: 16px;">
-            <div class="card-body">
-              <img src="img/Shope.jpg" class="card-img-top" alt="Card image" style="width: 105px; height: 105px; margin-left: 45px;">
-              <div class="card-body">
-                <h5 class="card-text" style="text-align: center; margin-left: 10px; margin-top: -15px;">Shopee</h5>
-                <div style="text-align: center;">
-                  ⭐  <span style="margin-left: 5px;">4.2 - 178 Reviews</span>
-                </div>
-              </div>
-              <div class="card-body" style="width: 130px; height: 24px; background-color: #E8F2F7; text-align: center; padding-top: 1px; border-radius: 8px; margin-left: 30px;">
-                82 Pekerjaan
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fifth card -->
-        <div class="col-3">
-          <div class="card" style="width: 220px; height: 235px; border-radius: 16px;">
-            <div class="card-body">
-              <img src="img/Traveloka.jpg" class="card-img-top" alt="Card image" style="width: 105px; height: 105px; margin-left: 45px;">
-              <div class="card-body">
-                <h5 class="card-text" style="text-align: center; margin-left: 10px; margin-top: -15px;">Traveloka</h5>
-                <div style="text-align: center;">
-                  ⭐  <span style="margin-left: 5px;">4.2 - 178 Reviews</span>
-                </div>
-              </div>
-              <div class="card-body" style="width: 130px; height: 24px; background-color: #E8F2F7; text-align: center; padding-top: 1px; border-radius: 8px; margin-left: 30px;">
-                82 Pekerjaan
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Previous and Next buttons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true" style="margin-right: 75px;"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true" style="margin-left: 145px;"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+            
+            <div style="display: flex; justify-content: center; margin-top: 45px;">
+        <div class="col-md-6 text-center">
+    <a href="/LihatPerusahaan" class="btn btn-secondary" style="color: #000000; background-color: #FFC94A;">Lihat Selengkapnya</a>
 </div>
-
-    </div>
-</section>
+</div>
+        </section>
 <!-- Akhir Section Kedua -->
 
 <!-- Section Ketiga -->
-<section style="background-color: #ffffff; padding: 1px; margin-bottom: 55px;">
+<section style="background-color: #ffffff; padding: 100px; margin-bottom: 55px;">
     <div style="margin-bottom: 65px;">
         <h3 style="text-align: center;">Dapatkan gambaran lengkap sebelum Anda mendaftar</h3>
     </div>
@@ -331,9 +451,9 @@
     <div class="col-md-6">
         <!-- Ikuti Kami -->
         <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none; margin-left: 455px;">
-            <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/facebook.svg" width="30" alt="Facebook Icon"></a></li>
-            <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/instagram.svg" width="30" alt="Instagram Icon"></a></li>
-            <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/link.svg" width="30" alt="LinkedIn Icon"></a></li>
+            <li class="list-inline-item" style="margin-right: 10px;"><a href="https://www.facebook.com/people/Link-Kerjaku/61559180558109/?mibextid=kFxxJD"><img src="svg/facebook.svg" width="30" alt="Facebook Icon"></a></li>
+            <li class="list-inline-item" style="margin-right: 10px;"><a href="https://www.instagram.com/linkkerjaku/"><img src="svg/instagram.svg" width="30" alt="Instagram Icon"></a></li>
+            <li class="list-inline-item" style="margin-right: 10px; margin-left: 5px;"><a href="#"><img src="svg/link.svg" width="30" alt="LinkedIn Icon"></a></li>
             <li class="list-inline-item"><a href="#"><img src="svg/twitter.svg" width="30" alt="Twitter Icon"></a></li>
         </ul>
     </div>
@@ -367,6 +487,63 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 500);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+            var splide = new Splide(".container.splide", {
+                type: "loop",
+                drag: "free",
+                focus: "center",
+                perPage: 4,
+                autoScroll: {
+                    speed: 1,
+                },
+            });
+            splide.mount(window.splide.Extensions);
+            var slider = new Splide(".another.splide", {
+                type: "loop",
+                drag: "free",
+                focus: "center",
+                perPage: 4,
+                autoScroll: {
+                    speed: -1,
+                },
+            });
+            slider.mount(window.splide.Extensions);
+        });
+
+    document.getElementById('loginButton').addEventListener('click', function(event) {
+            event.stopPropagation();
+            var dropdownMenuLogin = document.getElementById('dropdownMenuLogin');
+            if (dropdownMenuLogin.style.display === 'none' || dropdownMenuLogin.style.display === '') {
+                dropdownMenuLogin.style.display = 'block';
+            } else {
+                dropdownMenuLogin.style.display = 'none';
+            }
+            document.getElementById('dropdownMenuSignUp').style.display = 'none';
+        });
+
+        document.getElementById('signUpButton').addEventListener('click', function(event) {
+            event.stopPropagation();
+            var dropdownMenuSignUp = document.getElementById('dropdownMenuSignUp');
+            if (dropdownMenuSignUp.style.display === 'none' || dropdownMenuSignUp.style.display === '') {
+                dropdownMenuSignUp.style.display = 'block';
+            } else {
+                dropdownMenuSignUp.style.display = 'none';
+            }
+            document.getElementById('dropdownMenuLogin').style.display = 'none';
+        });
+
+        // Close the dropdowns if the user clicks outside of them
+        window.addEventListener('click', function(event) {
+            var dropdownMenuLogin = document.getElementById('dropdownMenuLogin');
+            var dropdownMenuSignUp = document.getElementById('dropdownMenuSignUp');
+            if (dropdownMenuLogin.style.display === 'block' && !event.target.matches('#loginButton')) {
+                dropdownMenuLogin.style.display = 'none';
+            }
+            if (dropdownMenuSignUp.style.display === 'block' && !event.target.matches('#signUpButton')) {
+                dropdownMenuSignUp.style.display = 'none';
+            }
+        });
 </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

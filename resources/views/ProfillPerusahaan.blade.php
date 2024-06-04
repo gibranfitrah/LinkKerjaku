@@ -56,7 +56,7 @@
             <h2 style="margin-top: 0; margin-left: 295px; color: #146D9A;">Perusahaan</h2>
             <p style="margin-top: 0; margin-left: 300px; color: #146D9A;">Design UI/UX dan Marketing Research</p>
             <div style="display: flex; align-items: center; margin-left: 295px; margin-top: 10px;">
-    <img src="svg/instagram.svg" alt="Instagram" style="width: 30px; height: 30px; filter: invert(53%) sepia(33%) saturate(2754%) hue-rotate(190deg) brightness(94%) contrast(91%);">
+    <img src="svg/instagram.svg" alt="Instagram" style="width: 30px; height: 30px;">
     <img src="svg/link.svg" alt="Link" style="width: 30px; height: 30px; margin-left: 20px; filter: invert(53%) sepia(33%) saturate(2754%) hue-rotate(190deg) brightness(94%) contrast(91%);">
     <img src="svg/facebook.svg" alt="Facebook" style="width: 30px; height: 30px; margin-left: 25px; filter: invert(53%) sepia(33%) saturate(2754%) hue-rotate(190deg) brightness(94%) contrast(91%);">
 </div>
@@ -161,6 +161,8 @@
         </div>
     </div>
 </div>
+
+
     </div>
         </div>
 </section>

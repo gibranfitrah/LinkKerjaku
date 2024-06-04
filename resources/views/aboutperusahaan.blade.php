@@ -102,7 +102,7 @@
             </ul>
             <div class="d-flex align-items-center">
             <a href="/BuatLowongan" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; color: #000000; margin-right: 15px;">Buat Lowongan</a>
-    <a href="/ProfillPelamar" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px; margin-right: 10px;" title="Olivia Rhye">
+            <a href="/ProfillPerusahaan" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px; margin-right: 10px;" title="Olivia Rhye">
         <img src="img/ProfilPerusahaan.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
     </a>
     <div id="dropdownIcon" class="arrow-icon" style="margin-left: 10px; width: 26px; height: 26px; border: 2px solid #FFC94A; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
@@ -213,7 +213,7 @@
 
         </div>
         <div>
-            <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px; margin-top: 18px; margin-right: 15px;">
+            <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px; margin-top: 18px; margin-right: 15px;">
                 <h3 style="margin-right: 700px;">Nama</h3>
                 <p style="margin-right: 700px;">Jabatan</p>
                 <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
@@ -223,7 +223,7 @@
     
     <div style="display: flex; justify-content: center; margin-top: 35px;">
     <div style="margin-right: 20px;">
-        <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
+        <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
             <h3 style="margin-right: 700px;">Nama</h3>
             <p style="margin-right: 700px;">Jabatan</p>
             <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
@@ -244,7 +244,7 @@
 </div>
         </div>
         <div>
-            <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
+            <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
                 <h3 style="margin-right: 700px;">Nama</h3>
                 <p style="margin-right: 700px;">Jabatan</p>
                 <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
@@ -254,7 +254,7 @@
 
     <div style="display: flex; justify-content: center; margin-top: 35px;">
     <div style="margin-right: 20px;">
-        <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
+        <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
             <h3 style="margin-right: 700px;">Nama</h3>
             <p style="margin-right: 700px;">Jabatan</p>
             <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
@@ -399,21 +399,21 @@
     </div>
     <div style="margin-top: 50px;">
         <div style="width: 1066px; height: 500px; background-color: #FFFFFF; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-between; margin-left: 155px;">
-            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px;">
+            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px; margin-top: 100px;">
                 <!-- Icon SVG di tengah -->
-                <img src="img/piala1.png" alt="gambar" style="display: block; margin: auto;">
+                <img src="img/piala.jpg" alt="gambar" style="display: block; margin: auto; width: 254px; height: 225px;">
                 <h5>Penghargaan</h5>
                 <p style="font-size: 15px;">Platform Lowongan Kerja Terbaik di Indonesia 2024</p>
             </div>
-            <div style="width: 254px; height: 450px; border-radius: 18px; margin: 20px;">
+            <div style="width: 254px; height: 450px; border-radius: 18px; margin: 20px; margin-top: 100px;">
                 <!-- Icon SVG di tengah -->
-                <img src="img/piala1.png" alt="gambar" style="display: block; margin: auto;">
+                <img src="img/piala2.jpg" alt="gambar" style="display: block; margin: auto; width: 254px; height: 225px;">
                 <h5>Penghargaan</h5>
-                <p style="font-size: 15px; margin-top: 1px;">Inovasi Teknologi dalam Rekrutmen 2024</p>
+                <p style="font-size: 15px; margin-top: 1px;"> Inovasi Teknologi dalam Rekrutmen 2024</p>
             </div>
-            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px;">
+            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px; margin-top: 100px;">
                 <!-- Icon SVG di tengah -->
-                <img src="img/piala1.png" alt="gambar" style="display: block; margin: auto;">
+                <img src="img/piala3.jpg" alt="gambar" style="display: block; margin: auto; width: 254px; height: 225px;">
                 <h5>Penghargaan</h5>
                 <p style="font-size: 15px;">Perusahaan dengan Dampak Sosial Terbaik 2024</p>
             </div>

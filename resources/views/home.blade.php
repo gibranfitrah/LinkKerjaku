@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Link-Kerjaku | Home</title>
     <link rel="icon" href="img/file.png" type="image/x-icon">
+    
+    <link
+            href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+
+    
     <style>
         .white-icon {
     filter: invert(100%);
@@ -47,10 +70,40 @@
                         <a class="nav-link active ms-4" aria-current="page" href="/about" style="color: #000000;">Tentang Kami</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
-                    <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
-                </div>
+
+                <div class="d-flex" style="margin-right: -25px; position: relative; display: flex; align-items: center;">
+    <div style="margin-right: -10px; position: relative;">
+    <a href="/Home-Perusahaan">
+    <button id="companyButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: white; padding: 10px;">
+        Perusahaan
+    </button>
+</a>
+
+        <div id="dropdownMenuCompany" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: opacity 0.3s ease;">
+            <a href="/companyProfile" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                Profil Perusahaan
+            </a>
+            <a href="/companyJobs" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                Lowongan Kerja
+            </a>
+        </div>
+    </div>
+    <div style="margin-right: -10px; position: relative;">
+        <button id="loginButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: #FFC94A; border: none; padding: 10px;">
+            Sign In / Sign Up
+        </button>
+        <div id="dropdownMenuLogin" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: opacity 0.3s ease;">
+            <a href="/loginperusahaan" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                Login Sebagai Perusahaan
+            </a>
+            <a href="/login" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                Login Sebagai Pelamar
+            </a>
+        </div>
+    </div>
+</div>
+
+    
             </div>
         </div>
     </nav>
@@ -79,12 +132,13 @@
         </form>
     </div>
     <div style="margin-left: 60px;">
-    <div class="card" style="width: 393px; height: 488px; border-radius: 20px; background-color: #8E98A8;">
-    <img src="img/profill.jpg" class="card-img-top" alt="Card Image" style="border-radius: 20px 20px 20px 20px; height: 100%;">
-        <div class="card-body">
-        </div>
-    </div>
+    <video style="border-radius: 20px 20px 20px 20px; width: 500px; height: 488px;" autoplay loop muted>
+        <source src="video/tes.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </div>
+
+
 </section>
 <!-- Section Akhir -->
 
@@ -516,7 +570,7 @@
 
 
 <!-- Section Keenam -->
-<section style="background-color: #FFFFFF; padding: 55px;">
+<section style="background-color: #FFFFFF; padding: 75px;">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-4">
@@ -739,9 +793,9 @@
     <div class="col-md-6">
         <!-- Ikuti Kami -->
         <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none; margin-left: 455px;">
-            <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/facebook.svg" width="30" alt="Facebook Icon"></a></li>
-            <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/instagram.svg" width="30" alt="Instagram Icon"></a></li>
-            <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/link.svg" width="30" alt="LinkedIn Icon"></a></li>
+            <li class="list-inline-item" style="margin-right: 10px;"><a href="https://www.facebook.com/people/Link-Kerjaku/61559180558109/?mibextid=kFxxJD"><img src="svg/facebook.svg" width="30" alt="Facebook Icon"></a></li>
+            <li class="list-inline-item" style="margin-right: 10px;"><a href="https://www.instagram.com/linkkerjaku/"><img src="svg/instagram.svg" width="30" alt="Instagram Icon"></a></li>
+            <li class="list-inline-item" style="margin-right: 10px; margin-left: 5px;"><a href="#"><img src="svg/link.svg" width="30" alt="LinkedIn Icon"></a></li>
             <li class="list-inline-item"><a href="#"><img src="svg/twitter.svg" width="30" alt="Twitter Icon"></a></li>
         </ul>
     </div>
@@ -749,6 +803,77 @@
     </div>
 </footer>
 <!-- Akhir Footer -->
+
+<script>
+        function toggleDropdown(buttonId, menuId) {
+        document.getElementById(buttonId).addEventListener('click', function(event) {
+            event.stopPropagation();
+            var dropdownMenu = document.getElementById(menuId);
+            if (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') {
+                dropdownMenu.style.display = 'block';
+                dropdownMenu.style.opacity = '1';
+            } else {
+                dropdownMenu.style.display = 'none';
+                dropdownMenu.style.opacity = '0';
+            }
+            closeOtherDropdowns(menuId);
+        });
+    }
+
+    function closeOtherDropdowns(exceptId) {
+        var dropdowns = ['dropdownMenuLogin', 'dropdownMenuSignUp'];
+        dropdowns.forEach(function(id) {
+            if (id !== exceptId) {
+                var menu = document.getElementById(id);
+                menu.style.display = 'none';
+                menu.style.opacity = '0';
+            }
+        });
+    }
+
+    toggleDropdown('loginButton', 'dropdownMenuLogin');
+    toggleDropdown('signUpButton', 'dropdownMenuSignUp');
+
+    window.addEventListener('click', function(event) {
+        var dropdownMenuLogin = document.getElementById('dropdownMenuLogin');
+        var dropdownMenuSignUp = document.getElementById('dropdownMenuSignUp');
+        if (dropdownMenuLogin.style.display === 'block' && !event.target.matches('#loginButton')) {
+            dropdownMenuLogin.style.display = 'none';
+            dropdownMenuLogin.style.opacity = '0';
+        }
+        if (dropdownMenuSignUp.style.display === 'block' && !event.target.matches('#signUpButton')) {
+            dropdownMenuSignUp.style.display = 'none';
+            dropdownMenuSignUp.style.opacity = '0';
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+            var splide = new Splide(".container.splide", {
+                type: "loop",
+                drag: "free",
+                focus: "center",
+                perPage: 4,
+                autoScroll: {
+                    speed: 1,
+                },
+            });
+            splide.mount(window.splide.Extensions);
+            var slider = new Splide(".another.splide", {
+                type: "loop",
+                drag: "free",
+                focus: "center",
+                perPage: 4,
+                autoScroll: {
+                    speed: -1,
+                },
+            });
+            slider.mount(window.splide.Extensions);
+        });
+
+
+
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

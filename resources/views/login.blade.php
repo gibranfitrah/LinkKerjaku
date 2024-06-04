@@ -33,7 +33,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <img src="img/Logo.png" alt="Brand Logo" class="mb-4" style="width: 175px;">
-                        <h2 class="mb-4" style="margin-top: -45px;">Masuk Sebagai Pelamar</h2>
+                        <h2 class="mb-4" style="margin-top: -45px;">Login Sebagai Pelamar</h2>
                         <form action="#" method="post">
                             <div class="form-group">
                                 <div class="input-group" style="border: 1px solid #146D9A; background-color: #FFFFFF;">
@@ -52,8 +52,9 @@
                                 </div>
                             </div>
                             <a href="/HomePagePelamar" style="text-decoration: none;">
-    <button type="button" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Masuk</button>
-</a>                            <div class="mt-5 social-icons">
+                        <button type="button" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Masuk</button>
+        </a>                            
+        <div class="mt-5 social-icons">
                                 <img src="svg/google.svg" alt="Google Icon" width="30">
                                 <img src="svg/facebook.svg" alt="Facebook Icon" width="30">
                                 <img src="svg/apple.svg" alt="Apple Icon" width="30">

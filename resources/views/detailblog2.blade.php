@@ -339,6 +339,9 @@
                 <h5 style="margin-top: 70px;">Penghargaan</h5>
                 <h5 style="margin-top: 25px;">Logo Partner</h5>
                 <h5 style="margin-top: 25px;">Bahasa</h5>
+                <h5 style="margin-top: 25px;">
+    <a href="/Kontak" style="text-decoration: none; color: inherit;">Kontak</a>
+</h5>
             </div>
         </div>
         <div class="row">

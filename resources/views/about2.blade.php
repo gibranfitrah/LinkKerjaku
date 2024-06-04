@@ -85,25 +85,23 @@
   </head>
   <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
         <img src="img/logo2.png" alt="Logo" style="height: 40px;">
-    </a>        
+    </a>         
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar" style="color: #000000;">Beranda</a>
-</li>
-
+                <li class="nav-item">
+                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar" style="color: #000000;">Beranda</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja" style="color: #000000;">Lowongan Kerja</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link active ms-4" aria-current="page" href="/about2" style="color: blue;">Tentang Kami</a>
                 </li>
@@ -223,18 +221,19 @@
 </div>
 
         </div>
-        <div>
-            <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px; margin-top: 18px; margin-right: 15px;">
-                <h3 style="margin-right: 700px;">Nama</h3>
-                <p style="margin-right: 700px;">Jabatan</p>
-                <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
-            </div>
-        </div>
+        <div style="position: relative; margin-top: 18px; margin-right: 15px;">
+    <div style="width: 807px; height: 234px; background-color: #D7ECFF; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);">
+        <h3 style="margin-right: 700px;">Nama</h3>
+        <p style="margin-right: 700px;">Jabatan</p>
+        <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
+    </div>
+</div>
+
     </div>
     
     <div style="display: flex; justify-content: center; margin-top: 35px;">
     <div style="margin-right: 20px;">
-        <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
+        <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
             <h3 style="margin-right: 700px;">Nama</h3>
             <p style="margin-right: 700px;">Jabatan</p>
             <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
@@ -255,7 +254,7 @@
 </div>
         </div>
         <div>
-            <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
+            <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
                 <h3 style="margin-right: 700px;">Nama</h3>
                 <p style="margin-right: 700px;">Jabatan</p>
                 <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
@@ -265,7 +264,7 @@
 
     <div style="display: flex; justify-content: center; margin-top: 35px;">
     <div style="margin-right: 20px;">
-        <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px;">
+        <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
             <h3 style="margin-right: 700px;">Nama</h3>
             <p style="margin-right: 700px;">Jabatan</p>
             <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
@@ -408,23 +407,23 @@
     </div>
     <div style="margin-top: 50px;">
         <div style="width: 1066px; height: 500px; background-color: #FFFFFF; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-between; margin-left: 155px;">
-            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px;">
+            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px; margin-top: 100px;">
                 <!-- Icon SVG di tengah -->
-                <img src="img/piala1.png" alt="gambar" style="display: block; margin: auto;">
+                <img src="img/piala.jpg" alt="gambar" style="display: block; margin: auto; width: 254px; height: 225px;">
                 <h5>Penghargaan</h5>
-                <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed risus mi.</p>
+                <p style="font-size: 15px;">Platform Lowongan Kerja Terbaik di Indonesia 2024</p>
             </div>
-            <div style="width: 254px; height: 450px; border-radius: 18px; margin: 20px;">
+            <div style="width: 254px; height: 450px; border-radius: 18px; margin: 20px; margin-top: 100px;">
                 <!-- Icon SVG di tengah -->
-                <img src="img/piala1.png" alt="gambar" style="display: block; margin: auto;">
+                <img src="img/piala2.jpg" alt="gambar" style="display: block; margin: auto; width: 254px; height: 225px;">
                 <h5>Penghargaan</h5>
-                <p style="font-size: 15px; margin-top: 1px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed risus mi.</p>
+                <p style="font-size: 15px; margin-top: 1px;"> Inovasi Teknologi dalam Rekrutmen 2024</p>
             </div>
-            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px;">
+            <div style="width: 254px; height: 403px; border-radius: 18px; margin: 20px; margin-top: 100px;">
                 <!-- Icon SVG di tengah -->
-                <img src="img/piala1.png" alt="gambar" style="display: block; margin: auto;">
+                <img src="img/piala3.jpg" alt="gambar" style="display: block; margin: auto; width: 254px; height: 225px;">
                 <h5>Penghargaan</h5>
-                <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed risus mi.</p>
+                <p style="font-size: 15px;">Perusahaan dengan Dampak Sosial Terbaik 2024</p>
             </div>
         </div>
     </div>

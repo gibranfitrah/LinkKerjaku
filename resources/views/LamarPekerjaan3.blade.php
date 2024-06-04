@@ -11,6 +11,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.min.css">
+
     <style>
        .dropdown-menu {
     position: absolute;
@@ -97,7 +99,9 @@
       padding: 15px;
     }
     
-
+    .swal2-confirm {
+            background-color: #FFC94A !important;
+        }
     </style>
 
   </head>
@@ -195,45 +199,47 @@
 <!-- Section Kedua -->
 <section style="background-color: #E8F2F7; padding: 70px; display: flex; align-items: center; justify-content: center;">
     <div style="margin-left: 55px; margin-top: -75px;">
-    <hr style="border: 1px solid black; margin-bottom: 20px; width: 900%; margin-left: -700px;">
-        <h6 style="text-align: left;">Berapa kisaran gaji yang diharapkan?*</h6>
+    <hr style="border: 1px solid black; margin-bottom: 20px; width: 250%; margin-left: -700px;">
+        <h5 style="text-align: left;">Berapa kisaran gaji yang diharapkan?*</h5>
         <form>
-            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px;">
-        </form>
-        <h6 style="text-align: left; margin-top: 15px;">Sertifikat*</h6>
-        <form>
-            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px;">
+            <input type="text" style="width: 704px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px;" placeholder="Ketik Disini.....">
         </form>
 
-        <div style="margin-top: 10px;">
+        <h5 style="text-align: left; margin-top: 15px;">Sertifikat*</h5>
+        <div style="width: 704px; height: 152px; background-color: #B7D5E5; border-radius: 10px; position: relative;">
+        <h5 style="text-align: justify; position: absolute; top: 35px; left: 50%; transform: translateX(-50%); font-size: 18px; white-space: nowrap;">Seret file ke sini atau klik tombol di bawah ini</h5>
+    
+    <!-- File Upload -->
+    <div style="position: absolute; top: 80px; left: 50%; transform: translateX(-50%);">
         <form style="margin-left: 5px;">
-    <label for="file-upload" style="background-color: #FFFFFF; border: 1px solid #808080; border-radius: 8px; padding: 10px; width: 185px; height: 60px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-        <img src="svg/upload.svg" alt="Unggah Berkas" style="width: 20px; height: 20px; margin-right: 5px;">
-        <span style="margin-left: 5px;">Unggah Berkas</span>
-        <input id="file-upload" type="file" style="display: none;">
-    </label>
-</form>
-    </div>
-
-
-        <h6 style="text-align: left; margin-top: 35px;">Berkas (CV/Resume/Portfolio)</h6>
-        <form>
-            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px;">
+            <label for="file-upload" style="background-color: #FFFFFF; border: 1px solid #808080; border-radius: 8px; padding: 10px; width: 185px; height: 60px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                <img src="svg/upload.svg" alt="Unggah Berkas" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span style="margin-left: 5px;">Unggah Berkas</span>
+                <input id="file-upload" type="file" style="display: none;">
+            </label>
         </form>
-
-        <div style="margin-top: 10px;">
-        <form style="margin-left: 5px;">
-    <label for="file-upload" style="background-color: #FFFFFF; border: 1px solid #808080; border-radius: 8px; padding: 10px; width: 185px; height: 60px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-        <img src="svg/upload.svg" alt="Unggah Berkas" style="width: 20px; height: 20px; margin-right: 5px;">
-        <span style="margin-left: 5px;">Unggah Berkas</span>
-        <input id="file-upload" type="file" style="display: none;">
-    </label>
-</form>
     </div>
+</div>
 
-        <h6 style="text-align: left; margin-top: 35px;">Mengapa Anda tertarik dengan lowongan pekerjaan ini?*</h6>
+        <h5 style="text-align: left; margin-top: 45px;">Berkas (CV/Resume/Portfolio)</h5>
+        <div style="width: 704px; height: 152px; background-color: #B7D5E5; border-radius: 10px; position: relative;">
+        <h5 style="text-align: justify; position: absolute; top: 35px; left: 50%; transform: translateX(-50%); font-size: 18px; white-space: nowrap;">Seret file ke sini atau klik tombol di bawah ini</h5>
+    
+    <!-- File Upload -->
+    <div style="position: absolute; top: 80px; left: 50%; transform: translateX(-50%);">
+        <form style="margin-left: 5px;">
+            <label for="file-upload" style="background-color: #FFFFFF; border: 1px solid #808080; border-radius: 8px; padding: 10px; width: 185px; height: 60px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                <img src="svg/upload.svg" alt="Unggah Berkas" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span style="margin-left: 5px;">Unggah Berkas</span>
+                <input id="file-upload" type="file" style="display: none;">
+            </label>
+        </form>
+    </div>
+</div>
+
+        <h5 style="text-align: left; margin-top: 55px;">Mengapa Anda tertarik dengan lowongan pekerjaan ini?*</h5>
         <form>
-            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px;">
+            <input type="text" style="width: 704px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px;" placeholder="Ketik Disini.....">
         </form>
 
     </div>
@@ -249,8 +255,8 @@
     </button>
 </a>
 <a href="#" style="text-decoration: none; margin-left: auto; margin-right: 100px; margin-top: -55px;">
-    <button type="submit" style="background-color: #FFC94A; border: none; border-radius: 8px; color: #000000; padding: 10px;">
-        Unggah
+    <button type="button" id="submitBtn" style="background-color: #FFC94A; border: none; border-radius: 8px; color: #000000; padding: 10px;">
+        Submit
     </button>
 </a>
 </section>
@@ -361,9 +367,25 @@ window.onclick = function(event) {
         });
     });
 
-
+    document.getElementById('submitBtn').addEventListener('click', function() {
+        Swal.fire({
+            title: 'Berhasil',
+            text: 'Lamaran Sudah Berhasil Disubmit',
+            icon: 'success',
+            confirmButtonText: 'OKE',
+            customClass: {
+                confirmButton: 'swal2-confirm'
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '/HomePagePelamar'; // Ubah 'home.html' dengan URL halaman home Anda
+            }
+        });
+    });
 
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
 
     <script src="owl.carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

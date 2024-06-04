@@ -85,15 +85,17 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+    <a class="navbar-brand" href="/">
+        <img src="img/logo2.png" alt="Logo" style="height: 40px;">
+    </a>         
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar" style="color: #000000;">Beranda</a>
+                    <a class="nav-link active ms-4" aria-current="page" href="/HomePagePelamar" style="color: blue;">Beranda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja" style="color: #000000;">Lowongan Kerja</a>
@@ -102,6 +104,7 @@
                     <a class="nav-link active ms-4" aria-current="page" href="/about2" style="color: #000000;">Tentang Kami</a>
                 </li>
             </ul>
+
             <div class="d-flex align-items-center">
     <a href="/ProfillPelamar" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px; margin-right: 10px;" title="Olivia Rhye">
         <img src="img/ProfilPelamar.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
@@ -135,7 +138,6 @@
 
     </div>
 </div>
-
         </div>
     </div>
 </nav>
@@ -173,11 +175,8 @@
 <hr style="margin-left: 70px; margin-top: 25px;">
 
 <h5 style="margin-right: 155px; margin-top: 50px; text-align: justify; margin-left: 70px;">Deskripsi Pekerjaan</h5>
-    <p style="margin-right: 155px; margin-top: 1px; text-align: justify; margin-left: 70px;">Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit. In consectetur ac nulla non mattis. Nunc eu magna nibh. Sed feugiat justo ullamcorper, 
-    interdum ex id, iaculis mi. Sed mollis tincidunt risus vitae tristique. Praesent a orci non turpis dapibus laoreet 
-    nec non risus. Vivamus mattis bibendum leo eget porttitor. 
-    Ut eu est mauris. In id risus augue.</p>
+    <p style="margin-right: 155px; margin-top: 1px; text-align: justify; margin-left: 70px;">Menganalisis data dan metrik pemasaran digital untuk mengukur efektivitas campaign dan memberikan rekomendasi untuk optimasi.
+Spesialis SEO: Membantu bisnis meningkatkan peringkat website mereka di hasil pencarian Google melalui strategi SEO (Search Engine Optimization).</p>
 
     <h5 style="margin-right: 155px; margin-top: 50px; text-align: left; margin-left: 70px;">Persyaratan Pekerjaan</h5>
 

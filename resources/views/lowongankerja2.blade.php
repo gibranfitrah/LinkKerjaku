@@ -34,16 +34,46 @@
                         <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #000000;">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #000000;">Lowongan Kerja</a>
+                        <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: blue;">Lowongan Kerja</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active ms-4" aria-current="page" href="/about" style="color: #000000;">Tentang Kami</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <a href="/loginperusahaan" class="btn btn-secondary me-2" style="background-color: #ffffff; color: #FFC94A; text-decoration: none; border: 2px solid #FFC94A;">Perusahaan</a>
-                    <a href="/login" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">Masuk/Daftar</a>
-                </div>
+
+                <div class="d-flex" style="margin-right: -25px; position: relative; display: flex; align-items: center;">
+    <div style="margin-right: -10px; position: relative;">
+    <a href="/Home-Perusahaan">
+    <button id="companyButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: white; padding: 10px;">
+        Perusahaan
+    </button>
+</a>
+
+        <div id="dropdownMenuCompany" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: opacity 0.3s ease;">
+            <a href="/companyProfile" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                Profil Perusahaan
+            </a>
+            <a href="/companyJobs" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                Lowongan Kerja
+            </a>
+        </div>
+    </div>
+    <div style="margin-right: -10px; position: relative;">
+        <button id="loginButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: #FFC94A; border: none; padding: 10px;">
+            Sign In / Sign Up
+        </button>
+        <div id="dropdownMenuLogin" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: opacity 0.3s ease;">
+            <a href="/loginperusahaan" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                Login Sebagai Perusahaan
+            </a>
+            <a href="/login" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
+                Login Sebagai Pelamar
+            </a>
+        </div>
+    </div>
+</div>
+
+    
             </div>
         </div>
     </nav>
@@ -399,6 +429,42 @@ Spesialis SEO: Membantu bisnis meningkatkan peringkat website mereka di hasil pe
     </div>
 </footer>
 <!-- Akhir Footer -->
+
+<script>
+    document.getElementById('loginButton').addEventListener('click', function(event) {
+            event.stopPropagation();
+            var dropdownMenuLogin = document.getElementById('dropdownMenuLogin');
+            if (dropdownMenuLogin.style.display === 'none' || dropdownMenuLogin.style.display === '') {
+                dropdownMenuLogin.style.display = 'block';
+            } else {
+                dropdownMenuLogin.style.display = 'none';
+            }
+            document.getElementById('dropdownMenuSignUp').style.display = 'none';
+        });
+
+        document.getElementById('signUpButton').addEventListener('click', function(event) {
+            event.stopPropagation();
+            var dropdownMenuSignUp = document.getElementById('dropdownMenuSignUp');
+            if (dropdownMenuSignUp.style.display === 'none' || dropdownMenuSignUp.style.display === '') {
+                dropdownMenuSignUp.style.display = 'block';
+            } else {
+                dropdownMenuSignUp.style.display = 'none';
+            }
+            document.getElementById('dropdownMenuLogin').style.display = 'none';
+        });
+
+        // Close the dropdowns if the user clicks outside of them
+        window.addEventListener('click', function(event) {
+            var dropdownMenuLogin = document.getElementById('dropdownMenuLogin');
+            var dropdownMenuSignUp = document.getElementById('dropdownMenuSignUp');
+            if (dropdownMenuLogin.style.display === 'block' && !event.target.matches('#loginButton')) {
+                dropdownMenuLogin.style.display = 'none';
+            }
+            if (dropdownMenuSignUp.style.display === 'block' && !event.target.matches('#signUpButton')) {
+                dropdownMenuSignUp.style.display = 'none';
+            }
+        });
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

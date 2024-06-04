@@ -150,22 +150,18 @@
             <!-- Kontak Section -->
             <div style="flex: 1; padding: 20px;">
                 <h5 style="margin: 0 0 20px 0; font-size: 24px; margin-left: 225px;">Kontak</h5>
-                <p style="margin-left: 55px; margin-right: 25px;">
-                    Jangan ragu untuk menghubungi Link Kerjaku untuk membahas bagaimana Link Kerjaku dapat berkontribusi pada tim Anda.
-                </p>
-                <h5 style="font-weight: bold; margin-left: 225px; margin-top: 45px;">Alamat</h5>
-                <p style="margin-left: 155px; margin-top: 20px;">Alamat Lengkap Link Kerjaku</p>
-                <h5 style="margin: 0 0 10px 0; font-weight: bold; margin-top: 25px; margin-left: 225px; margin-top: 35px;">Nomor</h5>
-                <p style="margin-left: 185px; margin-top: 20px;">(+62) 000 000 000</p>
-                <h5 style="font-weight: bold; margin-left: 225px; margin-top: 45px;">Email</h5>
-                <p style="margin-left: 185px; margin-top: 25px;">Email Link Kerjaku</p>
-
-                <div style="display: flex; justify-content: center; margin-top: 75px; margin-right: 75px;">
+                <div style="display: flex; justify-content: center; margin-top: 55px; margin-right: 75px;">
                     <img src="svg/facebook.svg" alt="Icon 1" style="width: 35px; height: 35px; margin: 0 10px;">
                     <img src="svg/instagram.svg" alt="Icon 2" style="width: 35px; height: 35px; margin: 0 10px;">
                     <img src="svg/link.svg" alt="Icon 3" style="width: 35px; height: 35px;; margin: 0 10px;">
                     <img src="svg/twitter.svg" alt="Icon 4" style="width: 35px; height: 35px; margin: 0 10px;">
                 </div>
+                <h5 style="font-weight: bold; margin-left: 225px; margin-top: 55px;">Alamat</h5>
+                <p style="margin-left: 155px; margin-top: 20px;">Alamat Lengkap Link Kerjaku</p>
+                <h5 style="margin: 0 0 10px 0; font-weight: bold; margin-top: 25px; margin-left: 225px; margin-top: 55px;">Nomor</h5>
+                <p style="margin-left: 185px; margin-top: 20px;">(+62) 000 000 000</p>
+                <h5 style="font-weight: bold; margin-left: 225px; margin-top: 55px;">Email</h5>
+                <p style="margin-left: 185px; margin-top: 25px;">Email Link Kerjaku</p>
             </div>
             <!-- Form Section -->
             <div style="flex: 1; padding: 20px; background-color: #FFFFFF; border-radius: 4px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);">

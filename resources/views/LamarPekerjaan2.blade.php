@@ -194,18 +194,25 @@
 <!-- Section Kedua -->
 <section style="background-color: #E8F2F7; padding: 70px; display: flex; align-items: center; justify-content: center;">
     <div style="margin-left: 55px; margin-top: -75px;">
-    <hr style="border: 1px solid black; margin-bottom: 20px; width: 900%; margin-left: -700px;">
+    <hr style="border: 1px solid black; margin-bottom: 20px; width: 310%; margin-left: -700px;">
         <h6 style="text-align: left;">Kota*</h6>
         <form>
-            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
-        </form>
+    <select style="width: 550px; height: 62px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+        <option value="semarang">Semarang</option>
+        <option value="medan">Medan</option>
+        <option value="jakarta">Jakarta</option>
+        <option value="bandung">Bandung</option>
+        <option value="yogyakarta">Yogyakarta</option>
+    </select>
+</form>
         <h6 style="text-align: left; margin-top: 15px;">Alamat Lengkap*</h6>
         <form>
-            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+            <input type="text" style="width: 550px; height: 62px;  border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;" placeholder="Ketik Disini.....">
         </form>
+        
         <h6 style="text-align: left; margin-top: 15px;">Kode Pos*</h6>
         <form>
-            <input type="text" style="width: 100%; height: 40px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; ">
+            <input type="text" style="width: 550px; height: 62px;  border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px;" placeholder="Ketik Disini.....">
         </form>
 
     </div>

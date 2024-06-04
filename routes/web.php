@@ -38,6 +38,8 @@ Route::get('/HomePagePerusahaan', function () {
     ]);
 });
 
+
+
 Route::get('/LihatPerusahaan', function () {
     return view('LihatPerusahaan', [
         "title" => "LihatPerusahaan"
@@ -232,5 +234,93 @@ Route::get('/LamarPekerjaan3', function () {
 Route::get('/PageValidasi', function () {
     return view('PageValidasi', [
         "title" => "PageValidasi"
+    ]);
+});
+
+// Dashboard
+Route::get('/PageDashboard', function () {
+    return view('PageDashboard', [
+        "title" => "PageDashboard"
+    ]);
+});
+
+Route::get('/Page-Profill', function () {
+    return view('Page-Profill', [
+        "title" => "Page-Profill"
+    ]);
+});
+
+Route::get('/Page-StatusPelamar', function () {
+    return view('Page-StatusPelamar', [
+        "title" => "Page-StatusPelamar"
+    ]);
+});
+
+Route::get('/Page-BuatLowongan', function () {
+    return view('Page-BuatLowongan', [
+        "title" => "Page-BuatLowongan"
+    ]);
+});
+
+Route::get('/Page-BuatLowongan2', function () {
+    return view('Page-BuatLowongan2', [
+        "title" => "Page-BuatLowongan2"
+    ]);
+});
+
+Route::get('/Page-BuatLowongan3', function () {
+    return view('Page-BuatLowongan3', [
+        "title" => "Page-BuatLowongan3"
+    ]);
+});
+
+Route::get('/Page-LowonganKerja', function () {
+    return view('Page-LowonganKerja', [
+        "title" => "Page-LowonganKerja"
+    ]);
+});
+
+
+Route::get('/Page-LihatLowongan', function () {
+    return view('Page-LihatLowongan', [
+        "title" => "Page-LihatLowongan"
+    ]);
+});
+
+Route::get('/PageLogin-Dashboard', function () {
+    return view('PageLogin-Dashboard', [
+        "title" => "PageLogin-Dashboard"
+    ]);
+});
+
+Route::get('/PageDaftar-Dashboard', function () {
+    return view('PageDaftar-Dashboard', [
+        "title" => "PageDaftar-Dashboard"
+    ]);
+});
+
+Route::get('/PageOverlay-Dashboard', function () {
+    return view('PageOverlay-Dashboard', [
+        "title" => "PageOverlay-Dashboard"
+    ]);
+});
+
+// BARU
+
+Route::get('/Home-Perusahaan', function () {
+    return view('Home-Perusahaan', [
+        "title" => "Home-Perusahaan"
+    ]);
+});
+
+Route::get('/About-Perusahaan', function () {
+    return view('About-Perusahaan', [
+        "title" => "About-Perusahaan"
+    ]);
+});
+
+Route::get('/Detail-Blog', function () {
+    return view('/Detail-Blog', [
+        "title" => "/Detail-Blog"
     ]);
 });

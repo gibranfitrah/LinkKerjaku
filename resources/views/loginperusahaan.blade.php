@@ -33,7 +33,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <img src="img/Logo.png" alt="Brand Logo" class="mb-4" style="width: 175px;">
-                        <h2 class="mb-4" style="margin-top: -45px;">Masuk Sebagai Perusahaan</h2>
+                        <h2 class="mb-4" style="margin-top: -45px;">Login Sebagai Perusahaan</h2>
                         <form action="#" method="post">
                             <div class="form-group">
                                 <div class="input-group" style="border: 1px solid #146D9A; background-color: #FFFFFF;">
@@ -51,7 +51,7 @@
                                     <input type="password" class="form-control" name="password" placeholder="Masukkan Kata Sandi Anda" style="border: none; background-color: #FFFFFF;">
                                 </div>
                             </div>
-                            <a href="/HomePagePerusahaan" style="text-decoration: none;">
+                            <a href="/PageDashboard" style="text-decoration: none;">
     <button type="button" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Masuk</button>
 </a>
                             <div class="mt-5 social-icons">
