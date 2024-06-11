@@ -30,7 +30,7 @@
 <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card">
+                <div class="card" style="background-image: url('img/login.jpg'); background-size: cover; background-position: bottom;">
                     <div class="card-body text-center">
                         <img src="img/Logo.png" alt="Brand Logo" class="mb-4" style="width: 175px;">
                         <h2 class="mb-4" style="margin-top: -45px;">Login Sebagai Pelamar</h2>
@@ -54,11 +54,11 @@
                             <a href="/HomePagePelamar" style="text-decoration: none;">
                         <button type="button" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Masuk</button>
         </a>                            
-        <div class="mt-5 social-icons">
-                                <img src="svg/google.svg" alt="Google Icon" width="30">
-                                <img src="svg/facebook.svg" alt="Facebook Icon" width="30">
-                                <img src="svg/apple.svg" alt="Apple Icon" width="30">
-                            </div>
+        <div class="mt-5 social-icons" style="margin-left: 25px;">
+                            <img src="img/google.png" alt="Google Icon" width="28">
+                            <img src="img/facebook.png" alt="Facebook Icon" width="35">
+                            <img src="svg/apple.svg" alt="Apple Icon" width="30">
+                        </div>
                             <p class="mt-5">Belum punya akun? <a href="/register" style="color: blue;">Daftar</a></p>
                         </form>
                     </div>

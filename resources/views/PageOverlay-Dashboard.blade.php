@@ -106,16 +106,16 @@
         </div>
 
         <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
-        <div style="width: 313px; height: 58px; background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+        <div style="width: 313px; height: 58px; background-color: #FEB941; border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; margin-right: 20px;">
             <img src="svg/document.svg" alt="Icon" style="width: 24px; height: 24px;">
             <h6 style="margin-left: 15px; margin-top: 7px;">Sertifikat</h6>
         </div>
-        <div style="width: 313px; height: 58px; background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+        <div style="width: 313px; height: 58px; background-color: #FEB941; border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; margin-right: 20px;">
             <img src="svg/document.svg" alt="Icon" style="width: 24px; height: 24px;">
             <h6 style="margin-left: 15px; margin-top: 7px;">CV</h6>
 
         </div>
-        <div style="width: 313px; height: 58px; background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center;">
+        <div style="width: 313px; height: 58px; background-color: #FEB941; border-radius: 12px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center;">
             <img src="svg/document.svg" alt="Icon" style="width: 24px; height: 24px;">
             <h6 style="margin-left: 15px; margin-top: 7px;">Surat Lamaran</h6>
 
@@ -153,7 +153,7 @@
       acceptButton.addEventListener('click', function() {
         Swal.fire({
           icon: 'success',
-          title: 'Terima kasih sudah menerima pelamar ini',
+          title: 'Berhasil Menerima Pelamar',
         }).then((result) => {
           if (result.isConfirmed) {
             window.location.href = '/Page-StatusPelamar';

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <title>Link-Kerjaku | Lihat Perusaahan 1</title>
+    <title>Link-Kerjaku | Lihat Perusaahan Home</title>
 
     <link
             href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
@@ -51,7 +51,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active ms-4" aria-current="page" href="/" style="color: #000000;">Beranda</a>
+                        <a class="nav-link active ms-4" aria-current="page" href="/" style="color: blue;">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active ms-4" aria-current="page" href="/lowongankerja2" style="color: #000000;">Lowongan Kerja</a>
@@ -63,33 +63,29 @@
 
                 <div class="d-flex" style="margin-right: -25px; position: relative; display: flex; align-items: center;">
         <div style="margin-right: -10px; position: relative;">
-            <button id="loginButton" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; margin-right: 15px;">
-                Log in
-            </button>
-            <div id="dropdownMenuLogin" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 10px;">
-                <a href="/loginperusahaan" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
-                    Login Sebagai Perusahaan
-                </a>
-                <a href="/login" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
-                    Login Sebagai Pelamar
-                </a>
+            <a href="/Home-Perusahaan">
+                <button id="companyButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: white; padding: 10px;">
+                    Perusahaan
+                </button>
+            </a>
+
+            <div id="dropdownMenuCompany" class="dropdown-menu">
+                <a href="/companyProfile" class="dropdown-item">Profil Perusahaan</a>
+                <a href="/companyJobs" class="dropdown-item">Lowongan Kerja</a>
             </div>
         </div>
-        <div style="position: relative; margin-right: -5px;">
-            <button id="signUpButton" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none;">
-                Sign up
+        <div style="margin-right: -10px; position: relative;">
+            <button id="loginButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: #FFC94A; border: none; padding: 10px;">
+                Sign In / Sign Up
             </button>
-            <div id="dropdownMenuSignUp" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 10px;">
-                <a href="/registerperusahaan" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
-                    Daftar Perusahaan
-                </a>
-                <a href="/register" class="dropdown-item" style="display: block; padding: 10px; text-decoration: none; color: black;">
-                    Daftar Pelamar
-                </a>
+            <div id="dropdownMenuLogin" class="dropdown-menu">
+                <a href="/loginperusahaan" class="dropdown-item">Login Sebagai Perusahaan</a>
+                <a href="/login" class="dropdown-item">Login Sebagai Pelamar</a>
             </div>
         </div>
     </div>
 
+    
             </div>
         </div>
     </nav>
@@ -107,12 +103,8 @@
     </div>
 </div>
 <div style="margin-left: 60px;">
-    <div class="card" style="width: 393px; height: 488px; border-radius: 20px; background-color: #8E98A8;">
-    <img src="img/profill 4.jpg" class="card-img-top" alt="Card Image" style="border-radius: 20px 20px 20px 20px; height: 100%;">
-        <div class="card-body">
-        </div>
+    <img src="img/LihatPerusahaan.png" alt="Card Image" style="border-radius: 20px; width: 500px; height: 488px;">
     </div>
-</div>
 
 
 </section>
@@ -371,7 +363,7 @@
         <h3 style="text-align: center;">Dapatkan gambaran lengkap sebelum Anda mendaftar</h3>
     </div>
     <div class="row justify-content-center">
-        <div class="col-md-3" style="margin-right: 100px;">
+        <div class="col-md-3" style="margin-right: 100px; margin-left: 25px;">
             <img src="img/gambar1.jpg" alt="Gambar 1" style="width: 70%; display: block; margin: 0 auto;">
             <h5 style="text-align: center; margin-top: 5px;">Budaya dan Nilai-Nilai </h5>
             <p style="text-align: center;">Mencari tahu tentang budaya perusahaan</p>
@@ -453,8 +445,8 @@
         <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none; margin-left: 455px;">
             <li class="list-inline-item" style="margin-right: 10px;"><a href="https://www.facebook.com/people/Link-Kerjaku/61559180558109/?mibextid=kFxxJD"><img src="svg/facebook.svg" width="30" alt="Facebook Icon"></a></li>
             <li class="list-inline-item" style="margin-right: 10px;"><a href="https://www.instagram.com/linkkerjaku/"><img src="svg/instagram.svg" width="30" alt="Instagram Icon"></a></li>
-            <li class="list-inline-item" style="margin-right: 10px; margin-left: 5px;"><a href="#"><img src="svg/link.svg" width="30" alt="LinkedIn Icon"></a></li>
-            <li class="list-inline-item"><a href="#"><img src="svg/twitter.svg" width="30" alt="Twitter Icon"></a></li>
+            <li class="list-inline-item" style="margin-right: 10px; margin-left: 5px;"><a href="#"><img src="img/link.png" width="30" alt="LinkedIn Icon"></a></li>
+            <li class="list-inline-item"><a href="https://www.tiktok.com/@linkkerjaku"><img src="img/tiktok.png" width="30" alt="Tiktok Icon"></a></li>
         </ul>
     </div>
 </div>

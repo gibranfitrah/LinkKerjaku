@@ -12,7 +12,7 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
@@ -298,7 +298,28 @@ a.sidebar-link:hover {
       font-weight: bold;
     }
 
+    .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 15px;
+            margin-left: 55px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        .show {display: block;}
 
+        .dropdown-content span {
+            margin-left: 8px;
+        }
     
     </style>
 </head>
@@ -311,61 +332,92 @@ a.sidebar-link:hover {
         <i class="lni lni-grid-alt"></i>
     </button>
     <div class="sidebar-logo">
-    <a href="/PageDashboard">Link Kerjaku</a>
+    <a href="/PageDashboard">
+    <span style="color: #FFDB00;">Link</span>
+    <span style="color: #3572EF;">Kerjaku</span>
+</a>
     </div>
 </div>
 <hr size="5" width="100%" color="#FFFFFF">
-<a href="/profill">
-    <img src="img/google.png" alt="Logo" width="31.94px" height="33px" style="display: inline-block; margin-left: 20px;">
-</a>
-<span style="vertical-align: middle; color: #FFFFFF; margin-left: 75px; margin-top: -30px;">Google</span>
-<hr size="5" width="100%" color="#FFFFFF" style="margin-top: 25px;">
 
-            <ul class="sidebar-nav">
+<ul class="sidebar-nav">
 
-            <li class="sidebar-item">
-                    <a href="/Page-Profill" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span style="color: blue;">Profile</span>
-                    </a>
-                </li>
-
-                <li class="sidebar-item" style="margin-top: 20px;">
-    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-        data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-link">
+<li class="sidebar-item" style="margin-top: -20px;">
+        <a href="/PageDashboard" class="sidebar-link">
         <i class="lni lni-protection"></i>
         <span>Dashboard</span>
-    </a>
-    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" style="margin-top: 10px;">
-        <li class="sidebar-item">
-            <a href="/Page-StatusPelamar" class="sidebar-link">
-                <img src="img/resume.png" alt="Logo" width="25px" height=""> Status Pelamar
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="/Page-BuatLowongan" class="sidebar-link">
-                <img src="img/vacancy.png" alt="Logo" width="25px" style="margin-top: 10px;"> Buat Lowongan
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
-                <img src="img/StatusPelamar.png" alt="Logo" width="25px" style="margin-top: 10px;"> Lowongan Kerja
-            </a>
-        </li>
-    </ul>
+        </a>
+    </li>
+
+<li class="sidebar-item" style="margin-top: 20px;">
+<a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-link">
+<i class="lni lni-apartment"></i>
+    <span >Lowongan</span>
+</a>
+<ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" style="margin-top: 10px;">
+<li class="sidebar-item">
+<a href="/Page-StatusPelamar" class="sidebar-link">
+    <img src="img/resume.png" alt="Logo" width="25px" height=""> Status Pelamar
+</a>
+</li>
+<li class="sidebar-item">
+<a href="/Page-BuatLowongan" class="sidebar-link">
+    <img src="img/vacancy.png" alt="Logo" width="25px" style="margin-top: 10px;"> Buat Lowongan
+</a>
+</li>
+<li class="sidebar-item">
+<a href="/Page-LowonganKerja" class="sidebar-link"  style="color: #FCDC94;">
+    <img src="img/StatusPelamar.png" alt="Logo" width="25px" style="margin-top: 10px;"> Lowongan Kerja
+</a>
+</li>
+</ul>
 </li>
 
-            </ul>
-            <div class="sidebar-footer">
-                <a href="/" class="sidebar-link">
-                    <i class="lni lni-exit"></i>
-                    <span>Logout</span>
-                </a>
-            </div>
+<li class="sidebar-item" style="margin-top: 25px;">
+        <a href="/Page-Profill" class="sidebar-link">
+            <i class="lni lni-user"></i>
+            <span style="color: #FCDC94;">Profile</span>
+        </a>
+    </li>
+
+</ul>
         </aside>
         <div class="main p-3">
+
+        <div class="text-left" style="margin-top: 15px;">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb" style="margin-left: 55px;">
+  <li class="breadcrumb-item">
+                <img src="img/Resume.png" alt="Home" width="26" height="26">
+            </li>
+                <li class="breadcrumb-item active" style="margin-left: 5px;" aria-current="page"><a href="/Page-Profill">Profill</a></li>
+  </ol>
+</nav>
+    </div>
+
+    <div class="d-flex align-items-center" style="position: relative; margin-left: 1065px; margin-top: -45px;">
+    <a href="#" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px; margin-right: 10px;" title="Olivia Rhye">
+        <img src="img/Google.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
+    </a>
+    <span style="margin-left: 10px;">Google</span>
+    <div id="dropdownIcon" class="arrow-icon" style="margin-left: 12px; width: 26px; height: 26px; border: 2px solid #FFC94A; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+            <path d="M6 9l6 6 6-6"></path>
+        </svg>
+    </div>
+    <div id="myDropdown" class="dropdown-content" style="top: 100%; left: -30px;">
+    <a href="/Page-Profill">
+            <img src="img/editing.png" alt="Profile Icon" width="16" height="16">
+            <span>Profile</span>
+        </a>
+        <a href="/">
+            <img src="img/logout.png" alt="Profile Icon" width="16" height="16">
+            <span>Logout</span>
+        </a>    </div>
+</div>
  
-        <section style="background-image: url('img/profillpelamar.jpg'); background-size: 500px 500px; background-position: center; padding: 225px;">
+        <section style="background-image: url('img/profillpelamar.jpg'); background-size: 500px 500px; background-position: center; padding: 225px; margin-top: 20px;">
 </section>
 
 <section style="background-color: #FFFFFF; padding: 50px;">
@@ -398,14 +450,14 @@ a.sidebar-link:hover {
             <div style="text-align: left; margin-top: 95px;">
         <h3 style="color: #146D9A;">Visi & Misi</h3>
         <form>
-            <input type="text" style="width: 910px; height: 150px;  border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;" placeholder="Tambahkan Visi Misi ke profil untuk memperkenalkan perusahaan anda..">
+            <input type="text" style="width: 910px; height: 150px;  border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px; padding-left: 30px;" placeholder="Tambahkan Visi Misi ke profil untuk memperkenalkan perusahaan anda..">
         </form>
             </div>
 
-            <div style="text-align: left; margin-top: 95px;">
+            <div style="text-align: left; margin-top: 55px;">
         <h3 style="color: #146D9A;">Tipe Industri</h3>
         <form>
-    <select style="width: 910px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+    <select style="width: 910px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px; padding-left: 30px;">
         <option value="semarang">Industri Primer</option>
         <option value="medan">Industri Sekunder</option>
         <option value="jakarta">Industri Tersier</option>
@@ -414,10 +466,10 @@ a.sidebar-link:hover {
 </form>        
             </div>
 
-            <div style="text-align: left; margin-top: 95px;">
+            <div style="text-align: left; margin-top: 55px;">
         <h3 style="color: #146D9A;">Jumlah Karyawan</h3>
         <form>
-    <select style="width: 910px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+    <select style="width: 910px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px; padding-left: 30px;">
         <option value="semarang">< 10 Karyawan atau 10 karyawan</option>
         <option value="medan">< 50 Karyawan atau 50 karyawan</option>
         <option value="jakarta">< 100 Karyawan atau 100 karyawan</option>
@@ -426,27 +478,26 @@ a.sidebar-link:hover {
 </form>    
             </div>
 
-            <div style="text-align: left; margin-top: 95px;">
+            <div style="text-align: left; margin-top: 55px;">
         <h3 style="color: #146D9A;">Lokasi Lengkap</h3>
         <form>
-            <input type="text" style="width: 910px; height: 70px;  border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;" placeholder="Ketik disini...">
+            <input type="text" style="width: 910px; height: 70px;  border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px; padding-left: 30px;" placeholder="Ketik disini...">
         </form>
             </div>
 
-            <div class="d-flex" style="margin-left: 355px; position: relative; display: flex; align-items: center; margin-top: 255px;">
-    <div style="margin-right: -10px; position: relative; margin-right: 255px;">
-    <a href="/Home-Perusahaan">
-    <button id="companyButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: white; padding: 10px;">
+
+            <a href="/Page-Profill" style="text-decoration: none; margin-right: 255px;">
+    <button type="submit" style="background-color: #FFC94A; border: none; border-radius: 8px; color: #000000; padding: 10px;">
+    <img src="img/editing.png"style="width: 20px; height: 20px; margin-right: 5px;">
         Edit
     </button>
 </a>
-    </div>
-    <div style="margin-right: -10px; position: relative;">
-    <button id="loginButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: #FFC94A; border: none; padding: 10px;">
+
+<a href="#" id="saveChangesBtn" style="text-decoration: none; margin-left: 385px;">
+    <button type="button" style="background-color: #028391; border: none; border-radius: 8px; color: #000000; padding: 10px;">
         Simpan Perubahan
     </button>
-</div>
-</div>
+</a>
 
     </div>
         </div>
@@ -458,6 +509,24 @@ a.sidebar-link:hover {
 </div>
 
     <script>
+
+document.getElementById("dropdownIcon").addEventListener("click", function() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.arrow-icon') && !event.target.matches('.arrow-icon *')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
         const hamBurger = document.querySelector(".toggle-btn");
 
 hamBurger.addEventListener("click", function () {
@@ -483,91 +552,24 @@ let timer = setInterval(() => {
 }, speed)
 
 
-let CircularBarSelesai = document.querySelector(".card.selesai .circular-bar");
-let PercentValueSelesai = document.querySelector(".card.selesai .percent");
 
-let initialValueSelesai = 0;
-let finaleValueSelesai = 10;
-let speedSelesai = 10;
 
-let timerSelesai = setInterval(() => {
-  initialValueSelesai += 1;
-
-  CircularBarSelesai.style.background = `conic-gradient(#4285f4 ${initialValueSelesai / 100 * 360}deg, #e8f0f7 0deg)`;
-  PercentValueSelesai.innerHTML = initialValueSelesai + "%";
-
-  if (initialValueSelesai >= finaleValueSelesai) {
-    clearInterval(timerSelesai);
-  }
-}, speedSelesai);
-
-let CircularBarTiga = document.querySelector(".card.tiga .circular-bar");
-let PercentValueTiga = document.querySelector(".card.tiga .percent");
-
-let initialValueTiga = 0;
-let finaleValueTiga = 5;
-let speedTiga = 10;
-
-let timerTiga = setInterval(() => {
-  initialValueTiga += 1;
-
-  CircularBarTiga.style.background = `conic-gradient(#4285f4 ${initialValueTiga / 100 * 360}deg, #e8f0f7 0deg)`;
-  PercentValueTiga.innerHTML = initialValueTiga + "%";
-
-  if (initialValueTiga >= finaleValueTiga) {
-    clearInterval(timerTiga);
-  }
-}, speedTiga);
-
-document.addEventListener("DOMContentLoaded", function () {
-  const data = {
-    totalPelamar: 200,
-    sedangDiproses: 80,
-    diterima: 20
-  };
-
-  function smoothIncrement(elementId, endValue, duration) {
-    let startValue = 0;
-    const increment = endValue / (duration / 10);
-    
-    function updateValue() {
-      startValue += increment;
-      if (startValue >= endValue) {
-        startValue = endValue;
-      } else {
-        setTimeout(updateValue, 10);
-      }
-      document.getElementById(elementId).textContent = Math.floor(startValue);
-    }
-    
-    updateValue();
-  }
-
-  smoothIncrement("totalPelamar", data.totalPelamar, 2000);
-  smoothIncrement("sedangDiproses", data.sedangDiproses, 2000);
-  smoothIncrement("diterima", data.diterima, 2000);
-});
-
-document.getElementById('dashboard-link').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = '/PageDashboard'; // Ganti dengan URL halaman tujuan
-    });
-
-    document.getElementById('loginButton').addEventListener('click', function() {
-        Swal.fire({
-            title: 'Berhasil',
-            text: 'Simpan Perubahan Berhasil',
-            icon: 'success',
-            confirmButtonColor: '#FFC94A',
-            confirmButtonText: 'OK'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.location.href = '/Page-Profill';
+document.getElementById("saveChangesBtn").addEventListener("click", function() {
+        swal({
+            title: "Berhasil",
+            text: "Simpan Perubahan Berhasil",
+            icon: "success",
+        })
+        .then((value) => {
+            if (value) {
+                window.location.href = "/Page-SimpanProfill";
             }
         });
     });
+    
 
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

@@ -303,6 +303,29 @@ a.sidebar-link:hover {
 .text-clickable:hover {
     color: #FFC94A;
 }
+
+.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 15px;
+            margin-left: 55px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        .show {display: block;}
+
+        .dropdown-content span {
+            margin-left: 8px;
+        }
     
     </style>
 </head>
@@ -315,62 +338,97 @@ a.sidebar-link:hover {
         <i class="lni lni-grid-alt"></i>
     </button>
     <div class="sidebar-logo">
-    <a href="/PageDashboard">Link Kerjaku</a>
+    <a href="/PageDashboard">
+    <span style="color: #FFDB00;">Link</span>
+    <span style="color: #3572EF;">Kerjaku</span>
+</a>
     </div>
 </div>
 <hr size="5" width="100%" color="#FFFFFF">
-<a href="/profill">
-    <img src="img/google.png" alt="Logo" width="31.94px" height="33px" style="display: inline-block; margin-left: 20px;">
-</a>
-<span style="vertical-align: middle; color: #FFFFFF; margin-left: 75px; margin-top: -30px;">Google</span>
-<hr size="5" width="100%" color="#FFFFFF" style="margin-top: 25px;">
 
-            <ul class="sidebar-nav">
+<ul class="sidebar-nav">
 
-            <li class="sidebar-item">
-                    <a href="/Page-Profill" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span>Profile</span>
-                    </a>
-                </li>
-
-                <li class="sidebar-item" style="margin-top: 20px;">
-    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-        data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-link">
+<li class="sidebar-item" style="margin-top: -20px;">
+        <a href="/PageDashboard" class="sidebar-link">
         <i class="lni lni-protection"></i>
-        <span style="color: blue;">Dashboard</span>
-    </a>
-    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" style="margin-top: 10px;">
-        <li class="sidebar-item">
-            <a href="/Page-StatusPelamar" class="sidebar-link">
-                <img src="img/resume.png" alt="Logo" width="25px" height=""> Status Pelamar
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="/Page-BuatLowongan" class="sidebar-link" style="color: #6FDCE3;">
-                <img src="img/vacancy.png" alt="Logo" width="25px" style="margin-top: 10px;"> Buat Lowongan
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
-                <img src="img/StatusPelamar.png" alt="Logo" width="25px" style="margin-top: 10px;"> Lowongan Kerja
-            </a>
-        </li>
-    </ul>
+        <span>Dashboard</span>
+        </a>
+    </li>
+
+<li class="sidebar-item" style="margin-top: 20px;">
+<a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-link">
+<i class="lni lni-apartment"></i>
+    <span >Lowongan</span>
+</a>
+<ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" style="margin-top: 10px;">
+<li class="sidebar-item">
+<a href="/Page-StatusPelamar" class="sidebar-link">
+    <img src="img/resume.png" alt="Logo" width="25px" height=""> Status Pelamar
+</a>
+</li>
+<li class="sidebar-item">
+<a href="/Page-BuatLowongan" class="sidebar-link" style="color: #FCDC94;">
+    <img src="img/vacancy.png" alt="Logo" width="25px" style="margin-top: 10px;"> Buat Lowongan
+</a>
+</li>
+<li class="sidebar-item">
+<a href="/Page-LowonganKerja" class="sidebar-link">
+    <img src="img/StatusPelamar.png" alt="Logo" width="25px" style="margin-top: 10px;"> Lowongan Kerja
+</a>
+</li>
+</ul>
 </li>
 
-            </ul>
-            <div class="sidebar-footer">
-                <a href="/" class="sidebar-link">
-                    <i class="lni lni-exit"></i>
-                    <span>Logout</span>
-                </a>
-            </div>
+<li class="sidebar-item" style="margin-top: 25px;">
+        <a href="/Page-Profill" class="sidebar-link">
+            <i class="lni lni-user"></i>
+            <span>Profile</span>
+        </a>
+    </li>
+
+</ul>
         </aside>
         <div class="main p-3">
 
+        <div class="text-left" style="margin-top: 15px;">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb" style="margin-left: 55px;">
+  <li class="breadcrumb-item">
+                <img src="img/job.png" alt="Home" width="26" height="26">
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+    <a href="/Page-BuatLowongan" style="text-decoration: none; color: inherit;">Step 1</a>
+</li>
+           
+ <li class="breadcrumb-item active" style="margin-left: 5px;" aria-current="page"><a href="/Page-BuatLowongan2">Step 2</a></li>
+  </ol>
+</nav>
+    </div>
 
-        <section style="background-color: #E8F2F7; padding: 70px; display: flex; align-items: center; justify-content: center;">
+    <div class="d-flex align-items-center" style="position: relative; margin-left: 1065px; margin-top: -45px;">
+    <a href="#" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px; margin-right: 10px;" title="Olivia Rhye">
+        <img src="img/Google.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
+    </a>
+    <span style="margin-left: 10px;">Google</span>
+    <div id="dropdownIcon" class="arrow-icon" style="margin-left: 12px; width: 26px; height: 26px; border: 2px solid #FFC94A; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+            <path d="M6 9l6 6 6-6"></path>
+        </svg>
+    </div>
+    <div id="myDropdown" class="dropdown-content" style="top: 100%; left: -30px;">
+    <a href="/Page-Profill">
+            <img src="img/editing.png" alt="Profile Icon" width="16" height="16">
+            <span>Profile</span>
+        </a>
+        <a href="/">
+            <img src="img/logout.png" alt="Profile Icon" width="16" height="16">
+            <span>Logout</span>
+        </a>    </div>
+</div>
+
+
+        <section style="background-color: #FFFFFF; padding: 70px; display: flex; align-items: center; justify-content: center; margin-top: 25px;">
 
 <div style="display: flex; align-items: center; flex-direction: column; margin-top: 20px; margin-right: -10px; margin-left: 100px;">
     <div style="width: 85px; height: 84px; background-color: #1679AB; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 10px;">    &#10003;
@@ -393,31 +451,25 @@ a.sidebar-link:hover {
 
 </section>
 
-<section style="background-color: #E8F2F7; padding: 70px; display: flex; align-items: center; justify-content: center;">
+<section style="background-color: #FFFFFF; padding: 70px; display: flex; align-items: center; justify-content: center;">
     <div style="margin-left: 55px; margin-top: -45px;">
-    <h5 style="text-align: left; margin-top: 55px;">Jenis Kelamin*</h5>
-    <form style="width: 725px; height: 70px; position: relative; margin-top: 20px;">
-        <input type="text" placeholder="Cari Disini....." style="width: calc(100% - 40px); height: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc; font-family: 'Arial', sans-serif; font-size: 16px; padding-left: 30px;">
-        <i style="position: absolute; top: 50%; left: 625px; transform: translateY(-50%); font-size: 24px;" class="fa">&#xf002;</i>
-    </form>
-    <h6 style="text-align: left; margin-top: 15px;">Jenis Kelamin yang dipilih:</h6>
-    <div style="display: flex; margin-top: 15px;">
-                    <div style="width: 157px; height: 36px; background-color: #B7D5E5; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
-                        Prempuan
-                    </div>
-                    <div style="width: 157px; height: 36px; background-color: #B7D5E5; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-left: 10px;">
-                       Laki-Laki
-                    </div>
-                </div>
+
+     <h6 style="text-align: left; margin-top: 40px;">Jenis Kelamin*</h6>
+        <form>
+    <select style="width: 704px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px; padding-left: 30px;">
+        <option value="Prempuan">Prempuan</option>
+        <option value="Laki-Laki">Laki-Laki</option>
+    </select>
+</form>
 
                 <h5 style="text-align: left; margin-top: 55px;">Pengalaman*</h5>
         <form>
-            <input type="text" style="width: 704px; height: 70px;  border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;" placeholder="Ketik Disini.....">
+            <input type="text" style="width: 704px; height: 70px;  border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px; padding-left: 30px;" placeholder="Ketik Disini.....">
         </form>
 
         <h6 style="text-align: left; margin-top: 40px;">Jenjang Pendidikan*</h6>
         <form>
-    <select style="width: 704px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+    <select style="width: 704px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px; padding-left: 30px;">
         <option value="Pendidikan Menengah">Pendidikan Menengah</option>
         <option value="Pendidikan Tinggi">Pendidikan Tinggi</option>
         <option value="Pendidikan nonformal">Pendidikan nonformal</option>
@@ -430,25 +482,42 @@ a.sidebar-link:hover {
     </div>
 </section>
 
-<section style="background-color: #FFFFFF; padding: 5px; display: flex; align-items: center; justify-content: center;">
-<a href="/Page-BuatLowongan" style="text-decoration: none; margin-left: auto; margin-left: 365px; margin-top: -55px;">
+<a href="/Page-BuatLowongan" style="text-decoration: none; margin-left: 400px; margin-right: 155px;">
     <button type="submit" style="background-color: #FFC94A; border: none; border-radius: 8px; color: #000000; padding: 10px;">
     <img src="svg/left.svg"style="width: 20px; height: 20px; margin-right: 5px;">
         Kembali
     </button>
 </a>
-<a href="/Page-BuatLowongan3" style="text-decoration: none; margin-left: auto; margin-right: 335px; margin-top: -55px;">
-    <button type="submit" style="background-color: #FFC94A; border: none; border-radius: 8px; color: #000000; padding: 10px;">
+<a href="/Page-BuatLowongan3" style="text-decoration: none; margin-left: 255px; margin-top: -55px;">
+    <button type="submit" style="background-color: #028391; border: none; border-radius: 8px; color: #000000; padding: 10px;">
         Selanjutnya
+        <img src="img/next.png"style="width: 20px; height: 20px; margin-left: 5px;">
     </button>
 </a>
-</section>
 
     </div>
 
 </div>
 
     <script>
+
+document.getElementById("dropdownIcon").addEventListener("click", function() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.arrow-icon') && !event.target.matches('.arrow-icon *')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
         const hamBurger = document.querySelector(".toggle-btn");
 
 hamBurger.addEventListener("click", function () {
@@ -543,6 +612,7 @@ document.getElementById("comment").addEventListener("input", function() {
                 var wordCount = this.value.trim().split(/\s+/).length;
                 document.getElementById("wordCount").innerText = wordCount + "/1000 kata";
             });
+
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

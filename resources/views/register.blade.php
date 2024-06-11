@@ -31,7 +31,7 @@
 <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card">
+                <div class="card" style="background-image: url('img/login.jpg'); background-size: cover; background-position: bottom;">
                     <div class="card-body text-center">
                         <img src="img/Logo.png" alt="Brand Logo" class="mb-4" style="width: 175px;">
                         <h2 class="mb-4" style="margin-top: -45px;">Daftar Sebagai Pelamar</h2>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             <a href="javascript:void(0);" onclick="showAlert()" class="btn btn-secondary btn-block" style="background-color: #146D9A;">Buat Akun</a>
-                            <p class="mt-5">Sudah punya akun? <a href="/loginperusahaan" style="color: blue;">Login</a></p>
+                            <p class="mt-5">Sudah punya akun? <a href="/login" style="color: blue;">Login</a></p>
                         </form>
                     </div>
                 </div>

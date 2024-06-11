@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <title>Link-Kerjaku | Lihat Perusaahan 2</title>
+    <title>Link-Kerjaku | Lihat Perusaahan Pelamar</title>
     <link
             href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
             rel="stylesheet"
@@ -168,12 +168,8 @@
     </div>
 </div>
 <div style="margin-left: 60px;">
-    <div class="card" style="width: 393px; height: 488px; border-radius: 20px; background-color: #8E98A8;">
-    <img src="img/profill 4.jpg" class="card-img-top" alt="Card Image" style="border-radius: 20px 20px 20px 20px; height: 100%;">
-        <div class="card-body">
-        </div>
+    <img src="img/LihatPerusahaan.png" alt="Card Image" style="border-radius: 20px; width: 500px; height: 488px;">
     </div>
-</div>
 
 
 </section>
@@ -420,7 +416,7 @@
             
             <div style="display: flex; justify-content: center; margin-top: 45px;">
         <div class="col-md-6 text-center">
-    <a href="/LihatPerusahaan" class="btn btn-secondary" style="color: #000000; background-color: #FFC94A;">Lihat Selengkapnya</a>
+    <a href="/LihatPerusahaan2" class="btn btn-secondary" style="color: #000000; background-color: #FFC94A;">Lihat Selengkapnya</a>
 </div>
 </div>
         </section>

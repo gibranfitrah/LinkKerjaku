@@ -202,10 +202,9 @@
             </div>
         </form>
     </div>
+
     <div style="margin-left: 60px;">
-    <div class="card" style="width: 500px; height: 488px; border-radius: 20px; background-color: #8E98A8;">
-    <img src="img/tes2.jpg" class="card-img-top" alt="Card Image" style="border-radius: 20px 20px 20px 20px; height: 100%;">
-    </div>
+    <img src="img/tes2.png" class="card-img-top" alt="Card Image" style="border-radius: 20px 20px 20px 20px; height: 100%;">
 </div>
 </section>
 

@@ -309,6 +309,28 @@ a.sidebar-link:hover {
             cursor: pointer;
         }
     
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 15px;
+            margin-left: 55px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        .show {display: block;}
+
+        .dropdown-content span {
+            margin-left: 8px;
+        }
     </style>
 </head>
 
@@ -320,61 +342,92 @@ a.sidebar-link:hover {
         <i class="lni lni-grid-alt"></i>
     </button>
     <div class="sidebar-logo">
-    <a href="/PageDashboard">Link Kerjaku</a>
+    <a href="/PageDashboard">
+    <span style="color: #FFDB00;">Link</span>
+    <span style="color: #3572EF;">Kerjaku</span>
+</a>
     </div>
 </div>
 <hr size="5" width="100%" color="#FFFFFF">
-<a href="/profill">
-    <img src="img/google.png" alt="Logo" width="31.94px" height="33px" style="display: inline-block; margin-left: 20px;">
-</a>
-<span style="vertical-align: middle; color: #FFFFFF; margin-left: 75px; margin-top: -30px;">Google</span>
-<hr size="5" width="100%" color="#FFFFFF" style="margin-top: 25px;">
 
-            <ul class="sidebar-nav">
+<ul class="sidebar-nav">
 
-            <li class="sidebar-item">
-                    <a href="/Page-Profill" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span>Profile</span>
-                    </a>
-                </li>
-
-                <li class="sidebar-item" style="margin-top: 20px;">
-    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-        data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-link">
+<li class="sidebar-item" style="margin-top: -20px;">
+        <a href="/PageDashboard" class="sidebar-link">
         <i class="lni lni-protection"></i>
-        <span style="color: blue;">Dashboard</span>
-    </a>
-    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" style="margin-top: 10px;">
-        <li class="sidebar-item">
-            <a href="/Page-StatusPelamar" class="sidebar-link">
-                <img src="img/resume.png" alt="Logo" width="25px" height=""> Status Pelamar
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="/Page-BuatLowongan" class="sidebar-link">
-                <img src="img/vacancy.png" alt="Logo" width="25px" style="margin-top: 10px;"> Buat Lowongan
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="#" class="sidebar-link" style="color: #6FDCE3;">
-                <img src="img/StatusPelamar.png" alt="Logo" width="25px" style="margin-top: 10px;"> Lowongan Kerja
-            </a>
-        </li>
-    </ul>
+        <span>Dashboard</span>
+        </a>
+    </li>
+
+<li class="sidebar-item" style="margin-top: 20px;">
+<a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-link">
+<i class="lni lni-apartment"></i>
+    <span >Lowongan</span>
+</a>
+<ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" style="margin-top: 10px;">
+<li class="sidebar-item">
+<a href="/Page-StatusPelamar" class="sidebar-link">
+    <img src="img/resume.png" alt="Logo" width="25px" height=""> Status Pelamar
+</a>
+</li>
+<li class="sidebar-item">
+<a href="/Page-BuatLowongan" class="sidebar-link">
+    <img src="img/vacancy.png" alt="Logo" width="25px" style="margin-top: 10px;"> Buat Lowongan
+</a>
+</li>
+<li class="sidebar-item">
+<a href="/Page-LowonganKerja" class="sidebar-link" style="color: #FCDC94;">
+    <img src="img/StatusPelamar.png" alt="Logo" width="25px" style="margin-top: 10px;"> Lowongan Kerja
+</a>
+</li>
+</ul>
 </li>
 
-            </ul>
-            <div class="sidebar-footer">
-                <a href="/" class="sidebar-link">
-                    <i class="lni lni-exit"></i>
-                    <span>Logout</span>
-                </a>
-            </div>
+<li class="sidebar-item" style="margin-top: 25px;">
+        <a href="/Page-Profill" class="sidebar-link">
+            <i class="lni lni-user"></i>
+            <span>Profile</span>
+        </a>
+    </li>
+
+</ul>
         </aside>
         <div class="main p-3">
 
-        <section style="background-color: #146D9A; padding: 50px;">
+        <div class="text-left" style="margin-top: 15px;">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb" style="margin-left: 55px;">
+  <li class="breadcrumb-item">
+                <img src="img/Lowongankerja.png" alt="Home" width="26" height="26">
+            </li>
+                <li class="breadcrumb-item active" style="margin-left: 5px;" aria-current="page"><a href="/Page-LowonganKerja">Lowongan Kerja</a></li>
+  </ol>
+</nav>
+    </div>
+
+    <div class="d-flex align-items-center" style="position: relative; margin-left: 1065px; margin-top: -45px;">
+    <a href="#" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px; margin-right: 10px;" title="Olivia Rhye">
+        <img src="img/Google.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
+    </a>
+    <span style="margin-left: 10px;">Google</span>
+    <div id="dropdownIcon" class="arrow-icon" style="margin-left: 12px; width: 26px; height: 26px; border: 2px solid #FFC94A; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+            <path d="M6 9l6 6 6-6"></path>
+        </svg>
+    </div>
+    <div id="myDropdown" class="dropdown-content" style="top: 100%; left: -30px;">
+    <a href="/Page-Profill">
+            <img src="img/editing.png" alt="Profile Icon" width="16" height="16">
+            <span>Profile</span>
+        </a>
+        <a href="/">
+            <img src="img/logout.png" alt="Profile Icon" width="16" height="16">
+            <span>Logout</span>
+        </a>    </div>
+</div>
+
+        <section style="background-color: #146D9A; padding: 50px; border-radius: 12px;  margin-top: 85px;">
 <div class="col" style="margin-left: 25px;">
 <h3 style="margin-left: 25px; color: #FFFFFF;">Lowongan Pekerjaan</h3>
 </div>
@@ -387,99 +440,41 @@ a.sidebar-link:hover {
 </div>
 
 
-<div class="row justify-content-center" style="margin-top: 35px;">
-    <div class="col-md-4 mb-4" style="margin-right: 120px;">
-        <div class="card" style="width: 467px; height: 255px; border-radius: 20px; background-color: #B7D5E5; position: relative; box-shadow: 10px 10px 15px rgba(255, 0, 0, 0.5);">
-            <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px; margin-left: -15px; overflow: hidden;">
-                <img src="img/ProfilPerusahaan.jpg" alt="Circular Image" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <h5 class="card-title" style="color: #000000; margin-top: 25px; margin-left: -45px; margin-bottom: 10px;">Digital Marketing</h5>
-            <p style="color: #000000; margin-bottom: 10px; margin-left: -115px;">Perusahaan</p>
-            <p style="color: #000000; margin-left: 25px; margin-top: 10px; margin-right: 65px;">Digital marketing adalah kegiatan pemasaran produk atau jasa...</p>
-            <div style="display: flex; justify-content: space-between; margin-left: -175px; margin-right: 55px; margin-top: 3px;">
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center;">Full Time</div>
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center; margin-left: 25px;">Full Time</div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4" style="margin-left: 10px;">
-        <div class="card" style="width: 467px; height: 255px; border-radius: 20px; background-color: #B7D5E5; position: relative; box-shadow: 10px 10px 15px rgba(255, 0, 0, 0.5);">
-            <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px; margin-left: -15px; overflow: hidden;">
-                <img src="img/ProfilPerusahaan.jpg" alt="Circular Image" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <h5 class="card-title" style="color: #000000; margin-top: 25px; margin-left: -95px; margin-bottom: 10px;">Analis Data</h5>
-            <p style="color: #000000; margin-bottom: 10px; margin-left: -115px;">Perusahaan</p>
-            <p style="color: #000000; margin-left: 20px; margin-top: 10px;">Digital marketing adalah kegiatan pemasaran produk atau jasa.....</p>
-            <div style="display: flex; justify-content: space-between; margin-left: -175px; margin-right: 55px; margin-top: 3px;">
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center;">Full Time</div>
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center; margin-left: 25px;">Full Time</div>
+<section style="background-color: #FFFFFF; padding: 20px; display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div style="width: 1217px; height: 555px; background-color: #E8F2F7; box-shadow: 10px 10px 15px rgba(20, 109, 154, 0.5); border-radius: 10px; position: relative;">
+            <img src="img/google.jpg" alt="Circular Image" style="width: 124px; height: 124px; border-radius: 50%; position: absolute; top: 55px; left: 85px; object-fit: cover;">
+            <h1 style="position: absolute; top: 100px; left: 230px; font-size: 24px; color: #333;">Google</h1>
+            <p style="position: absolute; top: 100px; left: 1035px; color: #ECB176;">Baru saja</p>
+            <!-- Content of the card goes here -->
+            <h5 style="margin-top: 215px; margin-left: 235px; ">UI/UX Designer</h5>
+            <p style="margin-top: 25px; margin-left: 235px; margin-right: 85px; text-align: justify;">
+                UI/UX Designer adalah profesional yang bertanggung jawab untuk merancang antarmuka pengguna (UI) dan pengalaman pengguna (UX) pada produk digital seperti website, aplikasi mobile, dan software. Mereka bekerja sama dengan tim pengembang, peneliti, dan pemangku kepentingan lainnya untuk menciptakan produk yang mudah digunakan, intuitif, dan menyenangkan bagi pengguna.
+            </p>
+            <hr style="margin-top: 35px; margin-left: 55px; margin-right: 85px; border: 0; border-top: 2px solid #333;">
+            <div style="display: flex; justify-content: center; margin-top: 35px;">
+                <button style="padding: 10px 20px; font-size: 16px; margin-right: 10px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; cursor: pointer; margin-right: 75px;">Edit</button>
+                <button style="padding: 10px 20px; font-size: 16px; color: #000000; border: 2px solid #FFC94A; border-radius: 5px; cursor: pointer;">Hapus</button>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<div class="row justify-content-center" style="margin-top: 35px;">
-    <div class="col-md-4 mb-4" style="margin-right: 120px;">
-        <div class="card" style="width: 467px; height: 255px; border-radius: 20px; background-color: #B7D5E5; position: relative; box-shadow: 10px 10px 15px rgba(255, 0, 0, 0.5);">
-            <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px; margin-left: -15px; overflow: hidden;">
-                <img src="img/ProfilPerusahaan.jpg" alt="Circular Image" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <h5 class="card-title" style="color: #000000; margin-top: 25px; margin-left: -45px; margin-bottom: 10px;">Digital Marketing</h5>
-            <p style="color: #000000; margin-bottom: 10px; margin-left: -115px;">Perusahaan</p>
-            <p style="color: #000000; margin-left: 25px; margin-top: 10px; margin-right: 65px;">Digital marketing adalah kegiatan pemasaran produk atau jasa.....</p>
-            <div style="display: flex; justify-content: space-between; margin-left: -175px; margin-right: 55px; margin-top: 3px;">
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center;">Full Time</div>
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center; margin-left: 25px;">Full Time</div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4" style="margin-left: 10px;">
-        <div class="card" style="width: 467px; height: 255px; border-radius: 20px; background-color: #B7D5E5; position: relative; box-shadow: 10px 10px 15px rgba(255, 0, 0, 0.5);">
-            <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px; margin-left: -15px; overflow: hidden;">
-                <img src="img/ProfilPerusahaan.jpg" alt="Circular Image" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <h5 class="card-title" style="color: #000000; margin-top: 25px; margin-left: -95px; margin-bottom: 10px;">Analis Data</h5>
-            <p style="color: #000000; margin-bottom: 10px; margin-left: -115px;">Perusahaan</p>
-            <p style="color: #000000; margin-left: 20px; margin-top: 10px;">Digital marketing adalah kegiatan pemasaran produk atau jasa.....</p>
-            <div style="display: flex; justify-content: space-between; margin-left: -175px; margin-right: 55px; margin-top: 3px;">
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center;">Full Time</div>
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center; margin-left: 25px;">Full Time</div>
+    <section style="background-color: #FFFFFF; padding: 20px; display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: -55px;">
+        <div style="width: 1217px; height: 555px; background-color: #E8F2F7; box-shadow: 10px 10px 15px rgba(20, 109, 154, 0.5); border-radius: 10px; position: relative;">
+            <img src="img/google.jpg" alt="Circular Image" style="width: 124px; height: 124px; border-radius: 50%; position: absolute; top: 55px; left: 85px; object-fit: cover;">
+            <h1 style="position: absolute; top: 100px; left: 230px; font-size: 24px; color: #333;">Google</h1>
+            <p style="position: absolute; top: 100px; left: 1035px; color: #ECB176;">Baru saja</p>
+            <!-- Content of the card goes here -->
+            <h5 style="margin-top: 215px; margin-left: 235px; ">UI/UX Designer</h5>
+            <p style="margin-top: 25px; margin-left: 235px; margin-right: 85px; text-align: justify;">
+                UI/UX Designer adalah profesional yang bertanggung jawab untuk merancang antarmuka pengguna (UI) dan pengalaman pengguna (UX) pada produk digital seperti website, aplikasi mobile, dan software. Mereka bekerja sama dengan tim pengembang, peneliti, dan pemangku kepentingan lainnya untuk menciptakan produk yang mudah digunakan, intuitif, dan menyenangkan bagi pengguna.
+            </p>
+            <hr style="margin-top: 35px; margin-left: 55px; margin-right: 85px; border: 0; border-top: 2px solid #333;">
+            <div style="display: flex; justify-content: center; margin-top: 35px;">
+                <button style="padding: 10px 20px; font-size: 16px; margin-right: 10px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; cursor: pointer; margin-right: 75px;">Edit</button>
+                <button style="padding: 10px 20px; font-size: 16px; color: #000000; border: 2px solid #FFC94A; border-radius: 5px; cursor: pointer;">Hapus</button>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="row justify-content-center" style="margin-top: 35px;">
-    <div class="col-md-4 mb-4" style="margin-right: 120px;">
-        <div class="card" style="width: 467px; height: 255px; border-radius: 20px; background-color: #B7D5E5; position: relative; box-shadow: 10px 10px 15px rgba(255, 0, 0, 0.5);">
-            <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px; margin-left: -15px; overflow: hidden;">
-                <img src="img/ProfilPerusahaan.jpg" alt="Circular Image" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <h5 class="card-title" style="color: #000000; margin-top: 25px; margin-left: -45px; margin-bottom: 10px;">Digital Marketing</h5>
-            <p style="color: #000000; margin-bottom: 10px; margin-left: -115px;">Perusahaan</p>
-            <p style="color: #000000; margin-left: 25px; margin-top: 10px; margin-right: 65px;">Digital marketing adalah kegiatan pemasaran produk atau jasa.....</p>
-            <div style="display: flex; justify-content: space-between; margin-left: -175px; margin-right: 55px; margin-top: 3px;">
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center;">Full Time</div>
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center; margin-left: 25px;">Full Time</div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4" style="margin-left: 10px;">
-        <div class="card" style="width: 467px; height: 255px; border-radius: 20px; background-color: #B7D5E5; position: relative; box-shadow: 10px 10px 15px rgba(255, 0, 0, 0.5);">
-            <div style="width: 83px; height: 83px; background-color: #808080; border-radius: 50%; position: absolute; left: 40px; top: 5px; margin-top: 30px; margin-left: -15px; overflow: hidden;">
-                <img src="img/ProfilPerusahaan.jpg" alt="Circular Image" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <h5 class="card-title" style="color: #000000; margin-top: 25px; margin-left: -95px; margin-bottom: 10px;">Analis Data</h5>
-            <p style="color: #000000; margin-bottom: 10px; margin-left: -115px;">Perusahaan</p>
-            <p style="color: #000000; margin-left: 20px; margin-top: 10px;">Digital marketing adalah kegiatan pemasaran produk atau jasa.....</p>
-            <div style="display: flex; justify-content: space-between; margin-left: -175px; margin-right: 55px; margin-top: 3px;">
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center;">Full Time</div>
-                <div style="width: 80px; height: 30px; background-color: #B2C4D4; border-radius: 5px; display: flex; align-items: center; justify-content: center; margin-left: 25px;">Full Time</div>
-            </div>
-        </div>
-    </div>
-</div>
-
+    </section>
 
 
     </div>
@@ -525,6 +520,23 @@ document.querySelectorAll('.card').forEach(card => {
             });
         });
     });
+
+    document.getElementById("dropdownIcon").addEventListener("click", function() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.arrow-icon') && !event.target.matches('.arrow-icon *')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
     </script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

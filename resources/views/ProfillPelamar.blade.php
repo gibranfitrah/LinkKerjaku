@@ -182,7 +182,7 @@
             <h5 style="text-align: left; margin-top: 45px; color: #146D9A;">Pengalaman</h5>
         <form style="margin-top: 10px;">
             <!-- Text Input -->
-            <input type="text" id="experience" name="experience" placeholder="Masukkan pengalaman Anda" style="width: 1013px; height: 70px; margin-bottom: 10px; padding: 8px;">
+            <input type="text" id="experience" name="experience" placeholder="Masukkan pengalaman Anda" style="width: 1013px; height: 70px; margin-bottom: 10px; padding: 8px; padding-left: 30px;">
 
             <!-- File Input with Icon -->
             <div style="position: relative; margin-top: -33px; margin-right: 145px;">
@@ -212,14 +212,14 @@
 
     <h5 style="text-align: left; margin-top: 45px; color: #146D9A;">Ringkasan Pribadi</h5>
         <form>
-            <textarea id="comment" name="comment" rows="4" cols="50" style="width: 1013px; height: 231px; border-radius: 10px; margin-bottom: 10px; margin-top: 15px;" placeholder="ketik disini"></textarea><br>
-            <span id="wordCount" style="margin-left: 555px;">0/300 kata</span>
+            <textarea id="comment" name="comment" rows="4" cols="50" style="width: 1013px; height: 231px; border-radius: 10px; margin-bottom: 10px; margin-top: 15px; padding-left: 30px; padding-top: 15px;" placeholder="ketik disini"></textarea><br>
+            <span id="wordCount" style="margin-left: 900px;">0/300 kata</span>
         </form>
 
         <h3 style="text-align: left; margin-top: 45px; color: #146D9A;">Pendidikan</h3>
         <form style="margin-top: 10px;">
             <!-- Text Input -->
-            <input type="text" id="experience" name="experience" placeholder="Masukkan pengalaman Anda" style="width: 1013px; height: 70px; margin-bottom: 10px; padding: 8px;">
+            <input type="text" id="experience" name="experience" placeholder="Masukkan pengalaman Anda" style="width: 1013px; height: 70px; margin-bottom: 10px; padding: 8px;  padding-left: 30px;">
 
             <!-- File Input with Icon -->
             <div style="position: relative; margin-top: -33px; margin-right: 145px;">
@@ -265,7 +265,7 @@
 
                 <h3 style="text-align: left; margin-top: 55px; color: #146D9A;">Bahasa</h3>
         <form>
-    <select style="width: 1013px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;">
+    <select style="width: 1013px; height: 70px; border: 1px solid black; border-radius: 8px; padding: 5px; margin-bottom: 20px; margin-top: 10px;  padding-left: 30px;">
         <option value="Bahasa Indonesia">Bahasa Indonesia</option>
         <option value="English">English</option>
         <option value="Mandarin">Mandarin</option>
@@ -306,20 +306,21 @@
     </div>
 </div>
 
-<div class="d-flex" style="margin-left: 355px; position: relative; display: flex; align-items: center; margin-top: 55px;">
-    <div style="margin-right: -10px; position: relative; margin-right: 255px;">
-    <a href="/HomePagePelamar">
-    <button id="companyButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: white; padding: 10px;">
-        Edit
-    </button>
-</a>
+<div style="width: 100%; display: table; margin-top: 55px; text-align: center;">
+    <div style="display: table-cell;">
+        <a href="/ProfillPelamar">
+            <button id="companyButton" class="btn" role="button" style="border: 2px solid #FFC94A; background-color: white; padding: 10px; margin-left: 12px;">
+                Hapus
+            </button>
+        </a>
     </div>
-    <div style="margin-right: -10px; position: relative;">
-    <button id="loginButton" class="btn" role="button" style="border: 2px solid #FFC94A; margin-right: 25px; background-color: #FFC94A; border: none; padding: 10px;">
-        Simpan Perubahan
-    </button>
+    <div style="display: table-cell;">
+        <a id="loginButton" class="btn" role="button" style="border: 2px solid #FFC94A; background-color: #FFC94A; border: none; padding: 10px; text-decoration: none; color: black;" href="javascript:void(0);">
+            Simpan Perubahan
+        </a>
+    </div>
 </div>
-</div>
+
 
 
     </div>
@@ -435,6 +436,17 @@ function confirmLogout() {
     });
 }
 
+document.getElementById('loginButton').addEventListener('click', function() {
+        Swal.fire({
+            title: 'Simpan Perubahan Berhasil',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '/SimpanPerubahan'; // Ganti '/home' dengan URL halaman home Anda
+            }
+        });
+    });
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

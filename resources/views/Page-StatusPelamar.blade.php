@@ -302,6 +302,29 @@ a.sidebar-link:hover {
 .text-clickable:hover {
     color: #FFC94A;
 }
+
+.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 15px;
+            margin-left: 55px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        .show {display: block;}
+
+        .dropdown-content span {
+            margin-left: 8px;
+        }
     
     </style>
 </head>
@@ -314,64 +337,98 @@ a.sidebar-link:hover {
         <i class="lni lni-grid-alt"></i>
     </button>
     <div class="sidebar-logo">
-    <a href="/PageDashboard">Link Kerjaku</a>
+    <a href="/PageDashboard">
+    <span style="color: #FFDB00;">Link</span>
+    <span style="color: #3572EF;">Kerjaku</span>
+</a>
     </div>
 </div>
 <hr size="5" width="100%" color="#FFFFFF">
-<a href="/profill">
-    <img src="img/google.png" alt="Logo" width="31.94px" height="33px" style="display: inline-block; margin-left: 20px;">
-</a>
-<span style="vertical-align: middle; color: #FFFFFF; margin-left: 75px; margin-top: -30px;">Google</span>
-<hr size="5" width="100%" color="#FFFFFF" style="margin-top: 25px;">
 
-            <ul class="sidebar-nav">
+<ul class="sidebar-nav">
 
-            <li class="sidebar-item">
-                    <a href="/Page-Profill" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span>Profile</span>
-                    </a>
-                </li>
-
-                <li class="sidebar-item" style="margin-top: 20px;">
-    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-        data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-link">
+<li class="sidebar-item" style="margin-top: -20px;">
+        <a href="/PageDashboard" class="sidebar-link">
         <i class="lni lni-protection"></i>
-        <span style="color: blue;">Dashboard</span>
-    </a>
-    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" style="margin-top: 10px;">
-        <li class="sidebar-item">
-            <a href="/Page-StatusPelamar" class="sidebar-link"  style="color: #6FDCE3;">
-                <img src="img/resume.png" alt="Logo" width="25px" height=""> Status Pelamar
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="/Page-BuatLowongan" class="sidebar-link">
-                <img src="img/vacancy.png" alt="Logo" width="25px" style="margin-top: 10px;"> Buat Lowongan
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
-                <img src="img/StatusPelamar.png" alt="Logo" width="25px" style="margin-top: 10px;"> Lowongan Kerja
-            </a>
-        </li>
-    </ul>
+        <span>Dashboard</span>
+        </a>
+    </li>
+
+<li class="sidebar-item" style="margin-top: 20px;">
+<a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-link">
+<i class="lni lni-apartment"></i>
+    <span >Lowongan</span>
+</a>
+<ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" style="margin-top: 10px;">
+<li class="sidebar-item">
+<a href="/Page-StatusPelamar" class="sidebar-link" style="color: #FCDC94;">
+    <img src="img/resume.png" alt="Logo" width="25px" height=""> Status Pelamar
+</a>
+</li>
+<li class="sidebar-item">
+<a href="/Page-BuatLowongan" class="sidebar-link">
+    <img src="img/vacancy.png" alt="Logo" width="25px" style="margin-top: 10px;"> Buat Lowongan
+</a>
+</li>
+<li class="sidebar-item">
+<a href="/Page-LowonganKerja" class="sidebar-link">
+    <img src="img/StatusPelamar.png" alt="Logo" width="25px" style="margin-top: 10px;"> Lowongan Kerja
+</a>
+</li>
+</ul>
 </li>
 
-            </ul>
-            <div class="sidebar-footer">
-                <a href="/" class="sidebar-link">
-                    <i class="lni lni-exit"></i>
-                    <span>Logout</span>
-                </a>
-            </div>
+<li class="sidebar-item" style="margin-top: 25px;">
+        <a href="/Page-Profill" class="sidebar-link">
+            <i class="lni lni-user"></i>
+            <span>Profile</span>
+        </a>
+    </li>
+
+</ul>
+
         </aside>
         <div class="main p-3">
 
+        <div class="text-left" style="margin-top: 15px;">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb" style="margin-left: 55px;">
+  <li class="breadcrumb-item">
+                <img src="img/Resume.png" alt="Home" width="26" height="26">
+            </li>
+                <li class="breadcrumb-item active" style="margin-left: 5px;" aria-current="page"><a href="/Page-StatusPelamar">Status Pelamar</a></li>
+  </ol>
+</nav>
+    </div>
 
-        <section style="background-color: #146D9A; padding: 50px;">
+    <div class="d-flex align-items-center" style="position: relative; margin-left: 1065px; margin-top: -45px;">
+    <a href="#" class="btn-btn d-flex align-items-center justify-content-center" role="button" style="width: 40px; height: 40px; border-radius: 50%; margin-left: 10px; margin-right: 10px;" title="Olivia Rhye">
+        <img src="img/Google.jpg" alt="Profile Image" style="width: 45px; height: 45px; border-radius: 50%;">
+    </a>
+    <span style="margin-left: 10px;">Google</span>
+    <div id="dropdownIcon" class="arrow-icon" style="margin-left: 12px; width: 26px; height: 26px; border: 2px solid #FFC94A; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+            <path d="M6 9l6 6 6-6"></path>
+        </svg>
+    </div>
+    <div id="myDropdown" class="dropdown-content" style="top: 100%; left: -30px;">
+    <a href="/Page-Profill">
+            <img src="img/editing.png" alt="Profile Icon" width="16" height="16">
+            <span>Profile</span>
+        </a>
+        <a href="/">
+            <img src="img/logout.png" alt="Profile Icon" width="16" height="16">
+            <span>Logout</span>
+        </a>    </div>
+</div>
+
+
+        <section style="background-color: #146D9A; padding: 50px; border-radius: 12px;  margin-top: 85px;">
 <div class="col" style="margin-left: -25px;">
-<select class="select" aria-label="Default select example" style="width: 250px; height: 40px; margin-left: 50px; margin-top: 25px; background-color: #146D9A; border: none; color: #FFFFFF;">
+<h6 style="margin-left: 55px; color: #FFFFFF;">Pilih Lowongan</h6>
+
+<select class="select" aria-label="Default select example" style="width: 250px; height: 40px; margin-left: 50px; margin-top: 5px; background-color: #146D9A; border: none; color: #FFFFFF;">
 <option style="color: #FFFFFF;" selected>Software Engineer</option>
   <option style="color: #FFFFFF;" value="1">Analisis Data</option>
   <option style="color: #FFFFFF;" value="2">UI/UX</option>
@@ -380,7 +437,7 @@ a.sidebar-link:hover {
 
 </div>
 
-<div style="display: flex; justify-content: space-between; margin-top: 45px; margin-left: 130px; color: #FFFFFF;">
+<div style="display: flex; justify-content: space-between; margin-top: 45px; margin-left: 100px; margin-right: 135px; color: #FFFFFF;">
     <span class="text-clickable" style="margin-left: -55px;">Semua Pelamar</span>
     <span style="margin-left: 45px;" class="text-clickable">Belum dibaca</span>
     <span style="margin-left: 55px;" class="text-clickable">Sudah dibaca</span>
@@ -405,8 +462,8 @@ a.sidebar-link:hover {
         </div>
     </div>
 
-
-    <div class="card2" id="jobCard" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+    <a href="/PageOverlay-Dashboard" style="text-decoration: none; color: inherit;">
+    <div class="card2" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
     <img src="img/pelamar1.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
     <div class="card-body">
         <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Nia, Digital Marketing</h6>
@@ -421,7 +478,7 @@ a.sidebar-link:hover {
     </div>
 </div>
 
-<div class="card3" id="jobCard2" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+<div class="card3" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
     <img src="img/pelamar2.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
     <div class="card-body">
         <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Reni , Manajemen</h6>
@@ -436,7 +493,7 @@ a.sidebar-link:hover {
     </div>
 </div>
 
-<div class="card4" id="jobCard3" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+<div class="card4" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
     <img src="img/pelamar3.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
     <div class="card-body">
         <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Deni , Web Developer</h6>
@@ -451,10 +508,10 @@ a.sidebar-link:hover {
     </div>
 </div>
 
-<div class="card5" id="jobCard5" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/pelamar5.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
+<div class="card5" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
+    <img src="img/pelamar4.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
     <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Kyla , Digital Marketing</h6>
+        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Beni , Digital Marketing</h6>
         <div style="display: flex; align-items: center;">
     <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
     <p style="margin-left: 20px; margin-top: 35px;">Surabaya</p>
@@ -465,6 +522,27 @@ a.sidebar-link:hover {
 </div>
     </div>
 </div>
+
+<nav aria-label="Page navigation example" style="margin-top: 55px; margin-left: 355px; width: 683px; height: 58px;">
+  <ul class="pagination" style="display: flex; justify-content: space-between; height: 100%; margin: 0; padding: 0; list-style: none;">
+    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+      <a class="page-link" href="/Page-StatusPelamar" style="display: block; width: 100%; text-align: center;">Previous</a>
+    </li>
+    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+      <a class="page-link" href="/Page-StatusPelamar" style="display: block; width: 100%; text-align: center;">1</a>
+    </li>
+    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+      <a class="page-link" href="/Page-StatusPelamar2" style="display: block; width: 100%; text-align: center;">2</a>
+    </li>
+    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+      <a class="page-link" href="/Page-StatusPelamar3" style="display: block; width: 100%; text-align: center;">3</a>
+    </li>
+    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+      <a class="page-link" href="/Page-StatusPelamar2" style="display: block; width: 100%; text-align: center;">Next</a>
+    </li>
+  </ul>
+</nav>
+
 
 
 </section>
@@ -564,87 +642,6 @@ document.addEventListener("DOMContentLoaded", function () {
   smoothIncrement("diterima", data.diterima, 2000);
 });
 
-document.getElementById('jobCard').addEventListener('click', function() {
-    Swal.fire({
-        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonText: 'Ya',
-        cancelButtonText: 'Tidak'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = '/PageOverlay-Dashboard';
-        } else {
-            Swal.fire('Baiklah', '', 'info');
-        }
-    });
-});
-
-document.getElementById('jobCard2').addEventListener('click', function() {
-    Swal.fire({
-        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonText: 'Ya',
-        cancelButtonText: 'Tidak'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = '/PageOverlay-Dashboard';
-        } else {
-            Swal.fire('Baiklah', '', 'info');
-        }
-    });
-});
-
-document.getElementById('jobCard3').addEventListener('click', function() {
-    Swal.fire({
-        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonText: 'Ya',
-        cancelButtonText: 'Tidak'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = '/PageOverlay-Dashboard';
-        } else {
-            Swal.fire('Baiklah', '', 'info');
-        }
-    });
-});
-
-document.getElementById('jobCard4').addEventListener('click', function() {
-    Swal.fire({
-        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonText: 'Ya',
-        cancelButtonText: 'Tidak'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = '/PageOverlay-Dashboard';
-        } else {
-            Swal.fire('Baiklah', '', 'info');
-        }
-    });
-});
-
-document.getElementById('jobCard5').addEventListener('click', function() {
-    Swal.fire({
-        title: 'Apakah Anda ingin melihat Profil Pelamar ini?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonText: 'Ya',
-        cancelButtonText: 'Tidak'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = '/PageOverlay-Dashboard';
-        } else {
-            Swal.fire('Baiklah', '', 'info');
-        }
-    });
-});
-
-
 document.getElementById("searchInput").addEventListener("input", function(event) {
         // Ambil nilai input pencarian
         var searchTerm = event.target.value.toLowerCase();
@@ -660,6 +657,23 @@ document.getElementById("searchInput").addEventListener("input", function(event)
         // Tampilkan hasil pencarian (contoh: tampilkan di console)
         console.log(filteredApplicants);
     });
+
+    document.getElementById("dropdownIcon").addEventListener("click", function() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.arrow-icon') && !event.target.matches('.arrow-icon *')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
 
     </script>
     <!-- SweetAlert CSS -->

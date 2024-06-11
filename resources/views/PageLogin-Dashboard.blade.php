@@ -30,7 +30,7 @@
 <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card">
+                <div class="card" style="background-image: url('img/LoginPerusahaan.jpg'); background-size: cover; background-position: center;">
                     <div class="card-body text-center">
                         <img src="img/Logo.png" alt="Brand Logo" class="mb-4" style="width: 175px;">
                         <h2 class="mb-4" style="margin-top: -45px;">Login Sebagai Perusahaan</h2>

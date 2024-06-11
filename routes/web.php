@@ -143,6 +143,12 @@ Route::get('/ProfillPelamar', function () {
     ]);
 });
 
+Route::get('/SimpanPerubahan', function () {
+    return view('SimpanPerubahan', [
+        "title" => "SimpanPerubahan"
+    ]);
+});
+
 Route::get('/ProfillPerusahaan', function () {
     return view('ProfillPerusahaan', [
         "title" => "ProfillPerusahaan"
@@ -212,6 +218,12 @@ Route::get('/Kontak', function () {
     ]);
 });
 
+Route::get('/Kontak-Perusahaan', function () {
+    return view('Kontak-Perusahaan', [
+        "title" => "Kontak-Perusahaan"
+    ]);
+});
+
 Route::get('/LamarPekerjaan', function () {
     return view('LamarPekerjaan', [
         "title" => "LamarPekerjaan"
@@ -250,7 +262,20 @@ Route::get('/Page-Profill', function () {
     ]);
 });
 
+
 Route::get('/Page-StatusPelamar', function () {
+    return view('Page-StatusPelamar', [
+        "title" => "Page-StatusPelamar"
+    ]);
+});
+
+Route::get('/Page-StatusPelamar2', function () {
+    return view('Page-StatusPelamar2', [
+        "title" => "Page-StatusPelamar2"
+    ]);
+});
+
+Route::get('/Page-StatusPelamar3', function () {
     return view('Page-StatusPelamar', [
         "title" => "Page-StatusPelamar"
     ]);
@@ -280,13 +305,6 @@ Route::get('/Page-LowonganKerja', function () {
     ]);
 });
 
-
-Route::get('/Page-LihatLowongan', function () {
-    return view('Page-LihatLowongan', [
-        "title" => "Page-LihatLowongan"
-    ]);
-});
-
 Route::get('/PageLogin-Dashboard', function () {
     return view('PageLogin-Dashboard', [
         "title" => "PageLogin-Dashboard"
@@ -302,6 +320,12 @@ Route::get('/PageDaftar-Dashboard', function () {
 Route::get('/PageOverlay-Dashboard', function () {
     return view('PageOverlay-Dashboard', [
         "title" => "PageOverlay-Dashboard"
+    ]);
+});
+
+Route::get('/Page-SimpanProfill', function () {
+    return view('Page-SimpanProfill', [
+        "title" => "Page-SimpanProfill"
     ]);
 });
 

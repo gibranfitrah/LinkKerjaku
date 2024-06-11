@@ -488,7 +488,7 @@
     </div>
     <div class="row mt-5">
     <div class="col-sm-6">
-        <div class="card" style="width: 600px; height: 235px; background-color: #1679AB; border-radius: 40px; margin-top: 20px; margin-left: 50px;">
+        <div class="card" style="width: 600px; height: 235px; background-color: #1679AB; border-radius: 40px; margin-top: 20px; margin-left: 75px;">
             <div class="card-body">
                 <h5 class="card-title" style="margin-top: 15px; color: #FFFFFF;">Bergabunglah dengan Kami Dalam Membuat Dampak!</h5>
                 <p class="card-text text-left" style="color: #FFFFFF;">Mari kita bersama-sama membentuk ekosistem talenta! Jika Anda ingin menampilkan kami atau menjajaki peluang kemitraan, cukup isi formulir di bawah ini dan tim kami akan segera menghubungi Anda.</p>
@@ -497,7 +497,7 @@
         </div>
     </div>
     <div class="col-sm-6">
-        <div class="card" style="width: 600px; height: 235px; background-color: #1679AB; border-radius: 40px; margin-top: 20px;">
+        <div class="card" style="width: 600px; height: 235px; background-color: #1679AB; border-radius: 40px; margin-top: 20px; margin-left: 35PX;">
             <div class="card-body">
                 <h5 class="card-title text-left" style="margin-top: 15px; color: #FFFFFF;">Media Atau Kemitraan Pertanyaan</h5>
                 <p class="card-text text-left" style="color: #FFFFFF;">Mari kita bersama-sama membentuk ekosistem talenta! Jika Anda ingin menampilkan kami atau menjajaki peluang kemitraan, cukup isi formulir di bawah ini dan tim kami akan segera menghubungi Anda.</p>
@@ -574,8 +574,8 @@
         <ul class="list-inline text-right" style="margin: 0; padding: 0; list-style: none; margin-left: 455px;">
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/facebook.svg" width="30" alt="Facebook Icon"></a></li>
             <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/instagram.svg" width="30" alt="Instagram Icon"></a></li>
-            <li class="list-inline-item" style="margin-right: 10px;"><a href="#"><img src="svg/link.svg" width="30" alt="LinkedIn Icon"></a></li>
-            <li class="list-inline-item"><a href="#"><img src="svg/twitter.svg" width="30" alt="Twitter Icon"></a></li>
+            <li class="list-inline-item" style="margin-right: 10px; margin-left: 5px;"><a href="#"><img src="img/link.png" width="30" alt="LinkedIn Icon"></a></li>
+            <li class="list-inline-item"><a href="https://www.tiktok.com/@linkkerjaku"><img src="img/tiktok.png" width="30" alt="Tiktok Icon"></a></li>
         </ul>
     </div>
 </div>
