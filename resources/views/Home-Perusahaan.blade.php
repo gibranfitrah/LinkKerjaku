@@ -38,10 +38,10 @@
             </ul>
 
             <div class="d-flex align-items-center">
-    <a href="/PageLogin-Dashboard" class="btn btn-secondary" role="button" style="background-color: white; border: 2px solid #FFC94A; color: #000000; margin-right: 15px;">
+    <a href="/loginperusahaan" class="btn btn-secondary" role="button" style="background-color: white; border: 2px solid #FFC94A; color: #000000; margin-right: 15px;">
         Sign In
     </a>
-    <a href="/PageDaftar-Dashboard" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; color: #000000;">
+    <a href="/loginperusahaan" class="btn btn-secondary" role="button" style="background-color: #FFC94A; border: none; color: #000000;">
         Sign Up
     </a>
 </div>

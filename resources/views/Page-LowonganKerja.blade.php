@@ -384,12 +384,6 @@ data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-
 </ul>
 </li>
 
-<li class="sidebar-item" style="margin-top: 25px;">
-        <a href="/Page-Profill" class="sidebar-link">
-            <i class="lni lni-user"></i>
-            <span>Profile</span>
-        </a>
-    </li>
 
 </ul>
         </aside>
@@ -440,48 +434,325 @@ data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-
 </div>
 
 
-<section style="background-color: #FFFFFF; padding: 20px; display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <div style="width: 1217px; height: 555px; background-color: #E8F2F7; box-shadow: 10px 10px 15px rgba(20, 109, 154, 0.5); border-radius: 10px; position: relative;">
-            <img src="img/google.jpg" alt="Circular Image" style="width: 124px; height: 124px; border-radius: 50%; position: absolute; top: 55px; left: 85px; object-fit: cover;">
-            <h1 style="position: absolute; top: 100px; left: 230px; font-size: 24px; color: #333;">Google</h1>
-            <p style="position: absolute; top: 100px; left: 1035px; color: #ECB176;">Baru saja</p>
-            <!-- Content of the card goes here -->
-            <h5 style="margin-top: 215px; margin-left: 235px; ">UI/UX Designer</h5>
-            <p style="margin-top: 25px; margin-left: 235px; margin-right: 85px; text-align: justify;">
-                UI/UX Designer adalah profesional yang bertanggung jawab untuk merancang antarmuka pengguna (UI) dan pengalaman pengguna (UX) pada produk digital seperti website, aplikasi mobile, dan software. Mereka bekerja sama dengan tim pengembang, peneliti, dan pemangku kepentingan lainnya untuk menciptakan produk yang mudah digunakan, intuitif, dan menyenangkan bagi pengguna.
-            </p>
-            <hr style="margin-top: 35px; margin-left: 55px; margin-right: 85px; border: 0; border-top: 2px solid #333;">
-            <div style="display: flex; justify-content: center; margin-top: 35px;">
-                <button style="padding: 10px 20px; font-size: 16px; margin-right: 10px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; cursor: pointer; margin-right: 75px;">Edit</button>
-                <button style="padding: 10px 20px; font-size: 16px; color: #000000; border: 2px solid #FFC94A; border-radius: 5px; cursor: pointer;">Hapus</button>
+<section style="background-color: #FFFFFF; padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+    <!-- Bagian Atas -->
+    <div style="display: flex; justify-content: space-around; width: 100%;">
+        <div style="width: 324px; height: 340px; background-color: #E2DFD0; display: flex; justify-content: center; align-items: center; border-radius: 16px;">
+            <div style="width: 289px; height: 198px; background-color: #FFFFFF; margin-top: -45px; border-radius: 16px;">
+                <img src="img/google1.png" alt="Gambar" style="width: 50px; height: 50px; margin-left: 16px; margin-top: 25px;">
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 85px; margin-top: -30px;">Google</h1>
+                    <span style="font-size: 12px; color: #666; margin-left: 210px; margin-top: -25px;">2 Minggu</span>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 25px; margin-top: 30px;">UI/UX Designer</h1>
+                </div>
+                <div style="display: flex; margin-top: 15px; margin-left: 25px;">
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                        Full Time
+                    </div>
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-left: 15px;">
+                        Part Time
+                    </div>
+                </div>
+
+                <div style="display: flex; margin-top: 55px; margin-left: -5px;">
+    <div style="position: relative;">
+        <div id="toggleButton1" style="position: absolute; left: 0; width: 80px; height: 30px; border-radius: 30px; display: flex; align-items: center; justify-content: flex-start; cursor: pointer; padding: 2px; background-color: #CCCCCC;" onclick="toggleSwitch(1)">
+            <div id="toggleHandle1" style="position: absolute; left: 2px; width: 26px; height: 26px; border-radius: 50%; background-color: #FFFFFF; transition: margin 0.3s;"></div>
+            <div id="toggleTextOn1" style="position: absolute; left: 5px; display: none;">ON</div>
+            <div id="toggleTextOff1" style="position: absolute; right: 5px;">OFF</div>
+        </div>
+    </div>
+</div>
+
+<div style="position: relative; display: inline-block; margin-left: 225px;">
+    <img src="img/list.png" alt="Gambar" style="width: 50px; height: 50px; filter: brightness(0); margin-top: -10px;" onclick="toggleDropdown(1)">
+    <div id="dropdownContent1" style="display: none; position: absolute; background-color: #f9f9f9; min-width: 120px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 5px;">
+        <a href="/Page-DetailLowongan" onclick="detail(1)" style="display: block; text-align: left;">Detail</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="edit(1)" style="display: block; text-align: left;">Edit</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="hapus(1)" style="display: block; text-align: left; color: red;">Hapus</a>
+    </div>
+</div>
+
             </div>
         </div>
-    </section>
 
-    <section style="background-color: #FFFFFF; padding: 20px; display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: -55px;">
-        <div style="width: 1217px; height: 555px; background-color: #E8F2F7; box-shadow: 10px 10px 15px rgba(20, 109, 154, 0.5); border-radius: 10px; position: relative;">
-            <img src="img/google.jpg" alt="Circular Image" style="width: 124px; height: 124px; border-radius: 50%; position: absolute; top: 55px; left: 85px; object-fit: cover;">
-            <h1 style="position: absolute; top: 100px; left: 230px; font-size: 24px; color: #333;">Google</h1>
-            <p style="position: absolute; top: 100px; left: 1035px; color: #ECB176;">Baru saja</p>
-            <!-- Content of the card goes here -->
-            <h5 style="margin-top: 215px; margin-left: 235px; ">UI/UX Designer</h5>
-            <p style="margin-top: 25px; margin-left: 235px; margin-right: 85px; text-align: justify;">
-                UI/UX Designer adalah profesional yang bertanggung jawab untuk merancang antarmuka pengguna (UI) dan pengalaman pengguna (UX) pada produk digital seperti website, aplikasi mobile, dan software. Mereka bekerja sama dengan tim pengembang, peneliti, dan pemangku kepentingan lainnya untuk menciptakan produk yang mudah digunakan, intuitif, dan menyenangkan bagi pengguna.
-            </p>
-            <hr style="margin-top: 35px; margin-left: 55px; margin-right: 85px; border: 0; border-top: 2px solid #333;">
-            <div style="display: flex; justify-content: center; margin-top: 35px;">
-                <button style="padding: 10px 20px; font-size: 16px; margin-right: 10px; background-color: #FFC94A; color: #000000; border: none; border-radius: 5px; cursor: pointer; margin-right: 75px;">Edit</button>
-                <button style="padding: 10px 20px; font-size: 16px; color: #000000; border: 2px solid #FFC94A; border-radius: 5px; cursor: pointer;">Hapus</button>
+        <!-- Kartu Kedua -->
+        <div style="width: 324px; height: 340px; background-color: #E2DFD0; display: flex; justify-content: center; align-items: center; border-radius: 16px;">
+            <div style="width: 289px; height: 198px; background-color: #FFFFFF; margin-top: -45px; border-radius: 16px;">
+                <img src="img/google1.png" alt="Gambar" style="width: 50px; height: 50px; margin-left: 16px; margin-top: 25px;">
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 85px; margin-top: -30px;">Google</h1>
+                    <span style="font-size: 12px; color: #666; margin-left: 210px;; margin-top: -25px;">1 Bulan</span>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 25px; margin-top: 30px;">Digital Marketing</h1>
+                </div>
+                <div style="display: flex; margin-top: 15px; margin-left: 25px;">
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                        Full Time
+                    </div>
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-left: 15px;">
+                        Part Time
+                    </div>
+                </div>
+
+                <div style="display: flex; margin-top: 55px; margin-left: -5px;">
+    <div style="position: relative;">
+        <div id="toggleButton2" style="position: absolute; left: 0; width: 80px; height: 30px; border-radius: 30px; display: flex; align-items: center; justify-content: flex-start; cursor: pointer; padding: 2px; background-color: #CCCCCC;" onclick="toggleSwitch(2)">
+            <div id="toggleHandle2" style="position: absolute; left: 2px; width: 26px; height: 26px; border-radius: 50%; background-color: #FFFFFF; transition: margin 0.3s;"></div>
+            <div id="toggleTextOn2" style="position: absolute; left: 5px; display: none;">ON</div>
+            <div id="toggleTextOff2" style="position: absolute; right: 5px;">OFF</div>
+        </div>
+    </div>
+</div>
+
+<div style="position: relative; display: inline-block; margin-left: 225px;">
+    <img src="img/list.png" alt="Gambar" style="width: 50px; height: 50px; filter: brightness(0); margin-top: -10px;" onclick="toggleDropdown(2)">
+    <div id="dropdownContent2" style="display: none; position: absolute; background-color: #f9f9f9; min-width: 120px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 5px;">
+        <a href="/Page-DetailLowongan" onclick="detail(2)" style="display: block; text-align: left;">Detail</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="edit(2)" style="display: block; text-align: left;">Edit</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="hapus(2)" style="display: block; text-align: left; color: red;">Hapus</a>
+    </div>
+</div>
+
             </div>
         </div>
-    </section>
+
+        <!-- Kartu Ketiga -->
+        <div style="width: 324px; height: 340px; background-color: #E2DFD0; display: flex; justify-content: center; align-items: center; border-radius: 16px;">
+            <div style="width: 289px; height: 198px; background-color: #FFFFFF; margin-top: -45px; border-radius: 16px;">
+                <img src="img/google1.png" alt="Gambar" style="width: 50px; height: 50px; margin-left: 16px; margin-top: 25px;">
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 85px; margin-top: -30px;">Google</h1>
+                    <span style="font-size: 12px; color: #666; margin-left: 210px; margin-top: -25px;">5 Hari</span>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 25px; margin-top: 30px;">Back-end</h1>
+                </div>
+                <div style="display: flex; margin-top: 15px; margin-left: 25px;">
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                        Full Time
+                    </div>
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-left: 15px;">
+                        Part Time
+                    </div>
+                </div>
+
+                <div style="display: flex; margin-top: 55px; margin-left: -5px;">
+    <div style="position: relative;">
+        <div id="toggleButton3" style="position: absolute; left: 0; width: 80px; height: 30px; border-radius: 30px; display: flex; align-items: center; justify-content: flex-start; cursor: pointer; padding: 2px; background-color: #CCCCCC;" onclick="toggleSwitch(3)">
+            <div id="toggleHandle3" style="position: absolute; left: 2px; width: 26px; height: 26px; border-radius: 50%; background-color: #FFFFFF; transition: margin 0.3s;"></div>
+            <div id="toggleTextOn3" style="position: absolute; left: 5px; display: none;">ON</div>
+            <div id="toggleTextOff3" style="position: absolute; right: 5px;">OFF</div>
+        </div>
+    </div>
+</div>
+
+<div style="position: relative; display: inline-block; margin-left: 225px;">
+    <img src="img/list.png" alt="Gambar" style="width: 50px; height: 50px; filter: brightness(0); margin-top: -10px;" onclick="toggleDropdown(3)">
+    <div id="dropdownContent3" style="display: none; position: absolute; background-color: #f9f9f9; min-width: 120px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 5px;">
+        <a href="/Page-DetailLowongan" onclick="detail(3)" style="display: block; text-align: left;">Detail</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="edit(3)" style="display: block; text-align: left;">Edit</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="hapus(3)" style="display: block; text-align: left; color: red;">Hapus</a>
+    </div>
+</div>
 
 
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Bawah -->
+    <div style="display: flex; justify-content: space-around; width: 100%; margin-top: 55px;">
+        <div style="width: 324px; height: 340px; background-color: #E2DFD0; display: flex; justify-content: center; align-items: center; border-radius: 16px;">
+            <div style="width: 289px; height: 198px; background-color: #FFFFFF; margin-top: -45px; border-radius: 16px;">
+                <img src="img/google1.png" alt="Gambar" style="width: 50px; height: 50px; margin-left: 16px; margin-top: 25px;">
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 85px; margin-top: -30px;">Google</h1>
+                    <span style="font-size: 12px; color: #666; margin-left: 210px; margin-top: -25px;">3 Bulan</span>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 25px; margin-top: 30px;">Front-end</h1>
+                </div>
+                <div style="display: flex; margin-top: 15px; margin-left: 25px;">
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                        Full Time
+                    </div>
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-left: 15px;">
+                        Part Time
+                    </div>
+                </div>
+
+                <div style="display: flex; margin-top: 55px; margin-left: -5px;">
+    <div style="position: relative;">
+        <div id="toggleButton4" style="position: absolute; left: 0; width: 80px; height: 30px; border-radius: 30px; display: flex; align-items: center; justify-content: flex-start; cursor: pointer; padding: 2px; background-color: #CCCCCC;" onclick="toggleSwitch(4)">
+            <div id="toggleHandle4" style="position: absolute; left: 2px; width: 26px; height: 26px; border-radius: 50%; background-color: #FFFFFF; transition: margin 0.3s;"></div>
+            <div id="toggleTextOn4" style="position: absolute; left: 5px; display: none;">ON</div>
+            <div id="toggleTextOff4" style="position: absolute; right: 5px;">OFF</div>
+        </div>
+    </div>
+</div>
+
+<div style="position: relative; display: inline-block; margin-left: 225px;">
+    <img src="img/list.png" alt="Gambar" style="width: 50px; height: 50px; filter: brightness(0); margin-top: -10px;" onclick="toggleDropdown(4)">
+    <div id="dropdownContent4" style="display: none; position: absolute; background-color: #f9f9f9; min-width: 120px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 5px; margin-left: 60px; margin-top: -85px;">
+        <a href="/Page-DetailLowongan" onclick="detail(4)" style="display: block; text-align: left;">Detail</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="edit(4)" style="display: block; text-align: left;">Edit</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="hapus(4)" style="display: block; text-align: left; color: red;">Hapus</a>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+
+        <!-- Kartu Kelima -->
+        <div style="width: 324px; height: 340px; background-color: #E2DFD0; display: flex; justify-content: center; align-items: center; border-radius: 16px;">
+            <div style="width: 289px; height: 198px; background-color: #FFFFFF; margin-top: -45px; border-radius: 16px;">
+                <img src="img/google1.png" alt="Gambar" style="width: 50px; height: 50px; margin-left: 16px; margin-top: 25px;">
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 85px; margin-top: -30px;">Google</h1>
+                    <span style="font-size: 12px; color: #666; margin-left: 210px; margin-top: -25px;">6 Bulan</span>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 25px; margin-top: 30px;">Quality Assurance</h1>
+                </div>
+                <div style="display: flex; margin-top: 15px; margin-left: 25px;">
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                        Full Time
+                    </div>
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-left: 15px;">
+                        Full Time
+                    </div>
+                </div>
+
+                <div style="display: flex; margin-top: 55px; margin-left: -5px;">
+    <div style="position: relative;">
+        <div id="toggleButton5" style="position: absolute; left: 0; width: 80px; height: 30px; border-radius: 30px; display: flex; align-items: center; justify-content: flex-start; cursor: pointer; padding: 2px; background-color: #CCCCCC;" onclick="toggleSwitch(5)">
+            <div id="toggleHandle5" style="position: absolute; left: 2px; width: 26px; height: 26px; border-radius: 50%; background-color: #FFFFFF; transition: margin 0.3s;"></div>
+            <div id="toggleTextOn5" style="position: absolute; left: 5px; display: none;">ON</div>
+            <div id="toggleTextOff5" style="position: absolute; right: 5px;">OFF</div>
+        </div>
+    </div>
+</div>
+
+<div style="position: relative; display: inline-block; margin-left: 225px;">
+    <img src="img/list.png" alt="Gambar" style="width: 50px; height: 50px; filter: brightness(0); margin-top: -10px;" onclick="toggleDropdown(5)">
+    <div id="dropdownContent5" style="display: none; position: absolute; background-color: #f9f9f9; min-width: 120px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 5px; margin-left: 60px; margin-top: -85px;">
+        <a href="/Page-DetailLowongan" onclick="detail(5)" style="display: block; text-align: left;">Detail</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="edit(5)" style="display: block; text-align: left;">Edit</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="hapus(5)" style="display: block; text-align: left; color: red;">Hapus</a>
+    </div>
+</div>                
+            </div>
+        </div>
+
+        <!-- Kartu Keenam -->
+        <div style="width: 324px; height: 340px; background-color: #E2DFD0; display: flex; justify-content: center; align-items: center; border-radius: 16px;">
+            <div style="width: 289px; height: 198px; background-color: #FFFFFF; margin-top: -45px; border-radius: 16px;">
+                <img src="img/google1.png" alt="Gambar" style="width: 50px; height: 50px; margin-left: 16px; margin-top: 25px;">
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 85px; margin-top: -30px;">Google</h1>
+                    <span style="font-size: 12px; color: #666; margin-left: 210px; margin-top: -25px;">5 Bulan</span>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h1 style="font-size: 16px; color: #000; margin-left: 25px; margin-top: 30px;">IT Consultant</h1>
+                </div>
+                <div style="display: flex; margin-top: 15px; margin-left: 25px;">
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                        Full Time
+                    </div>
+                    <div style="width: 80px; height: 30px; border: 1px solid #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-left: 15px;">
+                        Full Time
+                    </div>
+                </div>
+
+                <div style="display: flex; margin-top: 55px; margin-left: -5px;">
+    <div style="position: relative;">
+        <div id="toggleButton6" style="position: absolute; left: 0; width: 80px; height: 30px; border-radius: 30px; display: flex; align-items: center; justify-content: flex-start; cursor: pointer; padding: 2px; background-color: #CCCCCC;" onclick="toggleSwitch(6)">
+            <div id="toggleHandle6" style="position: absolute; left: 2px; width: 26px; height: 26px; border-radius: 50%; background-color: #FFFFFF; transition: margin 0.3s;"></div>
+            <div id="toggleTextOn6" style="position: absolute; left: 5px; display: none;">ON</div>
+            <div id="toggleTextOff6" style="position: absolute; right: 5px;">OFF</div>
+        </div>
+    </div>
+</div>
+
+<div style="position: relative; display: inline-block; margin-left: 225px;">
+    <img src="img/list.png" alt="Gambar" style="width: 50px; height: 50px; filter: brightness(0); margin-top: -10px;" onclick="toggleDropdown(6)">
+    <div id="dropdownContent6" style="display: none; position: absolute; background-color: #f9f9f9; min-width: 120px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 5px; margin-left: 60px; margin-top: -85px;">
+        <a href="/Page-DetailLowongan" onclick="detail(6)" style="display: block; text-align: left;">Detail</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="edit(6)" style="display: block; text-align: left;">Edit</a>
+        <br> <!-- Spasi -->
+        <a href="#" onclick="hapus(6)" style="display: block; text-align: left; color: red;">Hapus</a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
     </div>
 
 </div>
 
     <script>
+
+function toggleDropdown(cardNumber) {
+        var dropdownContent = document.getElementById('dropdownContent' + cardNumber);
+        if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+        } else {
+            dropdownContent.style.display = 'block';
+        }
+    }
+
+    function detail(cardNumber) {
+        // Fungsi detail untuk kartu ke cardNumber
+    }
+
+    function edit(cardNumber) {
+        // Fungsi edit untuk kartu ke cardNumber
+    }
+
+    function hapus(cardNumber) {
+        // Fungsi hapus untuk kartu ke cardNumber
+    }
+
+    function toggleSwitch(cardNumber) {
+        var button = document.getElementById('toggleButton' + cardNumber);
+        var handle = document.getElementById('toggleHandle' + cardNumber);
+        var textOn = document.getElementById('toggleTextOn' + cardNumber);
+        var textOff = document.getElementById('toggleTextOff' + cardNumber);
+
+        if (button.classList.contains('active')) {
+            button.classList.remove('active');
+            handle.style.marginLeft = '2px';
+            textOn.style.display = 'none';
+            textOff.style.display = 'block';
+            button.style.backgroundColor = '#CCCCCC'; // Mengembalikan warna latar belakang tombol saat dalam posisi OFF
+        } else {
+            button.classList.add('active');
+            handle.style.marginLeft = 'calc(100% - 28px)';
+            textOn.style.display = 'block';
+            textOff.style.display = 'none';
+            button.style.backgroundColor = '#17DB94'; // Mengubah warna latar belakang tombol menjadi hijau saat dalam posisi ON
+        }
+    }
+
         const hamBurger = document.querySelector(".toggle-btn");
 
 hamBurger.addEventListener("click", function () {

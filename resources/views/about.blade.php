@@ -157,9 +157,18 @@
         </div>
         <div>
             <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px; margin-top: 18px; margin-right: 15px;">
-                <h3 style="margin-right: 700px;">Nama</h3>
-                <p style="margin-right: 700px;">Jabatan</p>
-                <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <H3>Anna Smith</H3>
+</div>
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <p>Pemasaran Digital</p>
+</div>
+
+<div style="margin-top: 35px; width: 525px;">
+    <p style="text-align: justify;">Keahlian: SEO, SEM, Media Sosial, Pemasaran Konten, Analisis Web</p>
+    <p style="text-align: justify;">Pengalaman: Meningkatkan lalu lintas website sebesar 20% dalam 6 bulan</p>
+</div>
+
             </div>
         </div>
     </div>
@@ -167,10 +176,18 @@
     <div style="display: flex; justify-content: center; margin-top: 35px;">
     <div style="margin-right: 20px;">
         <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-            <h3 style="margin-right: 700px;">Nama</h3>
-            <p style="margin-right: 700px;">Jabatan</p>
-            <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
-        </div>
+            <h3 style="margin-right: 700px;">Jimmy</h3>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <p>Software Developer</p>
+</div>
+
+<div style="margin-top: 35px; width: 525px;">
+    <p style="text-align: justify;">Keahlian : Pengembangan perangkat lunak, Pemrograman Java, Python</p>
+    <p style="text-align: justify;">Pengalaman: Mengembangkan aplikasi web yang digunakan oleh lebih dari 1 juta orang</p>
+</div>
+
+</div>
     </div>
     <div>
     <div style="width: 393px; height: 275px; padding: 20px; border-radius: 10px; margin-top: -16px;">
@@ -188,20 +205,40 @@
         </div>
         <div>
             <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-                <h3 style="margin-right: 700px;">Nama</h3>
-                <p style="margin-right: 700px;">Jabatan</p>
-                <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
-            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <H3>Alex Wong</H3>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <p>Sales Executive</p>
+</div>
+
+<div style="margin-top: 35px; width: 525px;">
+    <p style="text-align: justify;">Keahlian : Pemahaman Produk, Teknik Penjualan, Riset Pasar.</p>
+    <p style="text-align: justify;">Pengalaman: 1-3 tahun pengalaman dalam penjualan B2B atau B2C (tergantung target pasar perusahaan)</p>
+</div>
+
+</div>
         </div>
     </div>
 
     <div style="display: flex; justify-content: center; margin-top: 35px;">
     <div style="margin-right: 20px;">
         <div style="width: 807px; height: 234px; background-color: #D7ECFF; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-            <h3 style="margin-right: 700px;">Nama</h3>
-            <p style="margin-right: 700px;">Jabatan</p>
-            <p style="margin-top: 75px; margin-right: 525px;">Keahlian dan pengalaman singkat</p>
-        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <H3>Lily Lucy</H3>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <p>Akuntan</p>
+</div>
+
+<div style="margin-top: 35px; width: 525px;">
+    <p style="text-align: justify;">Keahlian : Akuntansi, Microsoft Office, Peraturan pajak</p>
+    <p style="text-align: justify;">Pengalaman: menyiapkan laporan keuangan, melakukan rekonsiliasi bank, dan mengajukan pajak.</p>
+</div>
+
+</div>
     </div>
     <div>
     <div style="width: 393px; height: 275px; padding: 20px; border-radius: 10px; margin-top: -16px;">

@@ -374,12 +374,7 @@ data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-
 </ul>
 </li>
 
-<li class="sidebar-item" style="margin-top: 25px;">
-        <a href="/Page-Profill" class="sidebar-link">
-            <i class="lni lni-user"></i>
-            <span style="color: #FCDC94;">Profile</span>
-        </a>
-    </li>
+
 
 </ul>
         </aside>
@@ -421,9 +416,11 @@ data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-
 </section>
 
 <section style="background-color: #FFFFFF; padding: 50px;">
-<div style="width: 155px; height: 155px; background-color: #A0A0A0; border-radius: 50%; margin-right: 125px; margin-top: -85px; margin-left: 100px; position: relative; overflow: hidden;">
-    <img src="img/Google.jpg" alt="Gambar" style="width: 100%; height: 100%; object-fit: cover; border: 10px solid #1679AB; border-radius: 50%;">
+<div id="image-container" style="width: 155px; height: 155px; background-color: #A0A0A0; border-radius: 50%; margin-right: 125px; margin-top: -85px; margin-left: 100px; position: relative; overflow: hidden;">
+    <img id="clickable-image" src="img/Google.jpg" alt="Gambar" style="width: 100%; height: 100%; object-fit: cover; border: 10px solid #1679AB; border-radius: 50%;">
+    <input type="file" id="file-input" style="display: none;">
 </div>
+
     <div style="margin-top: -100px; margin-left: -25px; margin-bottom: 155px;">
     <div style="display: flex; align-items: center;">
     <div style="flex-grow: 1;">
@@ -509,6 +506,22 @@ data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-
 </div>
 
     <script>
+
+document.getElementById('clickable-image').addEventListener('click', function() {
+    document.getElementById('file-input').click();
+});
+
+document.getElementById('file-input').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById('clickable-image').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
 
 document.getElementById("dropdownIcon").addEventListener("click", function() {
         document.getElementById("myDropdown").classList.toggle("show");

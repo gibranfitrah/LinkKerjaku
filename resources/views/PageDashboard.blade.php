@@ -158,145 +158,6 @@ a.sidebar-link:hover {
 }
 
 /* Circular */
-* {
-      padding: 0;
-      margin: 0;
-      font-family: 'Poppins', arial;
-      box-sizing: border-box;
-    }
-
-    .card {
-      box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-      -6px -6px 10px -1px rgba(255,255,255,0.7);
-      width: 430px;
-      padding: 45px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      border-radius: 7px;
-      background-color: #082A3C;
-        color: #FFFFFF;
-    }
-
-    .circular-bar {
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 40px;
-    }
-
-    .circular-bar::before {
-      content: "";
-      position: absolute;
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      background-color: #082A3C;
-    }
-
-    .percent {
-      z-index: 10;
-      font-size: 30px;
-    }
-
-    label {
-      font-size: 20px;
-    }
-
-/* CARD 2 */
-.card.selesai {
-  margin-left: 50px;
-  margin-top: 55px;
-}
-
-.card.selesai .circular-bar {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.card.selesai .circular-bar::before {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background-color: #082A3C;
-
-}
-
-.card.selesai .percent {
-  z-index: 10;
-  font-size: 30px;
-}
-
-.card.selesai label {
-  font-size: 20px;
-}
-
-/* CARD 3 */
-.card.tiga {
-  margin-left: 50px;
-  margin-top: 55px;
-}
-
-.card.tiga .circular-bar {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.card.tiga .circular-bar::before {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background-color: #082A3C;
-}
-
-.card.tiga .percent {
-  z-index: 10;
-  font-size: 30px;
-}
-
-.card.tiga label {
-  font-size: 20px;
-}
-
-/* BARU */
-.funnel-chart {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 20px;
-    }
-    .funnel-stage {
-      flex: 1;
-      text-align: center;
-      padding: 20px;
-      color: white;
-    }
-    .funnel-stage:nth-child(1) { background-color: #00a2e8; }
-    .funnel-stage:nth-child(2) { background-color: #0073e6; }
-    .funnel-stage:nth-child(3) { background-color: #000080; }
-    .funnel-value {
-      font-size: 2em;
-      font-weight: bold;
-    }
-    
     .dropdown-content {
             display: none;
             position: absolute;
@@ -321,14 +182,122 @@ a.sidebar-link:hover {
         }
 
         .container {
-            margin-top: 45px;
+  text-align: center;
+  margin-top: 25px;
+}
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.progress-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: conic-gradient(#ffc300 0% 0%, #3a3a3a 0% 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s ease-out;
+  margin-left: 100px;
+}
+.progress-circle::before {
+  content: '';
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: #000;
+  border-radius: 50%;
+}
+.progress-circle span {
+  position: absolute;
+  font-size: 32px;
+  color: #fff;
+  z-index: 10;
+}
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.legend div {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.legend div span {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+.legend .non-aktif span {
+  background-color: #560bad;
+}
+.legend .aktif span {
+  background-color: #ffc300;
+}
+
+.chart-heading {
+  font-family: 'Rubik', sans-serif;
+  color: #023047;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.chart-container {
+  width: 200px;
+  margin-top: 25px;
+}
+
+.programming-stats {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+  width: fit-content;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 8px 32px;
+  color: #023047;
+  transition: all 400ms ease;
+}
+
+.programming-stats:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px -7px rgba(0, 0, 0, 0.3);
+}
+
+.programming-stats .details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.programming-stats .details ul li {
+  font-size: 16px;
+  margin: 12px 0;
+  text-transform: uppercase;
+}
+
+.programming-stats .details .percentage {
+  font-weight: 700;
+  color: #e63946;
+}
+
+.container2 {
+            margin-top: -1px;
         }
-        .chart-container {
+        .chart-container2 {
             position: relative;
             margin: auto;
             height: 80vh;
             width: 80vw;
         }
+
     </style>
 </head>
 
@@ -382,12 +351,7 @@ a.sidebar-link:hover {
         </ul>
     </li>
 
-<li class="sidebar-item" style="margin-top: 25px;">
-                    <a href="/Page-Profill" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span>Profile</span>
-                    </a>
-                </li>
+
 
             </ul>
         </aside>
@@ -425,112 +389,110 @@ a.sidebar-link:hover {
         </a>    </div>
 </div>
 
-    <div class="text-left" style="margin-top: 100px;">
-        <h1>
-            Lowongan Pekerjaan
-        </h1>
+
+
+<section style="width: 1165px; height: 460px; background-color: #EBEDF0; margin-top: 55px; margin-left: 100px; display: flex; justify-content: space-between; padding: 0 20px; border-radius: 10px;">
+<div style="width: 434px; height: 400px; background-color: #FFFFFF; border-radius: 10px; margin-top: 25px;">
+  <div class="container">
+    <div class="title">Lowongan Pekerjaan</div>
+    <div class="progress-circle">
+      <span>0%</span>
+    </div>
+    <div class="legend">
+      <div class="non-aktif"><span></span>Non-aktif</div>
+      <div class="aktif"><span></span>Aktif</div>
+    </div>
+  </div>
+</div>
+  <div style="width: 20px;"></div> <!-- Spasi antara card -->
+  
+  <div style="width: 465px; height: 400px; background-color: #FFFFFF; border-radius: 10px; margin-top: 25px;">
+
+  <h2 class="chart-heading">Status Lowongan</h2>
+  <div class="programming-stats">
+    <div class="chart-container">
+      <canvas class="my-chart"></canvas>
     </div>
 
-    <div style="display: flex;">
-  <div class="card" style="margin-top: 55px;">
-    <div class="circular-bar">
-      <div class="percent">50%</div>
+    <div class="details">
+      <ul></ul>
     </div>
-    <label>Aktif</label>
   </div>
 
-  <div class="card selesai">
-    <div class="circular-bar">
-      <div class="percent">10%</div>
-    </div>
-    <label>Baru</label>
-</div>
+  <select style="width: 147px; height: 40px; border: 1px solid #000; border-radius: 4px; margin-top: 25px; margin-left: 25px;">
+  <option value="uiux_designer">UI/UX Designer</option>
+  <option value="frontend">Frontend</option>
+  <option value="backend">Backend</option>
+  <option value="digital_marketing">Digital Marketing</option>
+</select>
 
-<div class="card tiga">
-    <div class="circular-bar">
-      <div class="percent">10%</div>
-    </div>
-    <label>Ditutup</label>
-</div>
-</div>
 
-<div class="container">
-        <div class="chart-container">
-            <canvas id="funnelChart"></canvas>
+
+</div>
+</section>
+
+<h2 class="chart-heading" style="margin-left: -900px; margin-top: 55px;">Overview</h2>
+<div class="container2">
+        <div class="chart-container2">
+            <canvas id="funnelChart2"></canvas>
         </div>
     </div>
+
   
 
-  <div class="text-left" style="margin-top: 35px;">
-        <h1>
-        Lowongan yang sedang berjalan
-        </h1>
-    </div>
+    <section style="margin-top: 55px; background-color: #E8F2F7; width: 1145px; height: 585px; margin-left: 115px; border-radius: 10px;">
+  <span style="float: left; margin-left: 55px; margin-top: 55px; font-size: 25px;">Aktivitas</span>
+  <select style="float: right; margin-top: 55px; margin-right: 55px; border-radius: 4px; width: 117px; height: 40px;">
+    <option value="pilihan1">Minggu Ini</option>
+    <option value="pilihan2">Pilihan 2</option>
+    <option value="pilihan3">Pilihan 3</option>
+    <option value="pilihan4">Pilihan 4</option>
+  </select>
 
-    <div style="display: flex; justify-content: center; margin-top: 35px; margin-left: 55px;">
-        <!-- Card 1 -->
-        <div style="width: 259px; height: 250px; background-color: #E9EBF8;; position: relative; border-radius: 16px; margin: 0 25px; right: 175px;">
-            <div style="width: 239px; height: 170px; background-color: #126189; border-radius: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 10px; box-sizing: border-box; color: #FFFFFF; margin-top: -25px;">
-                <p style="margin-left: 125px; font-size: 12px;">2 menit lalu</p>
-                <h1 style="margin-top: 15px; font-size: 24px; margin-left: 25px;">Designer</h1>
-                <h1 style="margin-left: 25px;">UI/UX</h1>
-                <div style="display: flex; margin-top: 15px;">
-                    <div style="width: 80px; height: 30px; border: 1px solid #FFFFFF; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
-                        Full Time
-                    </div>
-                    <div style="width: 80px; height: 30px; border: 1px solid #FFFFFF; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        Full Time
-                    </div>
-                </div>
-            </div>
-            <!-- BUTTON -->
-            <div style="position: absolute; bottom: 10px; left: 80%; transform: translateX(-50%);">
-                <button style="width: 53px; height: 28px; background-color: #FFC94A; border: none; border-radius: 10px; color: #000; cursor: pointer;">Edit</button>
-            </div>
-        </div>
+  <div style="clear:both;"></div>
+  
+  <table class="table" style="width: 1087px; height: 434px; background-color: #FFFFFF; margin: 20px auto; border-radius: 5px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align: center;  padding-top: 25px;">Lowongan</th>
+      <th scope="col" style="text-align: center;  padding-top: 25px;">Tanggal Diposting</th>
+      <th scope="col" style="text-align: center;  padding-top: 25px;">Tanggal Kadaluarsa</th>
+      <th scope="col" style="text-align: center;  padding-top: 25px;">Jumlah Pelamar</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;" class="fw-bold">UI/UX Designer</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">12/12/2024</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">30/12/2024</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">10 Pelamar</td>
+</tr>
 
-        <!-- Card 2 -->
-        <div style="width: 259px; height: 250px; background-color: #E9EBF8;; position: relative; border-radius: 16px; margin: 0 5px; right: 75px;">
-            <div style="width: 239px; height: 170px; background-color: #126189; border-radius: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 10px; box-sizing: border-box; color: #FFFFFF; margin-top: -25px;">
-                <p style="margin-left: 125px; font-size: 12px;">6 jam lalu</p>
-                <h1 style="margin-top: 15px; font-size: 24px; margin-left: 25px;">Digital</h1>
-                <h1 style="margin-left: 25px;">Marketing</h1>
-                <div style="display: flex; margin-top: 15px;">
-                    <div style="width: 80px; height: 30px; border: 1px solid #FFFFFF; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
-                        Full Time
-                    </div>
-                    <div style="width: 80px; height: 30px; border: 1px solid #FFFFFF; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        Full Time
-                    </div>
-                </div>
-            </div>
-            <!-- BUTTON -->
-            <div style="position: absolute; bottom: 10px; left: 80%; transform: translateX(-50%);">
-                <button style="width: 53px; height: 28px; background-color: #FFC94A; border: none; border-radius: 10px; color: #000; cursor: pointer;">Edit</button>
-            </div>
-        </div>
+<tr>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;" class="fw-bold">Back-end</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">01/10/2024</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">30/10/2024</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">20 Pelamar</td>
+</tr>
+<tr>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;" class="fw-bold">Front-end</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">25/12/2024</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">30/12/2024</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">30 Pelamar</td>
+</tr>
+<tr>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;" class="fw-bold">Software Engineer</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">06/12/2024</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">30/12/2024</td>
+    <td style="text-align: center; vertical-align: middle; padding-top: 25px;">40 Pelamar</td>
+</tr>
+  </tbody>
+</table>
 
-        <!-- Card 3 -->
-        <div style="width: 259px; height: 250px; background-color: #E9EBF8; position: relative; border-radius: 16px; margin: 0 5px; left: 55px;">
-            <div style="width: 239px; height: 170px; background-color: #126189; border-radius: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 10px; box-sizing: border-box; color: #FFFFFF; margin-top: -25px;">
-                <p style="margin-left: 125px; font-size: 12px;">1 minggu lalu</p>
-                <h1 style="margin-top: 15px; font-size : 24px; margin-left: 25px;">Designer</h1>
-                <h1 style="margin-left: 25px;">UI/UX</h1>
-                <div style="display: flex; margin-top: 15px;">
-                    <div style="width: 80px; height: 30px; border: 1px solid #FFFFFF; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
-                        Full Time
-                    </div>
-                    <div style="width: 80px; height: 30px; border: 1px solid #FFFFFF; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        Full Time
-                    </div>
-                </div>
-            </div>
-            <!-- BUTTON -->
-            <div style="position: absolute; bottom: 10px; left: 80%; transform: translateX(-50%);">
-                <button style="width: 53px; height: 28px; background-color: #FFC94A; border: none; border-radius: 10px; color: #000; cursor: pointer;">Edit</button>
-            </div>
-        </div>
-    </div>
+
+</section>
+
+
 
         
     </div>
@@ -540,7 +502,7 @@ a.sidebar-link:hover {
     </div>
 
     <script>
-        const ctx = document.getElementById('funnelChart').getContext('2d');
+        const ctx = document.getElementById('funnelChart2').getContext('2d');
         const funnelChart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -578,7 +540,86 @@ a.sidebar-link:hover {
 
         // Contoh pemanggilan fungsi updateFunnelChart
         // Anda dapat memanggil fungsi ini dengan data yang diperoleh dari sumber lain (misalnya API)
-        updateFunnelChart(100, 50, 25);
+        updateFunnelChart(200, 50, 20);
+    </script>
+    <script>
+      const chartData = {
+        labels: ['Wawancara', 'Penilaian', 'Ditolak', 'Diterima'],
+        data: [39, 38, 10, 27, 22],
+      };
+
+      const myChart = document.querySelector('.my-chart');
+      const ul = document.querySelector('.programming-stats .details ul');
+
+      new Chart(myChart, {
+        type: 'doughnut',
+        data: {
+          labels: chartData.labels,
+          datasets: [
+            {
+              label: 'Language Popularity',
+              data: chartData.data,
+            },
+          ],
+        },
+        options: {
+          borderWidth: 10,
+          borderRadius: 2,
+          hoverBorderWidth: 0,
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+        },
+      });
+
+      const populateUl = () => {
+        chartData.labels.forEach((l, i) => {
+          let li = document.createElement('li');
+          li.innerHTML = `${l}: <span class='percentage'>${chartData.data[i]}%</span>`;
+          ul.appendChild(li);
+        });
+      };
+
+      populateUl();
+    </script>
+
+    <script>
+function setProgress(percent) {
+            const progressCircle = document.querySelector('.progress-circle');
+            const span = progressCircle.querySelector('span');
+            let currentPercent = 0;
+            const interval = setInterval(() => {
+                if (currentPercent >= percent) {
+                    clearInterval(interval);
+                } else {
+                    currentPercent++;
+                    span.textContent = `${currentPercent}%`;
+
+                    const activePercent = Math.min(currentPercent, 50);
+                    const additionalPercent = currentPercent > 50 ? currentPercent - 50 : 0;
+
+                    if (currentPercent <= 50) {
+                        progressCircle.style.background = `conic-gradient(
+                            #FFC300 0% ${currentPercent}%, 
+                            #3A3A3A ${currentPercent}% 100%
+                        )`;
+                    } else {
+                        progressCircle.style.background = `conic-gradient(
+                            #FFC300 0% 50%, 
+                            #560BAD 50% ${currentPercent}%, 
+                            #3A3A3A ${currentPercent}% 100%
+                        )`;
+                    }
+                }
+            }, 10); // Adjust the interval speed if needed
+        }
+
+        // Example: Set progress to 73% on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            setProgress(73);
+        });
     </script>
 
     <script>

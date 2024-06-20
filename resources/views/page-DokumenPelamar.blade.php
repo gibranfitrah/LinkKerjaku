@@ -325,6 +325,8 @@ a.sidebar-link:hover {
         .dropdown-content span {
             margin-left: 8px;
         }
+
+        
     
     </style>
 </head>
@@ -429,6 +431,8 @@ data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-
   <option style="color: #FFFFFF;" value="3">Digital Marketing</option>
 </select>
 
+
+
 </div>
 
 <div style="display: flex; justify-content: space-between; margin-top: 45px; margin-left: 100px; margin-right: 135px; color: #FFFFFF;">
@@ -441,111 +445,306 @@ data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-
 </section>
 
 
-<section style="background-color: #E8F2F7; padding: 50px;">
+<section style="background-color: #FFFFFF; padding: 50px;">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h6>Menampilkan 6 Pelamar</h6>
-            </div>
             <div class="col-md-6" style="margin-top: -15px;">
     <form class="d-flex">
-        <input id="searchInput" class="form-control me-2" type="search" placeholder="Cari Pelamar" aria-label="Search" style="padding-right: 30px; background-image: url('svg/search.svg'); background-repeat: no-repeat; background-position: calc(100% - 10px) center; background-color: #E8F2F7;">
+    <input id="searchInput" class="form-control me-2" type="search" placeholder="Cari Keyword atau Pelamar" aria-label="Search" style="padding-right: 30px; background-image: url('svg/search.svg'); background-repeat: no-repeat; background-position: calc(100% - 10px) center; background-color: #FFFFFF; background-size: 30px 30px; width: 395px; height: 50px;">
     </form>
 </div>
 
         </div>
     </div>
 
-    <a href="/PageOverlay-Dashboard" style="text-decoration: none; color: inherit;">
-    <div class="card2" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/pelamar1.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
-    <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Nia, Digital Marketing</h6>
-        <div style="display: flex; align-items: center;">
-            <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-            <p style="margin-left: 20px; margin-top: 35px;">Bandung</p>
-            <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-            <p style="margin-left: 20px; margin-top: 40px;">1 hari yang lalu</p>
-            <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-            <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
+    <div style="display: flex relative;">
+    <div class="card2" style="width: 419px; height: 150px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 10px; display: flex; align-items: center;"
+        onmouseover="this.style.backgroundColor='#ADD8E6';" 
+        onmouseout="this.style.backgroundColor='#FFFFFF';">
+        <img src="img/pelamar1.jpg" class="card-img-top" alt="Card Image" style="width: 60px; height: 60px; background-color: #D9D9D9; border-radius: 50%; object-fit: cover; margin-left: 15px;">
+        <div style="margin-left: 15px;">
+            <div style="margin-bottom: 10px;">
+                <span style="font-weight: bold;">Olivia Rhye</span>, <span>Software Engineer</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-top: 15px;">
+                <div style="display: flex; align-items: center; margin-right: 15px;">
+                    <img src="svg/location.svg" alt="Icon 1" style="width: 20px; height: 20px; margin-right: 5px;">
+                    <span>Bandung</span>
+                </div>
+                <div style="display: flex; align-items: center; margin-left: 5px;">
+                    <img src="svg/date.svg" alt="Icon 2" style="width: 20px; height: 20px; margin-right: 5px;">
+                    <span>Baru saja</span>
+                </div>
+                <div style="display: flex; align-items: center; margin-left: 17px;">
+                    <img src="svg/bag.svg" alt="Icon 3" style="width: 20px; height: 20px; margin-right: 5px;">
+                    <span>1 tahun</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Garis vertikal -->
+    <div style="position: absolute; width: 1px; height: 147%; background-color: #000000; margin-left: 455px; margin-top: -255px;"></div>
+
+    <!-- Kartu besar di sebelah kanan -->
+    <div style="width: 644px; height: 874px; background-color: #FFFFFF; margin-left: 555px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+        <!-- Isi dari kartu besar -->
+        
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin-left: 430px; margin-top: -500px;">
+        <div style="width: 1200px; height: 1231px; background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; box-sizing: border-box; margin-left: -75px; margin-top: 355px;">
+            <div style="display: flex; align-items: center; margin-left: 10px; margin-top: -1px;">
+                <img src="img/pelamar1.jpg" alt="Profile Picture" style="width: 80px; height: 80px; border-radius: 50%;">
+                <div style="margin-left: 25px;">
+                    <h2 style="margin: 0; margin-top: 5px;">Olivia Rhye </h2>
+                    <p style="margin: 0; margin-top: 25px;">Status pelamar</p>
+                    <div style="width: 125px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-left: 165px; background-color: #FFE9B5; margin-top: -25px;">
+    Wawancara
+</div>
+
+<form style="margin-left: 445px; margin-top: -55px;">
+    <select onchange="changeColor(this)" style="width: 132px; height: 40px; border-radius: 8px; padding: 5px; margin-bottom: 20px;">
+        <option value="Full-time" data-bgcolor="#FFE9B5" data-textcolor="#9C7B2D">Wawancara</option>
+        <option value="Part-time" data-bgcolor="#EFFFED" data-textcolor="#38992B">Diterima</option>
+        <option value="Kontrak" data-bgcolor="#E8F2F7" data-textcolor="#082A3C">Penilaian</option>
+        <option value="Freelance" data-bgcolor="#FEEEEE" data-textcolor="#953131">Ditolak</option>
+    </select>
+</form>
+                </div>
+
+
+                
+            </div>
+
+            <p style="margin-bottom: 10px; margin-left: 25px; margin-right: 60px; margin-top: 25px;">
+        <span style="font-weight: bold;">Soft :</span>
+        <span class="read-more">Komunikasi, Kerja Tim, Manajemen Waktu</span> - <span style="font-weight: bold;">Hard :</span>
+        <span class="read-more">DevOps, Cloud Computing, Keamanan Siber</span>
+    </p>
+
+            
+    <div style="width: 800px; height: 82px; display: flex; border: 1px solid grey; border-radius: 4px; margin-top: 30px; margin-left: 25px;">
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1px solid grey;">
+            <p style="margin: 0;">Tipe Pekerjaan</p>
+            <p style="margin: 0; font-weight: bold; margin-top: 15px;">Full Time</p>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1px solid grey;">
+            <p style="margin: 0;">Pengalaman</p>
+            <p style="margin: 0; font-weight: bold; margin-top: 15px;">1 tahun</p>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <p style="margin: 0;">Gaji yang diharapkan</p>
+            <p style="margin: 0; font-weight: bold; margin-top: 15px;">Rp 6.000.000 per bulan</p>
+        </div>
+    </div>
+
+
+    <div class="mb-4" style="margin-top: 55px; margin-left: 25px;">
+    <a href="/PageOverlay-Dashboard" style="text-decoration: none; color: black;">
+    <span id="about" style="font-size: 18px; margin-right: 20px; color: #000000; position: relative; display: inline-block; text-decoration: none;">
+        Profill Pelamar
+    </span>
+</a>
+
+    <a href="/Page-DokumenPelamar" style="text-decoration: none; color: black;">
+        <span id="about" style="font-size: 18px; margin-right: 20px; color: #1E47A9; position: relative; display: inline-block;">
+           Dokumen
+           <span style="display: block; height: 3px; background-color: #FFC94A; position: absolute; bottom: -5px; left: 0; width: 100%;"></span>
+        </span>
+    </a>
+</div> 
+
+<h4 class="mt-5" style="margin-left: 25px; color: #146D9A; font-size: 20px;">Sertifikat</h4>
+<form action="/upload" method="post" enctype="multipart/form-data" style="margin-left: 25px;">
+    <div style="width: 355px; height: 55px; border-radius: 10px; border: 1px solid #ccc; padding: 5px; display: flex; align-items: center;">
+        <input type="file" name="file" id="file" style="display: none;">
+        <label for="file" style="cursor: pointer;">
+            <img src="svg/document.svg" alt="icon" style="width: 20px; height: 20px; margin-right: 5px; margin-left: 15px;">
+            Sertifikat
+        </label>
+    </div>
+</form>
+<span>
+  <img src="img/download.png" style="width: 24px; height: 24px; margin-left: 415px; margin-top: -80px; cursor: pointer;" onclick="downloadFile()">
+</span>
+      
+
+<h4 style="margin-left: 25px; color: #146D9A; font-size: 20px; margin-top: 55px;">CV</h4>
+<form action="/upload" method="post" enctype="multipart/form-data" style="margin-left: 25px;">
+    <div style="width: 355px; height: 55px; border-radius: 10px; border: 1px solid #ccc; padding: 5px; display: flex; align-items: center;">
+        <input type="file" name="file" id="file" style="display: none;">
+        <label for="file" style="cursor: pointer;">
+            <img src="svg/document.svg" alt="icon" style="width: 20px; height: 20px; margin-right: 5px; margin-left: 15px;">
+            CV
+        </label>
+    </div>
+</form>
+<span><img src="img/download.png" style="width: 24px; height: 24px; margin-left: 415px; margin-top: -80px;"></span>
+
+      
+
+<h4 style="margin-left: 25px; color: #146D9A; font-size: 20px; margin-top: 65px;">Surat Lamaran</h4>
+<form action="/upload" method="post" enctype="multipart/form-data" style="margin-left: 25px;">
+    <div style="width: 355px; height: 55px; border-radius: 10px; border: 1px solid #ccc; padding: 5px; display: flex; align-items: center;">
+        <input type="file" name="file" id="file" style="display: none;">
+        <label for="file" style="cursor: pointer;">
+            <img src="svg/document.svg" alt="icon" style="width: 20px; height: 20px; margin-right: 5px; margin-left: 15px;">
+            Surat Lamaran
+        </label>
+    </div>
+</form>
+<span><img src="img/download.png" style="width: 24px; height: 24px; margin-left: 415px; margin-top: -80px;"></span>
+
+
+     
+
+
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+<div class="card2" style="width: 419px; height: 150px; background-color: #FFFFFF; margin-top: -855px; border-radius: 20px; margin-left: 10px; display: flex; align-items: center;"
+    onmouseover="this.style.backgroundColor='#ADD8E6';" 
+    onmouseout="this.style.backgroundColor='#FFFFFF';">
+    <img src="img/pelamar2.jpg" class="card-img-top" alt="Card Image" style="width: 60px; height: 60px; background-color: #D9D9D9; border-radius: 50%; object-fit: cover; margin-left: 15px;">
+    <div style="margin-left: 15px;">
+        <div style="margin-bottom: 10px;">
+            <span style="font-weight: bold;">Siti Badiah</span>, <span>Software Engineer</span>
+        </div>
+        <div style="display: flex; align-items: center; margin-top: 15px;">
+            <div style="display: flex; align-items: center; margin-right: 15px;">
+                <img src="svg/location.svg" alt="Icon 1" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>Bandung</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 5px;">
+                <img src="svg/date.svg" alt="Icon 2" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>Baru saja</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 17px;">
+                <img src="svg/bag.svg" alt="Icon 3" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>1 tahun</span>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="card3" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/pelamar2.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
-    <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Reni , Manajemen</h6>
-        <div style="display: flex; align-items: center;">
-    <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 35px;">Jakarta</p>
-    <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">1 hari yang lalu</p>
-    <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
-</div>
+<div class="card2" style="width: 419px; height: 150px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 10px; display: flex; align-items: center;"
+    onmouseover="this.style.backgroundColor='#ADD8E6';" 
+    onmouseout="this.style.backgroundColor='#FFFFFF';">
+    <img src="img/pelamar3.jpg" class="card-img-top" alt="Card Image" style="width: 60px; height: 60px; background-color: #D9D9D9; border-radius: 50%; object-fit: cover; margin-left: 15px;">
+    <div style="margin-left: 15px;">
+        <div style="margin-bottom: 10px;">
+            <span style="font-weight: bold;">Kim Chan</span>, <span>Software Engineer</span>
+        </div>
+        <div style="display: flex; align-items: center; margin-top: 15px;">
+            <div style="display: flex; align-items: center; margin-right: 15px;">
+                <img src="svg/location.svg" alt="Icon 1" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>Bandung</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 5px;">
+                <img src="svg/date.svg" alt="Icon 2" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>Baru saja</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 17px;">
+                <img src="svg/bag.svg" alt="Icon 3" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>1 tahun</span>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="card4" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/pelamar3.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
-    <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Deni , Web Developer</h6>
-        <div style="display: flex; align-items: center;">
-    <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 35px;">Bogor</p>
-    <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">2 hari yang lalu</p>
-    <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
-</div>
+<div class="card2" style="width: 419px; height: 150px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 10px; display: flex; align-items: center;"
+    onmouseover="this.style.backgroundColor='#ADD8E6';" 
+    onmouseout="this.style.backgroundColor='#FFFFFF';">
+    <img src="img/pelamar4.jpg" class="card-img-top" alt="Card Image" style="width: 60px; height: 60px; background-color: #D9D9D9; border-radius: 50%; object-fit: cover; margin-left: 15px;">
+    <div style="margin-left: 15px;">
+        <div style="margin-bottom: 10px;">
+            <span style="font-weight: bold;">Kristoff Lee</span>, <span>Software Engineer</span>
+        </div>
+        <div style="display: flex; align-items: center; margin-top: 15px;">
+            <div style="display: flex; align-items: center; margin-right: 15px;">
+                <img src="svg/location.svg" alt="Icon 1" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>Bandung</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 5px;">
+                <img src="svg/date.svg" alt="Icon 2" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>Baru saja</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 17px;">
+                <img src="svg/bag.svg" alt="Icon 3" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>1 tahun</span>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="card5" style="width: 1120px; height: 225px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 145px;">
-    <img src="img/pelamar4.jpg" class="card-img-top" alt="Card Image" style="width: 187px; height: 158px; background-color: #D9D9D9; margin-top: 35px; margin-left: 35px;">
-    <div class="card-body">
-        <h6 class="card-title" style="margin-left: 250px; margin-top: -120px;">Beni , Digital Marketing</h6>
-        <div style="display: flex; align-items: center;">
-    <img src="svg/location.svg" alt="Icon 1" style="width: 30px; height: 30px; margin-left: 250px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 35px;">Surabaya</p>
-    <img src="svg/date.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">3 hari yang lalu</p>
-    <img src="svg/bag.svg" alt="Icon 2" style="width: 30px; height: 30px; margin-left: 125px; margin-top: 25px;">
-    <p style="margin-left: 20px; margin-top: 40px;">2 tahun</p>
-</div>
+<div class="card2" style="width: 419px; height: 150px; background-color: #FFFFFF; margin-top: 45px; border-radius: 20px; margin-left: 10px; display: flex; align-items: center;"
+    onmouseover="this.style.backgroundColor='#ADD8E6';" 
+    onmouseout="this.style.backgroundColor='#FFFFFF';">
+    <img src="img/pelamar8.jpg" class="card-img-top" alt="Card Image" style="width: 60px; height: 60px; background-color: #D9D9D9; border-radius: 50%; object-fit: cover; margin-left: 15px;">
+    <div style="margin-left: 15px;">
+        <div style="margin-bottom: 10px;">
+            <span style="font-weight: bold;">Thofan Chow</span>, <span>Software Engineer</span>
+        </div>
+        <div style="display: flex; align-items: center; margin-top: 15px;">
+            <div style="display: flex; align-items: center; margin-right: 15px;">
+                <img src="svg/location.svg" alt="Icon 1" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>Bandung</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 5px;">
+                <img src="svg/date.svg" alt="Icon 2" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>Baru saja</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 17px;">
+                <img src="svg/bag.svg" alt="Icon 3" style="width: 20px; height: 20px; margin-right: 5px;">
+                <span>1 tahun</span>
+            </div>
+        </div>
     </div>
 </div>
-
-<nav aria-label="Page navigation example" style="margin-top: 55px; margin-left: 355px; width: 683px; height: 58px;">
-  <ul class="pagination" style="display: flex; justify-content: space-between; height: 100%; margin: 0; padding: 0; list-style: none;">
-    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <a class="page-link" href="/Page-StatusPelamar" style="display: block; width: 100%; text-align: center;">Previous</a>
-    </li>
-    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <a class="page-link" href="/Page-StatusPelamar" style="display: block; width: 100%; text-align: center;">1</a>
-    </li>
-    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <a class="page-link" href="/Page-StatusPelamar2" style="display: block; width: 100%; text-align: center;">2</a>
-    </li>
-    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <a class="page-link" href="/Page-StatusPelamar3" style="display: block; width: 100%; text-align: center;">3</a>
-    </li>
-    <li class="page-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <a class="page-link" href="/Page-StatusPelamar2" style="display: block; width: 100%; text-align: center;">Next</a>
-    </li>
-  </ul>
-</nav>
-
-
-
 </section>
 
-    </div>
 
+
+
+
+  </div>
 </div>
 
     <script>
+
+function downloadFile() {
+    // Ambil file yang diupload
+    var file = document.getElementById('file').files[0];
+    
+    // Buat objek blob untuk file
+    var blob = new Blob([file], { type: file.type });
+    
+    // Buat objek URL untuk file
+    var url = URL.createObjectURL(blob);
+    
+    // Buat objek a untuk mengunduh file
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = file.name;
+    a.click();
+    
+    // Hapus objek a dan URL
+    URL.revokeObjectURL(url);
+  }
+
+function changeColor(select) {
+        var selectedOption = select.options[select.selectedIndex];
+        var bgcolor = selectedOption.dataset.bgcolor;
+        var textcolor = selectedOption.dataset.textcolor;
+        select.style.backgroundColor = bgcolor;
+        select.style.color = textcolor;
+    }
+
         const hamBurger = document.querySelector(".toggle-btn");
 
 hamBurger.addEventListener("click", function () {

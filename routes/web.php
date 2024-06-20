@@ -329,6 +329,18 @@ Route::get('/Page-SimpanProfill', function () {
     ]);
 });
 
+Route::get('/Page-DetailLowongan', function () {
+    return view('Page-DetailLowongan', [
+        "title" => "Page-DetailLowongan"
+    ]);
+});
+
+Route::get('/Page-DokumenPelamar', function () {
+    return view('Page-DokumenPelamar', [
+        "title" => "Page-DokumenPelamar"
+    ]);
+});
+
 // BARU
 
 Route::get('/Home-Perusahaan', function () {

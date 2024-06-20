@@ -380,12 +380,6 @@ data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="dashboard-
 </ul>
 </li>
 
-<li class="sidebar-item" style="margin-top: 25px;">
-        <a href="/Page-Profill" class="sidebar-link">
-            <i class="lni lni-user"></i>
-            <span>Profile</span>
-        </a>
-    </li>
 
 </ul>
         </aside>
