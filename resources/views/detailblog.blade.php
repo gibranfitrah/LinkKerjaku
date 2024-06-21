@@ -94,7 +94,7 @@
 <section style="background-color: #FFFFFF; padding: 20px;">
 <div style="display: flex; justify-content: center; align-items: center; margin-top: -55px;">
     <div class="card" style="width: 1351px; height: 502px; border-radius: 24px; overflow: hidden;">
-        <img src="img/detailblog.jpg" alt="Panduan Lengkap" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="img/detailblog2.jpg" alt="Panduan Lengkap" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
 </div>
 </section>
